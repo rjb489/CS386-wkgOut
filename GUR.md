@@ -7,7 +7,7 @@
 - Don't declare declare in loops
 - Declare variables at start of a function
 - Comment regularly
-- For individual branches, follow this naming format: branch<Name>
+- For individual branches, follow this naming format: branch"Name"
     - example: branchRiley
 - ---
 - More to be added...
