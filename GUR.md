@@ -1,4 +1,4 @@
-# (*Insert Project Name*) General Usage Format
+# wkgOut General Usage Format
 
 - Descriptive Variables
 - Tabs ( 3 Space Tab )
