@@ -23,6 +23,21 @@ A web app that is designed to help people who enjoy working out build, share, tr
    - Key Insights:
    - Representative Quotes:
    - Assessment: *Must Have* *Nice to Have* *Don't Care*
+ 
+- Interviewer: Laura Guerrero
+   - Interviewee: Noah Knight Marlow
+   - When: Januray 31, 2024
+   - Customer Segment: Work out but do not journal, would benefit from both
+   - Key Insights: Persets would be beneficial
+   - Representative Quotes: "Preset layout for specific workout, reps, and sets kinda like a spreadsheet type deal"
+   - Assessment: Nice to Have
+  #
+   - Interviewee: Tanya Hoose
+   - When: Februrary 1, 2024
+   - Customer Segment: Work out but do not journal, would benefit from both
+   - Key Insights: Persets would be beneficial
+   - Representative Quotes: "Workout exercise description with videos and recommended frequency per exercise"
+   - Assessment: Nice to Have
 
 ---
 # **Final Value Proposition & Consumer Segments**
