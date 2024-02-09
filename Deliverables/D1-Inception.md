@@ -31,7 +31,7 @@ A web app that is designed to help people who enjoy working out build, share, tr
    - Key Insights: presets and ability to track workouts would be beneficial
    - Representative Quotes: "...track progress with reps to weight ratio for various exercises."
    - Assessment: Nice to Have
-#
+  #
    - Interviewee: Grant Gibson
    - When: Febuary 3, 2024
    - Customer Segment: Works out but doesn't journal, would be interested in journaling
