@@ -54,6 +54,19 @@ A web app that is designed to help people who enjoy working out build, share, tr
    - Representative Quotes: "Workout exercise description with videos and recommended frequency per exercise"
    - Assessment: Nice to Have
 
+- Interviewer: Xavier Graham
+  - Interviewee: Lena Throlson
+  - When: Februray 6, 2024
+  - Customer Segment: Work out but does not journal
+  - Key Insights: I belive that this person does not do workouts like lifting weights, we should take into account customers who say run or hike as their choice of exersise.
+  - Representative Quotes: "Options for the day to take in account how you are feeling, weather"
+  - Assessment: Don't Care
+  #
+  - Interviewee: Kent Throlson
+  - When: Februray 6,2024
+  - Key Insights: There are many applications like this so we need to find a nichie and I think journaling could be that for us.
+  - Representative Quotes: "I’m pretty much set with Strava features and functionality, so haven’t been even looking at other sites or options. But some new idea could really change the game."
+  - Assessment: Nice to have
 ---
 # **Final Value Proposition & Consumer Segments**
 
