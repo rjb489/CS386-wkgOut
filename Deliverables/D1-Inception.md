@@ -7,11 +7,11 @@ A web app that is designed to help people who enjoy working out build, share, tr
 ---
 # **Initial Value Proposition & Customer Segment**
 
--Initial guess
-   -Customers will find value in being able to both schedule and record there workouts.
+-  Initial guess
+   -  Customers will find value in being able to both schedule and record there workouts.
 
--Value Proposition
-   -We will provide an way for our customers to plan their workouts and journal about their days.   
+-  Value Proposition
+   -  We will provide an way for our customers to plan their workouts and journal about their days.   
 
 *The value proposition should make clear the value from the point of view of the customer. It should not be a slogan or a description of functionality. The value proposition and consumer segment should be coherent with the text in the previous section; in particular, the value should address the problem reported above (problem-solution fit). The customer segment should not be too broad or too specific.* 
 
