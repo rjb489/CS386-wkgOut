@@ -74,6 +74,28 @@ A web app that is designed to help people who enjoy working out build, share, tr
   - Key Insights: There are many applications like this so we need to find a niche and I think journaling could be that for us.
   - Representative Quotes: "I’m pretty much set with Strava features and functionality, so haven’t been even looking at other sites or options. But some new idea could really change the game."
   - Assessment: Nice to have
+
+- Interviewer: Charles Diaz
+   - Interviewee: Myles Hurley
+   - When: February 5, 2024
+   - Customer Segment: Would like to use an app version, as well as the ablity to track progress with a leveling system that is based on the time working out. Also noted the idea of progress sharing with freinds. 
+   - Key Insights: Having a mobile application, game like leveling system, and progress sharing are features to consider.
+   - Representative Quotes: "I wouldn't use a website but an app on my phone would be beneficial."
+   - Assessment: Nice to Have
+  #
+   - Interviewee: Andrew Speers
+   - When: February 6, 2024
+   - Customer Segment: Would like to keep track of their progress on lifts, like how much weight they can do for how many reps.
+   - Key Insights: Having a feature to keep track of weight and reps in the workout planner or journal might be useful.
+   - Representative Quotes: "...keep track of where my personal progress is on per lift for repping and max."
+   - Assessment: Don't care
+  #
+   - Interviewee: Benjamin Levine
+   - When: February 10, 2024
+   - Customer Segment: Was intrested in keeping track of the how heavy they lifted for each week or month.
+   - Key Insights: Like in Andrew Speers interview a feature to keep track of weight and reps in the workout planner or journal might be useful.
+   - Representative Quotes: "I would like to see a weekly/monthly roundup of averages and/or high's."
+   - Assessment: Nice to have
 ---
 # **Final Value Proposition & Consumer Segments**
 
