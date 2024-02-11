@@ -26,45 +26,52 @@ A web app that is designed to help people who enjoy working out build, share, tr
 
 - Interviewer: Riley Burke
    - Interviewee: Matt Nagler
-   - When: Febuary 3, 2024
+   - When: February 3, 2024
    - Customer Segment: Works out and journals, would benefit from both
    - Key Insights: presets and ability to track workouts would be beneficial
    - Representative Quotes: "...track progress with reps to weight ratio for various exercises."
    - Assessment: Nice to Have
   #
    - Interviewee: Grant Gibson
-   - When: Febuary 3, 2024
+   - When: February 3, 2024
    - Customer Segment: Works out but doesn't journal, would be interested in journaling
    - Key Insights: The workout builder is most important feature
    - Representative Quotes: "User friendly, easily accessible on phone or computer."
    - Assessment: Nice to Have
+  #
+   - Interviewee: Colton Waken
+   - When: February 9, 2024
+   - Customer Segment: Works out often, does not journal, may be interested in journaling
+   - Key Insights: Make the website have some fun little features
+   - Representative Quotes: "YOu should implement an xp system and maybe achievements/badges for milestones"
+   - Assessment: Nice to Have
  
 - Interviewer: Laura Guerrero
    - Interviewee: Noah Knight Marlow
-   - When: Januray 31, 2024
+   - When: January 31, 2024
    - Customer Segment: Work out but do not journal, would benefit from both
    - Key Insights: Presets would be beneficial
    - Representative Quotes: "Preset layout for specific workout, reps, and sets kinda like a spreadsheet type deal"
    - Assessment: Nice to Have
   #
    - Interviewee: Tanya Hoose
-   - When: Februrary 1, 2024
+   - When: February 1, 2024
    - Customer Segment: Work out but do not journal, would benefit from both
-   - Key Insights: Persets would be beneficial
+   - Key Insights: Presets would be beneficial
    - Representative Quotes: "Workout exercise description with videos and recommended frequency per exercise"
    - Assessment: Nice to Have
 
 - Interviewer: Xavier Graham
   - Interviewee: Lena Throlson
-  - When: Februray 6, 2024
+  - When: February 6, 2024
   - Customer Segment: Work out but does not journal
-  - Key Insights: I belive that this person does not do workouts like lifting weights, we should take into account customers who say run or hike as their choice of exersise.
+  - Key Insights: I believe that this person does not do workouts like lifting weights, we should take into account customers who say run or hike as their choice of exercise.
   - Representative Quotes: "Options for the day to take in account how you are feeling, weather"
   - Assessment: Don't Care
   #
   - Interviewee: Kent Throlson
-  - When: Februray 6,2024
-  - Key Insights: There are many applications like this so we need to find a nichie and I think journaling could be that for us.
+  - When: February 6,2024
+  - Key Insights: There are many applications like this so we need to find a niche and I think journaling could be that for us.
   - Representative Quotes: "I’m pretty much set with Strava features and functionality, so haven’t been even looking at other sites or options. But some new idea could really change the game."
   - Assessment: Nice to have
 ---
