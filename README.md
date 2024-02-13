@@ -30,6 +30,9 @@
 [Click Here](https://docs.google.com/spreadsheets/d/1IFqqjtxfPq3EEyFwIj_uh65KQR4u18Z64S7PRJNeOas/edit#gid=0)
 
 ---
+# Technologies
+
+---
 
 # Created By:
 ### Laura Guerrero
@@ -37,3 +40,4 @@
 ### Riley Burke
 ### Xavier Graham
 ### Minuka Trikawalagoda
+

@@ -102,6 +102,14 @@ A web app that is designed to help people who enjoy working out build, share, tr
    - Key Insights: Like in Andrew Speers interview a feature to keep track of weight and reps in the workout planner or journal might be useful.
    - Representative Quotes: "I would like to see a weekly/monthly roundup of averages and/or high's."
    - Assessment: Nice to have
+
+- Interviewer: Minuka Trikawalagoda
+   - Interviewee: 
+   - When: *Month*/*Day*/*Year*
+   - Customer Segment:
+   - Key Insights:
+   - Representative Quotes:
+   - Assessment: *Must Have* *Nice to Have* *Don't Care*
 ---
 # **Final Value Proposition & Consumer Segments**
 
