@@ -61,7 +61,29 @@ our product provides preset workouts that use specific gym equipment.
     - *Your case description*
     - *Your Image of Use Case*
         - Markdown Cheat for Image: ![alt text](image.jpg)
-    
+
+- Riley Burke
+
+    - Use Case: Build Workout
+    Actor: User
+    Trigger: User selects "Build Workout"
+    Pre-Condition: User is registered and has an account
+    Post-Condition: User has access to a workout they built
+    Success Scenario:
+        - User selects "Build Workout"
+        - User is prompted to place "Exercises"
+        - User picks the amount of reps and sets
+        - User can add more or finish the build
+        - User can access the workout to edit later
+
+    Alternate Scenario:
+        - User selects "Build Workout"
+        - User selects to create exercise (one that isn't a preset)
+        - User inputs necessary information
+        - User can add more or finish the build
+        - The newly created exercise is saved to the user's profile for future use
+        - User can access the workout to edit later
+
 
 ---
 
@@ -80,6 +102,16 @@ our product provides preset workouts that use specific gym equipment.
         - *Priority Level:*
         - *Time Estimate:*
 
+
+- Riley Burke
+
+    - As a workout planner, I want to have the ability to share workouts I build, so I can help my team with consistent workouts.
+        - Priority Level: 3
+        - Time Estimate: 3 Hours
+
+    - As someone who works out, I want to be able to build my own workout plans, so that I can be more efficient in my workouts.
+        - Priority Level: 1
+        - Time Estimate: 6 Hours
 
 ---
 
