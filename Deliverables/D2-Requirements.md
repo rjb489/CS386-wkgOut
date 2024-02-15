@@ -65,18 +65,18 @@ our product provides preset workouts that use specific gym equipment.
 - Riley Burke
 
     - Use Case: Build Workout
-    Actor: User
-    Trigger: User selects "Build Workout"
-    Pre-Condition: User is registered and has an account
-    Post-Condition: User has access to a workout they built
-    Success Scenario:
+    - Actor: User
+    - Trigger: User selects "Build Workout"
+    - Pre-Condition: User is registered and has an account
+    - Post-Condition: User has access to a workout they built
+    - Success Scenario:
         - User selects "Build Workout"
         - User is prompted to place "Exercises"
         - User picks the amount of reps and sets
         - User can add more or finish the build
         - User can access the workout to edit later
 
-    Alternate Scenario:
+    - Alternate Scenario:
         - User selects "Build Workout"
         - User selects to create exercise (one that isn't a preset)
         - User inputs necessary information
