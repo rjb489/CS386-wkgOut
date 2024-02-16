@@ -84,7 +84,26 @@ our product provides preset workouts that use specific gym equipment.
         - The newly created exercise is saved to the user's profile for future use
         - User can access the workout to edit later
 
+- Laura Guerrero
 
+    - Use Case: Create Journal
+    - Actor: User
+    - Trigger: User selects "Create Journal"
+    - Pre-Condition: User is registered and has an account
+    - Post-Condition: User has access to a journal they created
+    - Success Scenario:
+        - User selects "Create Journal"
+        - User is prompted to place "Journal Prompts'
+        - User can add more prompts or finish the jounral
+        - User can access the journal to edit later
+
+    - Alternate Scenario:
+        - User selects "Create Journal"
+        - User selects to create prompt (one that isn't a preset)
+        - User inputs necessary information
+        - User can add more prompts or finish the build
+        - The newly created prompt is saved to the user's profile for future use
+        - User can access the journal to edit later
 ---
 
 # **User Stores**
@@ -112,6 +131,17 @@ our product provides preset workouts that use specific gym equipment.
     - As someone who works out, I want to be able to build my own workout plans, so that I can be more efficient in my workouts.
         - Priority Level: 1
         - Time Estimate: 6 Hours
+    
+- Laura Guerrero
+
+    - As someone who journals, I want to be able to create my own journal prompts, so that I can track and refelct on crucial information.
+        - Priority Level: 1
+        - Time Estimate: 3 Hours
+
+    - As someone who works out, I want to be able to choose preset workouts, so that I know how to build muscle and improve my workouts.
+        - Priority Level: 3
+        - Time Estimate: 3 Hours
+
 
 ---
 
