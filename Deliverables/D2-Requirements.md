@@ -13,6 +13,22 @@ our product provides preset workouts that use specific gym equipment.
 
 # **Stakeholders**
 
+- Xavier Graham
+  
+1. Users
+    - The users of this application could be anyone who is intrested in working out and would like to journal about their progress
+2. Clients
+    - An athletic team or club using our product to track their athletic and mental health growth 
+3. Competitors
+    - Myfitness Tracker
+    - Apple Fitness
+    - Any app that provides workouts to the user
+5. Developers
+    - Charles Diaz
+    - Laura Guerrero
+    - Riley Burke
+    - Xavier Graham
+
 *Make a list of all stakeholders of the project with a brief description of each one of them, emphasizing any responsibilities with the project. Examples of stakeholders include users, clients, competitors, detractors, developers, etc. Grading criteria (1 point): The stakeholders can’t be too generic or specific. The list should reflect what was described in Section 1.*
 
 
@@ -148,7 +164,23 @@ our product provides preset workouts that use specific gym equipment.
         - User inputs incorrect information
         - User can reset password
 
+- Xavier Graham
 
+    - Use Case: Calories burned tracker
+    - Actor: User
+    - Trigger: User selects "Start Workout"
+    - Pre-Conditon: User has an accout and workout created
+    - Post-Conditon: User can see how many calories they burned during workout
+    - Success Senario:
+        - User selects "Start Workout"
+        - timer starts
+        - User selects "End workout"
+        - Number of calories burned is displayed
+
+    - Alternate Scenario:
+        - User may not have accout
+        - User may not have a workout selected
+    
 ---
 
 # **User Stores**
@@ -195,6 +227,16 @@ our product provides preset workouts that use specific gym equipment.
 
     - As someone who trains others in bodybuilding, I want to be able to share my workoutplans with other people.
         - Priority Level: 3
+        - Time Estimate: 5 Hours
+
+- Xavier Graham
+
+    - As someone who works out, I would like to be able to see how many calories I burn after a workout.
+        - Priority Level: 2
+        - Time Estimate: 3 Hours
+
+    - As someone who has friends who work out, I would like to compare who much calories I burn compared to them
+        - Priority Level: 5
         - Time Estimate: 5 Hours
 
 
