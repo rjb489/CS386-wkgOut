@@ -1,7 +1,7 @@
-FROM python
-
-WORKDIR /Users/xaviergraham/NAU/sophomore/spring/CS386/dockerTest
+FROM python:3.9
 
 COPY . .
 
-CMD [ "python", "./test.py" ]
+RUN pip install mysql-connector-python pandas
+
+CMD [ "python", "project.py" ]
