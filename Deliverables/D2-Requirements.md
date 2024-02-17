@@ -14,20 +14,20 @@ our product provides preset workouts that use specific gym equipment.
 # **Stakeholders**
 
 - Xavier Graham
-- 
+  
 1. Users
-- The users of this application could be anyone who is intrested in working out and would like to journal about their progress
+    - The users of this application could be anyone who is intrested in working out and would like to journal about their progress
 2. Clients
-- An athletic team or club using our product to track their athletic and mental health growth 
+    - An athletic team or club using our product to track their athletic and mental health growth 
 3. Competitors
-- Myfitness Tracker
-- Apple Fitness
-- Any app that provides workouts to the user
+    - Myfitness Tracker
+    - Apple Fitness
+    - Any app that provides workouts to the user
 5. Developers
-- Charles Diaz
-- Laura Guerrero
-- Riley Burke
-- Xavier Graham
+    - Charles Diaz
+    - Laura Guerrero
+    - Riley Burke
+    - Xavier Graham
 
 *Make a list of all stakeholders of the project with a brief description of each one of them, emphasizing any responsibilities with the project. Examples of stakeholders include users, clients, competitors, detractors, developers, etc. Grading criteria (1 point): The stakeholders can’t be too generic or specific. The list should reflect what was described in Section 1.*
 
