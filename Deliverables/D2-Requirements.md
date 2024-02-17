@@ -164,7 +164,23 @@ our product provides preset workouts that use specific gym equipment.
         - User inputs incorrect information
         - User can reset password
 
+- Xavier Graham
 
+    - Use Case: Calories burned tracker
+    - Actor: User
+    - Trigger: User selects "Start Workout"
+    - Pre-Conditon: User has an accout and workout created
+    - Post-Conditon: User can see how many calories they burned during workout
+    - Success Senario:
+        - User selects "Start Workout"
+        - timer starts
+        - User selects "End workout"
+        - Number of calories burned is displayed
+
+    - Alternate Scenario:
+        - User may not have accout
+        - User may not have a workout selected
+    
 ---
 
 # **User Stores**
