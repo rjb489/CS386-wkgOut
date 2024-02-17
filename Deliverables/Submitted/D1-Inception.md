@@ -102,7 +102,11 @@ A web app that is designed to help people who enjoy working out build, share, tr
    - Key Insights: Like in Andrew Speers interview a feature to keep track of weight and reps in the workout planner or journal might be useful.
    - Representative Quotes: "I would like to see a weekly/monthly roundup of averages and/or high's."
    - Assessment: Nice to have
+<<<<<<< HEAD:Deliverables/Submitted/D1-Inception.md
+   
+=======
 
+>>>>>>> dbce2700325855be53998c447701e03187e1559a:Deliverables/D1-Inception.md
 - Interviewer: Minuka Trikawalagoda
    - Interviewee: 
    - When: *Month*/*Day*/*Year*

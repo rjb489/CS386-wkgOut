@@ -20,6 +20,19 @@ our product provides preset workouts that use specific gym equipment.
 
 # **Functional Requirements**
 
+<<<<<<< HEAD
+1. Workout Planner/Scheduler
+1. Calendar
+1. Journal 
+1. Account System
+1. Workout presets 
+1. Experience Leveling System 
+1. Sharing Workouts 
+1. Sharing Progress
+1. Link between Journal Entries & wkgOut builds
+
+=======
+>>>>>>> dbce2700325855be53998c447701e03187e1559a
 *Make a numbered list of requirements for your software. Just self-explanatory titles are enough at this point. Remember that requirements should deliver the value proposition and they must be consistent with the interviews you performed for the previous deliverable. You can talk again to your clients to help define the requirements. While writing the requirements, focus on the capabilities needed and not on how they should be implemented. Grading criteria (2 points): The list should be comprehensive (remember that you are not expected to implement all the requirements by the end of the course but you should list them). Follow the same pattern to describe all the requirements. The list of requirements should be coherent with the previous sections.*
 
 
@@ -27,6 +40,20 @@ our product provides preset workouts that use specific gym equipment.
 
 # **Non-Functional Requirements**
 
+<<<<<<< HEAD
+1. Usability of the workout planning system
+-  Have a group of test users, test the planning system and give back their feedback focusing on if the experience was easy to use. If the feedback is positive then the planning system is a success. 
+1. Scalability of the planning system
+-  Make sure that the planning system can hold at least 20 exercises per day, and 10 sets per exercise. 
+1. Performance of workout planner
+- Be able to have at least 20 exercises per day, and 10 sets per exercise and have no noticeable delay on page loading or exercise loading. This will be tested by having a few test users load a page that has 20 exercises with 10 sets per exercise and then are asked if the page felt laggy.
+1. Proper workout planner manageability 
+- We will test this by having users who have never used the program and should be "workout literate" to design a workout plan in the planner. To be literal "workout literate" will mean they have worked out consistently for over six months. After they have designed a workout plan. They will be given the question "How manageable was the planner to use on a scale of 1-10?" along with some follow up questions.
+
+
+
+=======
+>>>>>>> dbce2700325855be53998c447701e03187e1559a
 *Make a numbered list of non-functional requirements that are important for your software. Explain their importance. Follow the terminology of ISO/IEC 25010:2011. For each non-functional requirement, give an objective goal/measurement in order to provide verifiability for the requirement. You can find more details at the following URL: [Click Me](https://ieeexplore.ieee.org/document/8559686). Grading criteria (2 points): Follow the ISO-IEC terminology, explain why they are important, provide verifiability criteria for each requirement.*
 
 ---
@@ -104,6 +131,29 @@ our product provides preset workouts that use specific gym equipment.
         - User can add more prompts or finish the build
         - The newly created prompt is saved to the user's profile for future use
         - User can access the journal to edit later
+<<<<<<< HEAD
+
+- Charles Diaz
+
+    - Use Case: Create Account
+    - Actor: User
+    - Trigger: User selects "Create Account To Join"
+    - Pre-Condition: User has an email 
+    - Post-Condition: User will have access to an account that will keep track of there information
+    - Success Scenario:
+        - User selects "Create Account To Join"
+        - User is prompted to create a password
+        - User has access to login 
+        - User has saved data that they can access after they login 
+
+    - Alternate Scenario:
+        - User may forget password
+        - User may try to login without an account
+        - User inputs incorrect information
+        - User can reset password
+
+=======
+>>>>>>> dbce2700325855be53998c447701e03187e1559a
 ---
 
 # **User Stores**
@@ -142,6 +192,19 @@ our product provides preset workouts that use specific gym equipment.
         - Priority Level: 3
         - Time Estimate: 3 Hours
 
+<<<<<<< HEAD
+- Charles Diaz
+
+    - As someone who travels, I would like to be able to login to my account from whichever computer I would like to.
+        - Priority Level: 1
+        - Time Estimate: 5 Hours
+
+    - As someone who trains others in bodybuilding, I want to be able to share my workoutplans with other people.
+        - Priority Level: 3
+        - Time Estimate: 5 Hours
+
+=======
+>>>>>>> dbce2700325855be53998c447701e03187e1559a
 
 ---
 
