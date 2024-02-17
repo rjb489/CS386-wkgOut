@@ -229,6 +229,16 @@ our product provides preset workouts that use specific gym equipment.
         - Priority Level: 3
         - Time Estimate: 5 Hours
 
+- Xavier Graham
+
+    - As someone who works out, I would like to be able to see how many calories I burn after a workout.
+        - Priority Level: 2
+        - Time Estimate: 3 Hours
+
+    - As someone who has friends who work out, I would like to compare who much calories I burn compared to them
+        - Priority Level: 5
+        - Time Estimate: 5 Hours
+
 
 ---
 
