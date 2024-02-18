@@ -6,7 +6,7 @@ the impact of which is causing
 
 ### Product position statement
 For gym goers who do not know how to work out, WkgOut is a work 
-out and journaling app that provides preset workouts; unlike fitness Blender. 
+out and journaling app that provides preset workouts; unlike fitness Blender, 
 our product provides preset workouts that use specific gym equipment.
 
 ---
@@ -16,7 +16,7 @@ our product provides preset workouts that use specific gym equipment.
 - Xavier Graham
   
 1. Users
-    - The users of this application could be anyone who is intrested in working out and would like to journal about their progress
+    - The users of this application could be anyone who is interested in working out and would like to journal about their progress
 2. Clients
     - An athletic team or club using our product to track their athletic and mental health growth 
 3. Competitors
@@ -35,7 +35,6 @@ our product provides preset workouts that use specific gym equipment.
 ---
 
 # **Functional Requirements**
-
 
 1. Workout Planner/Scheduler
 2. Calendar
@@ -74,6 +73,9 @@ our product provides preset workouts that use specific gym equipment.
 
 *What will be your MVP? Which features are you going to validate? How? Grading criteria (2 points): Describe what would be considered the Minimal Viable Product and how it will be tested (e.g., via implementation, prototyping, Wizard of Woz, etc.). Make clear what you are going to validate. The MVP should be coherent with the previous sections.*
 
+The Minimum Viable Product will be a web application that allows a user with an account to create a workout from preset or user created exercises, and has an area that allows users to create journal entries based off of preset or user generated prompts. The exercises will be viewable from a calendar that is a focal point of the website.
+
+This will be validated by the developers by the means of testing at every stage of development.
 
 ---
 
@@ -123,6 +125,8 @@ our product provides preset workouts that use specific gym equipment.
         - The newly created exercise is saved to the user's profile for future use
         - User can access the workout to edit later
 
+    ![Build Workout UI Concept](Build_Workout_UI_Concept1.png)
+
 - Laura Guerrero
 
     - Use Case: Create Journal
@@ -133,7 +137,7 @@ our product provides preset workouts that use specific gym equipment.
     - Success Scenario:
         - User selects "Create Journal"
         - User is prompted to place "Journal Prompts'
-        - User can add more prompts or finish the jounral
+        - User can add more prompts or finish the journal
         - User can access the journal to edit later
 
     - Alternate Scenario:
@@ -169,16 +173,16 @@ our product provides preset workouts that use specific gym equipment.
     - Use Case: Calories burned tracker
     - Actor: User
     - Trigger: User selects "Start Workout"
-    - Pre-Conditon: User has an accout and workout created
-    - Post-Conditon: User can see how many calories they burned during workout
-    - Success Senario:
+    - Pre-Condition: User has an account and workout created
+    - Post-Condition: User can see how many calories they burned during workout
+    - Success Scenario:
         - User selects "Start Workout"
         - timer starts
         - User selects "End workout"
         - Number of calories burned is displayed
 
     - Alternate Scenario:
-        - User may not have accout
+        - User may not have account
         - User may not have a workout selected
     
 ---
@@ -211,7 +215,7 @@ our product provides preset workouts that use specific gym equipment.
     
 - Laura Guerrero
 
-    - As someone who journals, I want to be able to create my own journal prompts, so that I can track and refelct on crucial information.
+    - As someone who journals, I want to be able to create my own journal prompts, so that I can track and reflect on crucial information.
         - Priority Level: 1
         - Time Estimate: 3 Hours
 
@@ -225,7 +229,7 @@ our product provides preset workouts that use specific gym equipment.
         - Priority Level: 1
         - Time Estimate: 5 Hours
 
-    - As someone who trains others in bodybuilding, I want to be able to share my workoutplans with other people.
+    - As someone who trains others in bodybuilding, I want to be able to share my workout plans with other people.
         - Priority Level: 3
         - Time Estimate: 5 Hours
 
