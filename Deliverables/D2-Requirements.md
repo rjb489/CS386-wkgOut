@@ -6,7 +6,7 @@ the impact of which is causing
 
 ### Product position statement
 For gym goers who do not know how to work out, WkgOut is a work 
-out and journaling app that provides preset workouts; unlike fitness Blender. 
+out and journaling app that provides preset workouts; unlike fitness Blender, 
 our product provides preset workouts that use specific gym equipment.
 
 ---
@@ -124,6 +124,8 @@ This will be validated by the developers by the means of testing at every stage 
         - User can add more or finish the build
         - The newly created exercise is saved to the user's profile for future use
         - User can access the workout to edit later
+
+    ![Build Workout UI Concept](Build_Workout_UI_Concept1.png)
 
 - Laura Guerrero
 
