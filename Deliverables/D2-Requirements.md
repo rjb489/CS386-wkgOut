@@ -2,7 +2,7 @@
 
 ### Problem statement
 The problem of not knowing how to work out affects gym goers;
-the impact of which is causing 
+the impact of which is causing injuries or failed workouts.
 
 ### Product position statement
 For gym goers who do not know how to work out, WkgOut is a work 
