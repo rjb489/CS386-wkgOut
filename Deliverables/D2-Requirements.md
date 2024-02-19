@@ -280,6 +280,6 @@ This will be validated by the developers by the means of testing at every stage 
 
 # **Issue Tracker**
 
+![Calories burned tracker UI Concept](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/issue_tracker.JPG)
 
-## THIS WILL BE AN IMAGE!! :D
 ---
