@@ -148,7 +148,7 @@ This will be validated by the developers by the means of testing at every stage 
         - The newly created prompt is saved to the user's profile for future use
         - User can access the journal to edit later
 
-    ![Create Journal UI Concept](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/Journal%20Prompts.pdf)
+    ![Create Journal UI Concept](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/Journal%20Prompts.jpg)
 
 
 
@@ -212,21 +212,7 @@ This will be validated by the developers by the means of testing at every stage 
 
 ---
 
-# **User Stores**
-
-*Write two user stories for each member of the group. They can be related to the same features described in the use cases or to different ones. Adopt the following format: "As a <ROLE>, I want <SOMETHING> so that <GOAL>." Establish a priority level for each user story and estimate how many hours each one will demand using the planning poker approach. Grading criteria (6 points): Use the provided format. The user stories should be in an adequate level of granularity (not too broad nor too specific). Provide the priority and estimation for each user story.*
-
-## Template
-
-- *{Your Name}*
-
-    - *User Story One*
-        - *Priority Level:*
-        - *Time Estimate:*
-    - *User Story Two*
-        - *Priority Level:*
-        - *Time Estimate:*
-
+# **User Stories**
 
 - Riley Burke
 
