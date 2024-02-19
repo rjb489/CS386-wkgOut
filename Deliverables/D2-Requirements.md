@@ -29,8 +29,6 @@ our product provides preset workouts that use specific gym equipment.
     - Riley Burke
     - Xavier Graham
 
-*Make a list of all stakeholders of the project with a brief description of each one of them, emphasizing any responsibilities with the project. Examples of stakeholders include users, clients, competitors, detractors, developers, etc. Grading criteria (1 point): The stakeholders can’t be too generic or specific. The list should reflect what was described in Section 1.*
-
 
 ---
 
@@ -45,9 +43,6 @@ our product provides preset workouts that use specific gym equipment.
 7. Sharing Workouts 
 8. Sharing Progress
 9. Link between Journal Entries & wkgOut builds
-
-
-*Make a numbered list of requirements for your software. Just self-explanatory titles are enough at this point. Remember that requirements should deliver the value proposition and they must be consistent with the interviews you performed for the previous deliverable. You can talk again to your clients to help define the requirements. While writing the requirements, focus on the capabilities needed and not on how they should be implemented. Grading criteria (2 points): The list should be comprehensive (remember that you are not expected to implement all the requirements by the end of the course but you should list them). Follow the same pattern to describe all the requirements. The list of requirements should be coherent with the previous sections.*
 
 
 ---
@@ -65,13 +60,9 @@ our product provides preset workouts that use specific gym equipment.
 - We will test this by having users who have never used the program and should be "workout literate" to design a workout plan in the planner. To be literal "workout literate" will mean they have worked out consistently for over six months. After they have designed a workout plan. They will be given the question "How manageable was the planner to use on a scale of 1-10?" along with some follow up questions.
 
 
-*Make a numbered list of non-functional requirements that are important for your software. Explain their importance. Follow the terminology of ISO/IEC 25010:2011. For each non-functional requirement, give an objective goal/measurement in order to provide verifiability for the requirement. You can find more details at the following URL: [Click Me](https://ieeexplore.ieee.org/document/8559686). Grading criteria (2 points): Follow the ISO-IEC terminology, explain why they are important, provide verifiability criteria for each requirement.*
-
 ---
 
 # **MVP**
-
-*What will be your MVP? Which features are you going to validate? How? Grading criteria (2 points): Describe what would be considered the Minimal Viable Product and how it will be tested (e.g., via implementation, prototyping, Wizard of Woz, etc.). Make clear what you are going to validate. The MVP should be coherent with the previous sections.*
 
 The Minimum Viable Product will be a web application that allows a user with an account to create a workout from preset or user created exercises, and has an area that allows users to create journal entries based off of preset or user generated prompts. The exercises will be viewable from a calendar that is a focal point of the website.
 
@@ -81,27 +72,8 @@ This will be validated by the developers by the means of testing at every stage 
 
 # **Use Case**
 
-*Use case diagram*
+## Diagram
 
-*Include a UML use case diagram for your project. There are many drawing tools that you can use, such as [Me!](https://app.diagrams.net/Links) and [Me2!](https://creately.com/Links)*
-
-*Grading criteria (5 points): Follow correctly the UML specification. The actors should be coherent with what was listed in sections 1 and 2. The use case diagram should be coherent with the list of requirements (section 3). The level of granularity of each use case should be adequate. The use cases should be adequately named.*
-
-*Use case descriptions and interface sketch*
-
-*Present one complete use case description for each member of the group. Therefore, if the group has 4 members, 4 use case descriptions are necessary. As the grading will not be individual, the group is responsible for keeping the quality and consistency of the whole document – avoid just splitting the work. Choose the most important use cases to describe. Follow the template provided in the Lecture slides to describe the use cases.*
-
-*After each use case description, add a sketch of the corresponding user interface. This will be a good opportunity to start thinking about usability.*
-
-*Grading criteria (8 points): Follow the template to describe the use cases. Present an interface sketch for each use case. Describe the use case as a dialog between the user and the system. Do not use UI language in the description of the use case.*
-
-
-## Template
-
-- *{Your Name}*
-    - *Your case description*
-    - *Your Image of Use Case*
-        - Markdown Cheat for Image: ![alt text](image.jpg)
 
 - Riley Burke
 
