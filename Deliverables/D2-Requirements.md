@@ -208,6 +208,7 @@ This will be validated by the developers by the means of testing at every stage 
         - User selects "See Progress"
         - User does not have any previous workouts tracked
 
+    ![Progress Tracker](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/progress_tracker.jpg)
 
 
 ---
