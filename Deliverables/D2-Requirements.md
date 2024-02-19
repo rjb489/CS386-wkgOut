@@ -121,7 +121,7 @@ This will be validated by the developers by the means of testing at every stage 
         - The newly created prompt is saved to the user's profile for future use
         - User can access the journal to edit later
 
-    ![Create Journal UI Concept](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/Journal%20Prompts.jpg)
+    ![Create Journal UI Concept](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/Journal_prompts.jpg)
 
 
 
