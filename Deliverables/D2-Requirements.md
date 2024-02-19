@@ -148,6 +148,9 @@ This will be validated by the developers by the means of testing at every stage 
         - The newly created prompt is saved to the user's profile for future use
         - User can access the journal to edit later
 
+    ![Create Journal UI Concept](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/Journal%20Prompts.pdf)
+
+
 
 - Charles Diaz
 
@@ -168,6 +171,9 @@ This will be validated by the developers by the means of testing at every stage 
         - User inputs incorrect information
         - User can reset password
 
+    ![Create Account UI Concept](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/create_account.jpg)
+
+
 - Xavier Graham
 
     - Use Case: Calories burned tracker
@@ -184,6 +190,8 @@ This will be validated by the developers by the means of testing at every stage 
     - Alternate Scenario:
         - User may not have account
         - User may not have a workout selected
+        
+    ![Calories burned tracker UI Concept](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/D2%20picture%20-%20CS386.png)
 
 - Minuka Trikawalagoda
     - Use case: Progress tracker
@@ -199,6 +207,9 @@ This will be validated by the developers by the means of testing at every stage 
     - Alternate Scenario:
         - User selects "See Progress"
         - User does not have any previous workouts tracked
+
+
+
 ---
 
 # **User Stores**
