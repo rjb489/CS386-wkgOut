@@ -73,6 +73,7 @@ This will be validated by the developers by the means of testing at every stage 
 # **Use Case**
 
 ## Diagram
+![Use Case Diagram](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/use_case_diagram.jpg)
 
 
 - Riley Burke
