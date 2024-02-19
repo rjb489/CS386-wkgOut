@@ -229,7 +229,7 @@ This will be validated by the developers by the means of testing at every stage 
         - Priority Level: 1
         - Time Estimate: 5 Hours
 
-    - As someone who trains others in bodybuilding, I want to be able to share my workout plans with other people.
+    - As someone who keeps track of my workouts, I would like to have a way to track my experience in game like system.
         - Priority Level: 3
         - Time Estimate: 5 Hours
 
