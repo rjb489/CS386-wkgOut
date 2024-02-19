@@ -184,7 +184,21 @@ This will be validated by the developers by the means of testing at every stage 
     - Alternate Scenario:
         - User may not have account
         - User may not have a workout selected
-    
+
+- Minuka Trikawalagoda
+    - Use case: Progress tracker
+    - Actor: User
+    - Trigger: User selects "See Progress"
+    - Pre-condition: User is registered and is logged in
+    - Post-condition: User will be able to see workout history
+    - Success Scenario:
+        - User selects "See Progress"
+        - User selects required day of progress
+        - Displays progress for selected date
+      
+    - Alternate Scenario:
+        - User selects "See Progress"
+        - User does not have any previous workouts tracked
 ---
 
 # **User Stores**
@@ -243,7 +257,14 @@ This will be validated by the developers by the means of testing at every stage 
         - Priority Level: 5
         - Time Estimate: 5 Hours
 
-
+- Minuka Trikawalagoda
+    - As someone who works out, I would like a visual aid that would show my progress
+        - Priority Level: 3
+        - Time Estimate: 5 hours
+     
+    - As someone who also participate in sports, I would like to have workouts that would help me out with my sport
+        - Priority Level: 5 
+        - Time Estimate: 3 hours
 ---
 
 # **Issue Tracker**
