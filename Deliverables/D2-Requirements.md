@@ -125,7 +125,7 @@ This will be validated by the developers by the means of testing at every stage 
         - The newly created exercise is saved to the user's profile for future use
         - User can access the workout to edit later
 
-    ![Build Workout UI Concept](https://github.com/rjb489/CS386-wkgOut/blob/main/Deliverables/Build_Workout_UI_Concept1.jpg)
+    ![Build Workout UI Concept](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/Build_Workout_UI_Concept1.jpg)
 
 - Laura Guerrero
 
