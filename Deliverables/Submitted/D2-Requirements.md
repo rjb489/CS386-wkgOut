@@ -28,6 +28,7 @@ our product provides preset workouts that use specific gym equipment.
     - Laura Guerrero
     - Riley Burke
     - Xavier Graham
+    - Minuka Trikawalagoda
 
 
 ---
