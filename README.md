@@ -32,6 +32,12 @@
 ---
 # Technologies
 
+- HTML
+- CSS
+- JavaScript
+- Python
+- MySQL
+- Amazon Web Service
 ---
 
 # Created By:
