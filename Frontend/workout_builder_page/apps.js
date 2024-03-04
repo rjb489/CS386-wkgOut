@@ -5,10 +5,6 @@ document.addEventListener('DOMContentLoaded', function()
         var workoutStage = document.getElementById('workoutStage').value;
         var workoutType = document.getElementById('workoutType').value;
         var workoutLength = document.getElementById('workoutLength').value;
-        
-        console.log("Workout Stage: " + workoutStage);
-        console.log("Workout Type: " + workoutType);
-        console.log("Workout Length: " + workoutLength);
 
         // Return values as an object
         return {
@@ -26,13 +22,7 @@ document.addEventListener('DOMContentLoaded', function()
         // Call the submitForm function
         var formValues = submitForm();
         
-        // Do something with the formValues object
-        console.log(formValues);
-        return formValues;
     });
-    
-    //var userInput = submitForm();
-
 });
 
 
