@@ -1,5 +1,7 @@
 # **System Description**
 
+ There is the problem of not knowing how workouts affect gym goers consistently and prevent the risk of injury or overtraining. Therefore, for gym goers with any experience level of working out, wkgOut is a journaling/schedualing application that provides unique workout presets that can either use bodyweight or free weights. Indeed, wkgOut is a journaling/schedualing webpage that allows gym goers to have more efficient and less injury-prone gym going experiences through the use of a gym scheduler that can both build unique gym schedules and provide gym schedule presets. 
+
 The current key requirements of the system start with the **Workout** which has an *schedule* that ***is A*** **Schedule** type and it also has an *xpValue* that is an integer. The **Workout** can be completed with the *isComplete* method, the xp can be updated with *updateXP* and we can copy a workout with the *copyWorkout* method. A ***is A*** **Schedule** in a 1 to 1 relationship.
 
  The **Workout Builder** has a *presetExercises* that is a **ExerciseType**. A **Workout Builder** can *buildPlan* method which will create an **ExerciseType**. A *selectExercise* method will select an exercise to be able to edit. A *createExercise* method which will create an exerciese that can be saved. The **Workout Builder** will also have a *moveExercise* method to move an exercise execersise around in a schedule. **Workout Builder** ***creates*** a **Workout** in a many to one format where **Workout Builder** can have many but has to at least have one **Workout**.
