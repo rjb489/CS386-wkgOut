@@ -218,6 +218,16 @@ document.addEventListener('DOMContentLoaded', function()
 
         // Call the submitForm function
         var formValues = submitForm();
+
+        //control flow to show the workout on the webpage
+        if(formValues.workoutLength == "30min" && formValues.workoutStage == "Beginner" && formValues.workoutType == "Weights")
+        {
+            console.log("works");
+        }
+        else
+        {
+            console.log("does not work");
+        }
         
     });
 });
