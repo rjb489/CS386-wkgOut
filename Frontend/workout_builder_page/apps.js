@@ -193,7 +193,15 @@ var advanced60MinWithoutWeights = [
 ];
 
 
-
+function displayWorkout( workout )
+{
+    var workoutDisplayElement = getElementById("workoutDisplay")
+    
+    for( index = 0; index < workout.length(); index++ )
+    {
+        
+    }
+}
 
 document.addEventListener('DOMContentLoaded', function() 
 {
