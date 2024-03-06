@@ -55,7 +55,7 @@ footer {
 
 .top-right-image {
     position: absolute;
-    top: 200px; /* Aligns the image to the top of the container */
+    top: 10px; /* Aligns the image to the top of the container */
     right: 50px; /* Aligns the image to the right of the container */
     width: 100px; /* Adjust based on your needs */
     height: auto; /* Adjust to maintain aspect ratio */
@@ -65,3 +65,29 @@ footer {
     transform: scale(1.1);
 }
 
+.mid {
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-bottom: 100px;
+    width: 700px;
+    height: auto;
+    border: 3px solid black;
+}
+
+.mid:hover {
+    transform: scale(1.1);
+}
+
+.right {
+    float: right; 
+    margin-top: 20px;
+    margin-bottom: 200px;
+    margin-right: 150px;
+    width: 350px; /* your desired width */
+    height: auto; /* your desired height */
+    border: 3px solid black;
+}
+
+.right:hover {
+    transform: scale(1.1);
+}
