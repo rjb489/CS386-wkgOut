@@ -306,6 +306,7 @@ document.addEventListener('DOMContentLoaded', function()
             //add error message visable to user
         }
         
+        //call the add to database funciton with the selected workout variable
     });
 });
 
