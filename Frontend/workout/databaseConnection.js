@@ -197,3 +197,25 @@ const advanced60MinWithoutWeights = [
     { exercise: "Plank (Extended)", duration: "60-75 seconds", sets: 6, restTime: "30 seconds" },
         // Add more exercises as needed
     ];
+
+// Create a connection to the database
+// 'your_database_host', 'your_username', 'your_password', 'your_database_name' are places holders
+const connection = mysql.createConnection({
+    host: 'your_database_host',
+    user: 'your_username',
+    password: 'your_password',
+    database: 'your_database_name'
+  });
+
+  //create connection
+  connection.connect((err) => {
+    if(err)
+    {
+        console.log("Error connecting to the database", err);
+        return;
+    }
+
+    console.log("Connected to database");
+
+
+  });
