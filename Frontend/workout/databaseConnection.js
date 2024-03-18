@@ -217,5 +217,9 @@ const connection = mysql.createConnection({
 
     console.log("Connected to database");
 
-
   });
+
+//adds the workout that was genereated for the user into the database
+function addWorkoutToDatabase( workout ){
+    
+  }
