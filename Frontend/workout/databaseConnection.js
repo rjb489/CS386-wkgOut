@@ -221,5 +221,27 @@ const connection = mysql.createConnection({
 
 //adds the workout that was genereated for the user into the database
 function addWorkoutToDatabase( workout ){
-    
-  }
+    workout.forEach((workout) => {
+        const { exercise, reps, sets } = workout;
+        const sqlQuery = "INSERT INTO workouts (exercise, reps, sets) VALUES (?, ?, ?)";
+        const values = [ exercise, reps, sets];
+    });
+
+        connection.query(sql, values, (err, result) => {
+            if (err) {
+                console.error('Error inserting workout:', err);
+                return;
+            }
+            console.log('Workout inserted successfully:', result);
+        });
+     
+  
+        // Close the connection to the database when done
+        connection.end((err) => {
+        if (err) {
+            console.error('Error closing database connection:', err);
+            return;
+        }
+        console.log('Connection to database closed');
+        });
+};
