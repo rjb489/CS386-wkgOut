@@ -192,17 +192,15 @@ var advanced60MinWithoutWeights = [
     // Add more exercises as needed
 ];
 
-
-function displayWorkout( workout )
+//displays workout saved message to user
+function displayWorkout()
 {
-    var workoutDisplayElement = getElementById("workoutDisplay")
+    document.getElementById("workoutDisplay").innerHTML += "Workout Saved"
     
-    for( index = 0; index < workout.length(); index++ )
-    {
-        
-    }
 }
 
+//saves the user input to variables and then checks what workout is assigned to them.
+//adds workout to database and prints out success message
 document.addEventListener('DOMContentLoaded', function() 
 {
     
@@ -307,6 +305,8 @@ document.addEventListener('DOMContentLoaded', function()
         }
         
         //call the add to database funciton with the selected workout variable
+
+        //call the display workout function
+        displayWorkout();
     });
 });
-
