@@ -192,6 +192,12 @@ var advanced60MinWithoutWeights = [
     // Add more exercises as needed
 ];
 
+//refreshes page
+function refreshPage()
+{
+    window.location.reload();
+}
+
 //displays workout saved message to user
 function displayWorkout()
 {
@@ -199,6 +205,20 @@ function displayWorkout()
     
 }
 
+function disableButton()
+{
+    var accessBtn = document.getElementById('displayWorkoutButton');
+    var messageDisplayed = false;
+    
+    accessBtn.addEventListener('click', function() {
+        if(!messageDisplayed) 
+        {
+            displayWorkout();
+            messageDisplayed = true;
+            accessBtn.disabled = true;
+        }
+    });
+}
 //saves the user input to variables and then checks what workout is assigned to them.
 //adds workout to database and prints out success message
 document.addEventListener('DOMContentLoaded', function() 
@@ -306,7 +326,8 @@ document.addEventListener('DOMContentLoaded', function()
         
         //call the add to database funciton with the selected workout variable
 
-        //call the display workout function
-        displayWorkout();
+        //call the disable button function to disable button after workout is saved
+        disableButton();
     });
 });
+
