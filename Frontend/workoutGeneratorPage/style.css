@@ -40,3 +40,7 @@ header {
     padding-top: 20px;
     font-size: 50px;
 }
+
+#editWorkoutButton{
+    text-align: center;
+}
