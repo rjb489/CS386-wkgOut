@@ -249,74 +249,92 @@ document.addEventListener('DOMContentLoaded', function()
         if(formValues.workoutLength == "30min" && formValues.workoutStage == "Beginner" && formValues.workoutType == "Weights")
         {
             var selectedWorkout = beginnerWorkout30MinWeights;
+            console.log( selectedWorkout );
         }
         else if(formValues.workoutLength == "45min" && formValues.workoutStage == "Beginner" && formValues.workoutType == "Weights")
         {
             var selectedWorkout = beginnerWorkout45MinWeights;
+            console.log( selectedWorkout );
         }
         else if(formValues.workoutLength == "60min" && formValues.workoutStage == "Beginner" && formValues.workoutType == "Weights")
         {
             var selectedWorkout = beginnerWorkout60MinWithWeights;
+            console.log( selectedWorkout );
         }
         else if(formValues.workoutLength == "30min" && formValues.workoutStage == "Beginner" && formValues.workoutType == "Body Weight")
         {
             var selectedWorkout = beginnerWorkOut30MinWithoutWeights;
+            console.log( selectedWorkout );
         }
         else if(formValues.workoutLength == "45min" && formValues.workoutStage == "Beginner" && formValues.workoutType == "Body Weight")
         {
             var selectedWorkout = beginnerWorkout45MinWithoutWeights;
+            console.log( selectedWorkout );
         }
         else if(formValues.workoutLength == "60min" && formValues.workoutStage == "Beginner" && formValues.workoutType == "Body Weight")
         {
             var selectedWorkout = beginnerWorkout60MinWithoutWeights;
+            console.log( selectedWorkout );
         }
         else if(formValues.workoutLength == "30min" && formValues.workoutStage == "Intermeidate" && formValues.workoutType == "Weights")
         {
             var selectedWorkout = intermediate30MinWithWeights;
+            console.log( selectedWorkout );
         }
         else if(formValues.workoutLength == "45min" && formValues.workoutStage == "Intermeidate" && formValues.workoutType == "Weights")
         {
             var selectedWorkout = intermediate45MinWithWeights;
+            console.log( selectedWorkout );
         }
         else if(formValues.workoutLength == "60min" && formValues.workoutStage == "Intermeidate" && formValues.workoutType == "Weights")
         {
             var selectedWorkout = intermediate60MinWithWeights;
+            console.log( selectedWorkout );
         }
         else if(formValues.workoutLength == "30min" && formValues.workoutStage == "Intermeidate" && formValues.workoutType == "Body Weight")
         {
             var selectedWorkout = intermediate30MinWithoutWeights;
+            console.log( selectedWorkout );
         }
         else if(formValues.workoutLength == "45min" && formValues.workoutStage == "Intermeidate" && formValues.workoutType == "Body Weight")
         {
             var selectedWorkout = intermediate45MinWithoutWeights;
+            console.log( selectedWorkout );
         }
         else if(formValues.workoutLength == "60min" && formValues.workoutStage == "Intermeidate" && formValues.workoutType == "Body Weight")
         {
             var selectedWorkout = intermediate60MinWithoutWeights;
+            console.log( selectedWorkout );
         }
         else if(formValues.workoutLength == "30min" && formValues.workoutStage == "Advanced" && formValues.workoutType == "Weights")
         {
             var selectedWorkout = advanced30MinWithWeights;
+            console.log( selectedWorkout );
         }
         else if(formValues.workoutLength == "45min" && formValues.workoutStage == "Advanced" && formValues.workoutType == "Weights")
         {
             var selectedWorkout = advanced45MinWithWeights;
+            console.log( selectedWorkout );
         }
         else if(formValues.workoutLength == "60min" && formValues.workoutStage == "Advanced" && formValues.workoutType == "Weights")
         {
             var selectedWorkout = advanced60MinWithWeights;
+            console.log( selectedWorkout );
         }
         else if(formValues.workoutLength == "30min" && formValues.workoutStage == "Advanced" && formValues.workoutType == "Body Weight")
         {
             var selectedWorkout = advanced30MinWithoutWeights;
+            console.log( selectedWorkout );
         }
         else if(formValues.workoutLength == "45min" && formValues.workoutStage == "Advanced" && formValues.workoutType == "Body Weight")
         {
             var selectedWorkout = advanced45MinWithoutWeights;
+            console.log( selectedWorkout );
         }
         else if(formValues.workoutLength == "60min" && formValues.workoutStage == "Advanced" && formValues.workoutType == "Body Weight")
         {
             var selectedWorkout = advanced60MinWithoutWeights;
+            console.log( selectedWorkout );
         }
         else
         {
