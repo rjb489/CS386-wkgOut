@@ -199,13 +199,29 @@ function refreshPage()
 }
 
 //displays workout saved message to user
-function displayWorkout()
+function displayWorkout( selectedWorkout )
 {
-    document.getElementById("workoutDisplay").innerHTML += "Workout Saved"
+    //document.getElementById("workoutDisplay").innerHTML += "Workout Saved"
+    var exercisePlanDiv = document.getElementById("workoutDisplay");
+    var html = '<h2>Advanced 60 Minutes Without Weights Exercise Plan</h2>';
+    html += '<ul>';
+    selectedWorkout.forEach(function( workout ) {
+        html += '<li>';
+        html += '<strong>' + workout.exercise + '</strong><br>';
+        html += 'Reps: ' + workout.reps + '<br>';
+        html += 'Sets: ' + workout.sets + '<br>';
+        html += 'Rest Time: ' + workout.restTime + '<br>';
+        if (workout.duration) {
+            html += 'Duration: ' + workout.duration + '<br>';
+        }
+        html += '</li>';
+    });
+    html += '</ul>';
+    exercisePlanDiv.innerHTML = html;
     
 }
 
-function disableButton()
+function disableButton( workoutToDisplay )
 {
     var accessBtn = document.getElementById('displayWorkoutButton');
     var messageDisplayed = false;
@@ -213,7 +229,7 @@ function disableButton()
     accessBtn.addEventListener('click', function() {
         if(!messageDisplayed) 
         {
-            displayWorkout();
+            displayWorkout( workoutToDisplay );
             messageDisplayed = true;
             accessBtn.disabled = true;
         }
@@ -345,7 +361,7 @@ document.addEventListener('DOMContentLoaded', function()
         //call the add to database funciton with the selected workout variable
 
         //call the disable button function to disable button after workout is saved
-        disableButton();
+        disableButton( selectedWorkout );
     });
 });
 
