@@ -221,7 +221,7 @@ function displayWorkout( selectedWorkout )
     
 }
 
-function disableButton(  )
+function disableButton()
 {
     var accessBtn = document.getElementById('displayWorkoutButton');
     
