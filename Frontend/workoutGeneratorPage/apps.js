@@ -221,18 +221,15 @@ function displayWorkout( selectedWorkout )
     
 }
 
-function disableButton( workoutToDisplay )
+function disableButton(  )
 {
     var accessBtn = document.getElementById('displayWorkoutButton');
-    var messageDisplayed = false;
     
     accessBtn.addEventListener('click', function() {
-        if(!messageDisplayed) 
-        {
-            displayWorkout( workoutToDisplay );
-            messageDisplayed = true;
-            accessBtn.disabled = true;
-        }
+        console.log("button clicked");
+        //displayWorkout( workoutToDisplay );
+        accessBtn.disabled = true;
+
     });
 }
 //saves the user input to variables and then checks what workout is assigned to them.
@@ -359,9 +356,12 @@ document.addEventListener('DOMContentLoaded', function()
         }
         
         //call the add to database funciton with the selected workout variable
-
-        //call the disable button function to disable button after workout is saved
-        disableButton( selectedWorkout );
+        
+        //call the display workout function to show the user the workout
+        displayWorkout( selectedWorkout );
+        
+        //call the disable button function to disable button after workout is saved and displayed
+        disableButton();
     });
 });
 
