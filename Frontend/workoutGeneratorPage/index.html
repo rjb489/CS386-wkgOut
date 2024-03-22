@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>workout builder</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/rockin-rocker');
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>wkgOut</h1>
+        </header>
+        <img src="profile.png" alt="Your Image" class="top-right-image">
+
+        <p id="openingMessage"> Please fill out the following questions in order to get your perfect workout.</p>
+
+        <form id="workoutBuilderForm">
+            <label for="workoutStage">What stage are you at in your fitness journy?: </label>
+            <select name="workoutStage" id="workoutStage">
+                <option value="">--Please Choose an Option--</option>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermeidate">Intermidate</option>
+                <option value="Advanced">Advanced</option>
+            </select>
+            <br><br>
+
+            <label for="workoutType">What kind of workout are you looking for?: </label>
+            <select name="workoutType" id="workoutType">
+                <option value="">--Please Choose an Option--</option>
+                <option value="Weights">Weights</option>
+                <option value="Body Weight">Body Weight</option>
+            </select>
+            <br><br>
+
+            <label for="workoutLength">How long would you like your workout to be?: </label>
+            <select name="workoutLength" id="workoutLength">
+                <option value="">--Please Choose an Option--</option>
+                <option value="30min">30 minutes</option>
+                <option value="45min">45 minutes</option>
+                <option value="60min">60 minutes</option>
+            </select>
+            <br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+        <div id="workoutDisplay">
+
+        </div>
+        <div id="editWorkoutButton">
+            <a href="">
+                <button>Click here to edit or create your own workout</button>
+            </a>
+        </div>
+    </main>
+    <script src="apps.js"></script>
+    <script src="databaseConnection.js"></script>
+</body>
+</html>

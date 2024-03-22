@@ -33,26 +33,6 @@ footer {
     width: 100%;
 }
 
-.box {
-    width: 150px;
-    height: 100px;
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-left: 75px;
-    display: inline-block;
-    background-color: #008080;
-    color: white;
-    text-align: center; 
-    line-height: 100px;
-    cursor: pointer;
-    border: 3px solid black;
-}
-
-.box:hover {
-    transform: scale(1.1); /* Scale the box on hover */
-    cursor: pointer;
-}
-
 .top-right-image {
     position: absolute;
     top: 10px; /* Aligns the image to the top of the container */
@@ -64,30 +44,30 @@ footer {
 .top-right-image:hover {
     transform: scale(1.1);
 }
-
-.mid {
-    margin-top: 50px;
-    margin-left: 70px;
-    margin-bottom: 100px;
-    width: 700px;
-    height: auto;
-    border: 3px solid black;
+#login {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
 }
 
-.mid:hover {
-    transform: scale(1.1);
+#login input {
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 15px; 
+    box-sizing: border-box;
 }
 
-.right {
-    float: right; 
-    margin-top: 20px;
-    margin-bottom: 200px;
-    margin-right: 150px;
-    width: 350px; /* your desired width */
-    height: auto; /* your desired height */
-    border: 3px solid black;
+#login button {
+    width: 25%;
+    padding: 10px;
+    background-color: #008080;
+    color: #fff;
 }
 
-.right:hover {
-    transform: scale(1.1);
-}

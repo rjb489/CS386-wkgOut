@@ -196,13 +196,13 @@ This will be validated by the developers by the means of testing at every stage 
         - Time Estimate: 3 Hours
 
     - As someone who works out, I want to be able to build my own workout plans, so that I can be more efficient in my workouts.
-        - Priority Level: 1
+        - Priority Level: 3
         - Time Estimate: 6 Hours
     
 - Laura Guerrero
 
     - As someone who journals, I want to be able to create my own journal prompts, so that I can track and reflect on crucial information.
-        - Priority Level: 1
+        - Priority Level: 3
         - Time Estimate: 3 Hours
 
     - As someone who works out, I want to be able to choose preset workouts, so that I know how to build muscle and improve my workouts.
