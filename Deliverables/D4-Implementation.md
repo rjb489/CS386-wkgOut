@@ -18,7 +18,7 @@ Requirement: As a person who works out, I want to be able to create my own worko
 
 Issue: [Issue #55](https://github.com/rjb489/CS386-wkgOut/issues/55)
 
-Pull request: XAVIER DID THIS
+Pull request: [Pull request #118](https://github.com/rjb489/CS386-wkgOut/pull/118)
 
 Implemented by: Xavier Graham
 
