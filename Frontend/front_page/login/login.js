@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function(){
         };
 
         sendData(userData);
+
     
         console.log(username);
         console.log(password);
@@ -31,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 Function: authoricateData
 DESCRIPTION: will send data to get a responce
-if responce good then returns true
+if responce is good will relink to the main page
 
 
 */
@@ -56,7 +57,15 @@ fetch('http://23.254.211.151:3000/authoricate',{
 .then(data => {
     console.log('Response from server:', data);
     // if the function was properly executed then you can return a true
-    return true;
+
+    if(data.success)
+       {
+        //redirect to default page
+        console.log('we are going to main page');
+
+       }
+    
+    
 })
 .catch(error => console.error('Error:', error));
 
