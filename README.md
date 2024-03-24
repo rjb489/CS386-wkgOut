@@ -16,7 +16,7 @@ Please install and test the provided prerequisites.
 
 ## Deployment
 
-When the server becomes live the link will be here to access it.
+[wkgOut](https://main.d1lrsqsn5lcgd2.amplifyapp.com)
 
 ## Built With
 
