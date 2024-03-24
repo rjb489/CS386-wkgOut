@@ -21,8 +21,13 @@ document.addEventListener("DOMContentLoaded", function(){
              };
 
              //add the data to database here
-             sendData(requestData);
+             if(sendData(requestData))
+              {
+                // reroute to home page
+                console.log("Correct output occured");
+              }
            }
+        // TODO: Have an else statment that says password is not the same
 
     
 
@@ -33,6 +38,15 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 // make a post request to the server
+
+/*
+
+Function: sendData
+DESCRIPTION: will send a post to create a new account
+with the userData inputed
+
+
+*/
 
 
 function sendData(userData) 
@@ -54,8 +68,10 @@ fetch('http://23.254.211.151:3000/createAccount',{
 })
 .then(data => {
     console.log('Response from server:', data);
+    // if the function was properly executed then you can return a true
+    return true;
 })
 .catch(error => console.error('Error:', error));
 
-
+ 
 }

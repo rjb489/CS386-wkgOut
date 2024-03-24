@@ -154,7 +154,7 @@ function createAccount(username,password)
 
         const userData = { username, password, };
         
-        // If connection is successful, perform a test query
+        // If connection is successful, perform a creation of a user
         connection.query('INSERT INTO users SET ?', userData, (error, results) => {
             if (error) {
                 console.error('Error executing query:', error);
@@ -162,7 +162,7 @@ function createAccount(username,password)
             }
             console.log('User inserted successfully');
             
-            // Close the connection after the test query
+            // Close the connection to the user
             connection.end();
         });
     });
