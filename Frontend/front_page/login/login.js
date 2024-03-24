@@ -10,50 +10,36 @@ document.addEventListener("DOMContentLoaded", function(){
 
         let username = document.getElementById("username").value;
         let password = document.getElementById("password").value;
-        let confirmPassword = document.getElementById("confirmPassword").value;
+        // Send data as an object
+        const userData = {
+            username: username,
+            password: password
+        };
 
-        if(password == confirmPassword)
-           {
-             // Send data as an object
-            const requestData = {
-               username: username,
-               password: password
-             };
-
-             //add the data to database here
-             if(sendData(requestData))
-              {
-                // reroute to home page
-                console.log("Correct output occured");
-
-              }
-           }
-        // TODO: Have an else statment that says password is not the same
-
+        sendData(userData);
     
-
+        console.log(username);
+        console.log(password);
     });
 
 
-    console.log(username);
 });
 
 // make a post request to the server
 
 /*
 
-Function: sendData
-DESCRIPTION: will send a post to create a new account
-with the userData inputed
+Function: authoricateData
+DESCRIPTION: will send data to get a responce
+if responce good then returns true
 
 
 */
 
-
 function sendData(userData) 
 {
 
-fetch('http://23.254.211.151:3000/createAccount',{
+fetch('http://23.254.211.151:3000/authoricate',{
 
     method: 'POST',
     headers: {
