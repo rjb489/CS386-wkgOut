@@ -90,6 +90,16 @@ app.use(bodyParser.json());
 // Enable CORS for all origins
 app.use(cors());
 
+/*
+
+POST: /createAccount
+DESCRIPTION: will recive info at /createAccount for username and password
+Will also call createAccount and fill in info to the mySql database
+Dependensies: createAccount
+
+
+*/
+
 // POST endpoint to receive data from client
 app.post('/createAccount', (req, res) => {
 
@@ -109,6 +119,16 @@ app.post('/createAccount', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
+
+
+/*
+
+Function: createAccount
+DESCRIPTION: Will connect to the mysql database then fill in
+an entered username and password
+
+
+*/
 
 function createAccount(username,password)
 {
