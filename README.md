@@ -35,7 +35,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 * **Riley Burke** - *Facilitator, Product Owner, Backend Dev* - [rjb489](https://github.com/rjb489)
 * **Laura Guerrero** - *Scrum Master and Flex Developer* - [lmg479](https://github.com/lmg479)
 * **Charles Diaz** - *Archivist & Backend Dev* - [chd63](https://github.com/chd63)
-* **Xavier Graham** - *Frontend Dev* - [xcg3](https://github.com/xcg2003)
+* **Xavier Graham** - *Flex Dev* - [xcg3](https://github.com/xcg2003)
 * **Minuka Trikawalagoda** - *Frontend Dev* - [mt2464](https://github.com/minukatrik)
 
 ## License
