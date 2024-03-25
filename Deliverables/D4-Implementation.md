@@ -24,7 +24,7 @@ Implemented by: Xavier Graham
 
 Approved by: Riley Burke
 
-Print screen: ![Alt text](?raw=true "Optional Title")
+Print screen: ![Alt text](Deliverables/Workoutgenerator_screenshot.png?raw=true "Optional Title")
 
 Requirement: As a person who works out, I want to be able to log in to the web app to view my progress.
 
