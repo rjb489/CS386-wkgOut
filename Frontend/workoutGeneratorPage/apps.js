@@ -203,7 +203,7 @@ function displayWorkout( selectedWorkout )
 {
     //document.getElementById("workoutDisplay").innerHTML += "Workout Saved"
     var exercisePlanDiv = document.getElementById("workoutDisplay");
-    var html = '<h2>Advanced 60 Minutes Without Weights Exercise Plan</h2>';
+    var html = '<h2>Here is the workout I have made for you:</h2>';
     html += '<ul>';
     selectedWorkout.forEach(function( workout ) {
         html += '<li>';

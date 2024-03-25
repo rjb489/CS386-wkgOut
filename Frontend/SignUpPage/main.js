@@ -11,13 +11,17 @@ document.addEventListener("DOMContentLoaded", function(){
         let username = document.getElementById("username").value;
         let password = document.getElementById("password").value;
         let confirmPassword = document.getElementById("confirmPassword").value;
+        let currentUserWeight = document.getElementById("weight").value;
+        let userGender = document.getElementById("gender").value;
 
         if(password == confirmPassword)
            {
              // Send data as an object
             const requestData = {
                username: username,
-               password: password
+               password: password,
+               weight: currentUserWeight,
+               gender: userGender
              };
 
              //add the data to database here
