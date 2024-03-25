@@ -36,7 +36,7 @@ Implemented by: Laura Guerrero
 
 Approved by: Riley Burke
 
-Print screen: SOMEONE DO THIS
+Print screen: ![Alt text](https://github.com/rjb489/CS386-wkgOut/blob/main/Deliverables/create-account.JPG)
 
 # Tests
 
