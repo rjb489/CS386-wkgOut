@@ -62,7 +62,7 @@ fetch('http://23.254.211.151:3000/authoricate',{
     if(data.success)
        {
         //redirect to default page
-        window.location.replace("file:///C:/Users/chasd/Desktop/cs_386_new/CS386-wkgOut/Frontend/front_page/Front%20page.html");
+        window.location.replace("front_page/index.html");
         console.log('we are going to main page');
 
        }

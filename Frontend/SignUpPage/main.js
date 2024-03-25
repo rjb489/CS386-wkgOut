@@ -89,7 +89,7 @@ fetch('http://23.254.211.151:3000/createAccount',{
 .then(data => {
     console.log('Response from server:', data);
     // if the function was properly executed then you can return a true
-    window.location.replace("file:///C:/Users/chasd/Desktop/cs_386_new/CS386-wkgOut/Frontend/front_page/Front%20page.html");
+    window.location.replace("file:///C:/Users/chasd/Desktop/cs_386_new/CS386-wkgOut/Frontend/front_page/index.html");
     console.log("Correct output occured");
     return true;
 })
