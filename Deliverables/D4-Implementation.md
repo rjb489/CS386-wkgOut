@@ -12,7 +12,7 @@ Implemented by: Charles Diaz
 
 Approved by: Riley Burke
 
-Print screen: SOMEONE DO THIS
+Print screen: ![Alt text](https://github.com/rjb489/CS386-wkgOut/blob/main/Deliverables/create-account.JPG)
 
 Requirement: As a person who works out, I want to be able to create my own workouts.
 
