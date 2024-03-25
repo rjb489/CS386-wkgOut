@@ -76,4 +76,4 @@ Usability:
 Our team learned how to start an AWS and how to work with it to deploy our website and linking all of the pages together. For the second release we will be able to deploy our website almost instantly as we have learned how to do that.
 
 # Demo
-Pull request: [website](https://main.d1lrsqsn5lcgd2.amplifyapp.com/)
+[DEMO Video](https://youtu.be/Ot6BY-u5RBk)
