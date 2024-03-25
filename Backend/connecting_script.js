@@ -112,7 +112,7 @@ app.post('/createAccount', (req, res) => {
     createAccount(receivedData.username,receivedData.password);
 
     // Send back a response to the client
-    res.json({ message: 'Data received successfully' });
+    //res.json({ message: 'Data received successfully' });
 });
 
 /*
@@ -240,6 +240,9 @@ function createAccount(username,password)
                 return;
             }
             console.log('User inserted successfully');
+
+            console.log('User exists and credentials are valid');
+            res.status(200).json({ success: true, message: 'User exists and credentials are valid' });
             
             // Close the connection to the user
             connection.end();

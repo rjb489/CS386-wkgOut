@@ -40,6 +40,7 @@ if responce is good will relink to the main page
 function sendData(userData) 
 {
 
+
 fetch('http://23.254.211.151:3000/authoricate',{
 
     method: 'POST',
@@ -61,6 +62,7 @@ fetch('http://23.254.211.151:3000/authoricate',{
     if(data.success)
        {
         //redirect to default page
+        window.location.replace("file:///C:/Users/chasd/Desktop/cs_386_new/CS386-wkgOut/Frontend/front_page/Front%20page.html");
         console.log('we are going to main page');
 
        }
