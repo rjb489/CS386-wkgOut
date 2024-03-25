@@ -56,7 +56,21 @@ See [LICENSE](https://github.com/rjb489/CS386-wkgOut/blob/main/LICENSE)
 See [README](https://github.com/rjb489/CS386-wkgOut/blob/main/README.md), [CONTRIBUTING](https://github.com/rjb489/CS386-wkgOut/blob/main/CONTRIBUTING.md), and [CODE_OF_CONDUCT](https://github.com/rjb489/CS386-wkgOut/blob/main/CODE_OF_CONDUCT.md)
 
 # Look & Feel
-MINUKA DO THIS ONE
+Designing an effective user interface (UI) hinges on a balance between aesthetics and usability. With this in mind, the UI for the workout application "wrkOut" was approached with a focus on simplicity and functionality, facilitating a seamless user experience. Below, I’ll describe the design approach for the UI as reflected in the provided screenshots.
+
+Aesthetics:
+1.	Color Scheme and Branding: The use of a consistent teal background creates a fresh, energizing atmosphere conducive to a fitness mindset. The white text on teal background ensures readability. The brand name "wrkOut" is boldly placed at the top of each page, reinforcing brand identity.
+2.	Typography: A sans-serif font presents a modern and clean look that is easy on the eyes, enhancing readability.
+3.	Imagery: High-quality images of a gym and natural landscapes provide visual motivation and context, suggesting both the environment where workouts take place and the outdoor activities that might relate to fitness goals.
+
+Usability:
+1.	Navigation: Clear navigation is present, with the main options contained within easy-to-recognize boxes on the homepage, guiding users to the next step without confusion.
+2.	Forms and Input Fields: Input fields are minimalist yet clear. Dropdown menus for selecting workout preferences and text fields for login information are standard and intuitive, facilitating easy interaction.
+3.	Consistency: Each page maintains consistent branding and navigation elements, which helps users know they are still within the same application.
+4.	Call to Action: Buttons like "Submit" and "Enter" are distinct and placed in predictable locations, guiding the user naturally toward the next step.
+5.	Responsive Design: While not explicitly shown, the layout suggests a consideration for responsive design, with elements likely able to scale or rearrange themselves gracefully on different devices.
+
+
 
 # Lessons Learned
 Our team learned how to start an AWS and how to work with it to deploy our website and linking all of the pages together. For the second release we will be able to deploy our website almost instantly as we have learned how to do that.
