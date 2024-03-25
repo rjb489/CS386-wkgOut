@@ -12,7 +12,7 @@ Implemented by: Charles Diaz
 
 Approved by: Riley Burke
 
-Print screen: ![Alt text](https://github.com/rjb489/CS386-wkgOut/blob/main/Deliverables/create-account.JPG)
+Print screen: ![Alt text](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/create-account.JPG)
 
 Requirement: As a person who works out, I want to be able to create my own workouts.
 
@@ -24,7 +24,7 @@ Implemented by: Xavier Graham
 
 Approved by: Riley Burke
 
-Print screen: ![Alt text](Workoutgenerator_screenshot.png?raw=true "Optional Title")
+Print screen: ![Alt text](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/Workoutgenerator_screenshot.png)
 
 Requirement: As a person who works out, I want to be able to log in to the web app to view my progress.
 
@@ -36,7 +36,7 @@ Implemented by: Laura Guerrero
 
 Approved by: Riley Burke
 
-Print screen: ![Alt text](https://github.com/rjb489/CS386-wkgOut/blob/main/Deliverables/create-account.JPG)
+Print screen: ![Alt text](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/signin.JPG)
 
 # Tests
 
