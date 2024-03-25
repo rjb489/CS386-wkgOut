@@ -28,10 +28,29 @@ document.addEventListener("DOMContentLoaded", function(){
              if(sendData(requestData))
               {
                 // reroute to home page
+                window.location.replace("file:///C:/Users/chasd/Desktop/cs_386_new/CS386-wkgOut/Frontend/front_page/Front%20page.html");
                 console.log("Correct output occured");
 
               }
+             else
+              {
+                // Get the element by its ID
+               var paragraph = document.getElementById("issue-occured");
+        
+               // Modify the text content of the paragraph
+               paragraph.innerText = "ERROR: USER ALREADY EXISTS";
+              }
+            
            }
+           else
+              {
+               // Get the element by its ID
+               var paragraph = document.getElementById("issue-occured");
+        
+               // Modify the text content of the paragraph
+               paragraph.innerText = "ERROR: PASSWORD DOES NOT MATCH";
+
+              }
         // TODO: Have an else statment that says password is not the same
 
     
@@ -74,6 +93,8 @@ fetch('http://23.254.211.151:3000/createAccount',{
 .then(data => {
     console.log('Response from server:', data);
     // if the function was properly executed then you can return a true
+    window.location.replace("file:///C:/Users/chasd/Desktop/cs_386_new/CS386-wkgOut/Frontend/front_page/Front%20page.html");
+    console.log("Correct output occured");
     return true;
 })
 .catch(error => console.error('Error:', error));
