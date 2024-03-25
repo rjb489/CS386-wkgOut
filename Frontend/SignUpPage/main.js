@@ -11,24 +11,24 @@ document.addEventListener("DOMContentLoaded", function(){
         let username = document.getElementById("username").value;
         let password = document.getElementById("password").value;
         let confirmPassword = document.getElementById("confirmPassword").value;
-        let currentUserWeight = document.getElementById("weight").value;
-        let userGender = document.getElementById("gender").value;
+        //let currentUserWeight = document.getElementById("weight").value;
+        //let userGender = document.getElementById("gender").value;
 
         if(password == confirmPassword)
            {
              // Send data as an object
             const requestData = {
                username: username,
-               password: password,
-               weight: currentUserWeight,
-               gender: userGender
+               password: password
+               //weight: currentUserWeight,
+               //gender: userGender
              };
 
              //add the data to database here
              if(sendData(requestData))
               {
                 // reroute to home page
-                window.location.replace("file:///C:/Users/chasd/Desktop/cs_386_new/CS386-wkgOut/Frontend/front_page/Front%20page.html");
+                window.location.replace("file:///C:/Users/chasd/Desktop/cs_386_new/CS386-wkgOut/Frontend/front_page/index.html");
                 console.log("Correct output occured");
 
               }
@@ -93,7 +93,7 @@ fetch('http://23.254.211.151:3000/createAccount',{
 .then(data => {
     console.log('Response from server:', data);
     // if the function was properly executed then you can return a true
-    window.location.replace("file:///C:/Users/chasd/Desktop/cs_386_new/CS386-wkgOut/Frontend/front_page/Front%20page.html");
+    window.location.replace("file:///C:/Users/chasd/Desktop/cs_386_new/CS386-wkgOut/Frontend/front_page/index.html");
     console.log("Correct output occured");
     return true;
 })
