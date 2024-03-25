@@ -101,15 +101,15 @@ Dependensies: createAccount
 */
 
 // POST endpoint to receive data from client
-app.post('/createAccount', (req, res) => {
+app.post('/createAccount', (req,res) => {
 
     const receivedData = req.body;
     console.log('Received data from client:', receivedData);
     
     console.log('This is the username:',receivedData.username);
 
-    // now we will send this data to a create account
-    createAccount(receivedData.username,receivedData.password);
+    // now we will send this data to a create accountgit
+    createAccount(receivedData.username,receivedData.password,res);
 
     // Send back a response to the client
     //res.json({ message: 'Data received successfully' });
@@ -209,7 +209,7 @@ an entered username and password
 
 */
 
-function createAccount(username,password)
+function createAccount(username,password,res)
 {
     const mysql = require('mysql');
 

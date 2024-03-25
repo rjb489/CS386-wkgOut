@@ -12,7 +12,7 @@ Implemented by: Charles Diaz
 
 Approved by: Riley Burke
 
-Print screen: SOMEONE DO THIS
+Print screen: ![Alt text](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/create-account.JPG)
 
 Requirement: As a person who works out, I want to be able to create my own workouts.
 
@@ -24,7 +24,7 @@ Implemented by: Xavier Graham
 
 Approved by: Riley Burke
 
-Print screen: ![Alt text](Workoutgenerator_screenshot.png?raw=true "Optional Title")
+Print screen: ![Alt text](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/Workoutgenerator_screenshot.png)
 
 Requirement: As a person who works out, I want to be able to log in to the web app to view my progress.
 
@@ -36,20 +36,21 @@ Implemented by: Laura Guerrero
 
 Approved by: Riley Burke
 
-Print screen: SOMEONE DO THIS
+Print screen: ![Alt text](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/signin.JPG)
 
 # Tests
 
 # Adopted Technologies
-AWS for deployment, MySql for database, HTML for web page creation, CSS for web page design, Javascript for functionality.
+AWS for deployment, MySql server for database, HTML for web page creation, CSS for web page design, Javascript for functionality, nodejs to connect between the front end and back end.
 
 # Learning / Training
 We decided to find a free platform to help us deploy our website and we have heard very good things about it so that is why we decided to use AWS. We used MySql as the majority of us are taking CS345 which introduces us to MySql so we knew how to incorporate that software for databases. Lastly, HTML, CSS, and JavaScript are the most well known languages to create websites and we are all fluent from previous classes so we decided to do that as well.
 
 # Deployment
-We are using Amplify by AWS to deploy our website. Using Amplify, we can directly connect our GitHub repo, which also allows for continuous deployment. The link is [HERE](https://main.d3c2e2m3rl6sk8.amplifyapp.com). We will update the domain later if necessary.
+For our frontend, we are using Amplify by AWS to deploy our website. Using Amplify, we can directly connect our GitHub repo, which also allows for continuous deployment. The link is [HERE](https://main.d3c2e2m3rl6sk8.amplifyapp.com). We will update the domain later if necessary. For our backend, we are using a hostwins server that is hosting both a MySql server and a nodejs server. The nodejs server is called by the AWS server and is the middle ground that allows the AWS server to get information from a MySql server.
 
 # Licensing
+We choose to go with a MIT License. We feel that, through the MIT License, we have a simple license that allows others to use and modify our work.
 See [LICENSE](https://github.com/rjb489/CS386-wkgOut/blob/main/LICENSE)
 
 # README File
@@ -73,7 +74,7 @@ Usability:
 
 
 # Lessons Learned
-Our team learned how to start an AWS and how to work with it to deploy our website and linking all of the pages together. For the second release we will be able to deploy our website almost instantly as we have learned how to do that.
+Our team learned how to start an AWS account and how to work with it to deploy our website and link all of the pages together. For the second release, we will be able to deploy our website almost instantly, as we have learned how to do that. Our team also learned the hardships of poor planning. We were not harsh enough on self-made deadlines, causing most of the work on the first deployment to be completed close to the actual deadline. The next deployment will benefit from more appropriate planning and self-made decisions to get a higher-quality end product.
 
 # Demo
-link goes here
+[DEMO Video](https://youtu.be/Ot6BY-u5RBk)
