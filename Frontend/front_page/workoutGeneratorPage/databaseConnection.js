@@ -201,10 +201,11 @@ const advanced60MinWithoutWeights = [
 // Create a connection to the database
 // 'your_database_host', 'your_username', 'your_password', 'your_database_name' are places holders
 const connection = mysql.createConnection({
-    host: 'your_database_host',
-    user: 'your_username',
-    password: 'your_password',
-    database: 'your_database_name'
+    host: '23.254.211.151',
+    user: 'dbuser',
+    password: 'MyPaSSworD587',
+    database: 'workout_planner_system',
+    port: '5231'
   });
 
   //create connection

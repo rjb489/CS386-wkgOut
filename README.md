@@ -12,16 +12,16 @@ Virtual Studio Code, MySQL, HTML, Javascript, CSS
 
 ### Installing
 
-Please install the provided prerequisites.
+Please install and test the provided prerequisites.
 
 ## Deployment
 
-When the serve becomes live the link will be here to access it
+[wkgOut](https://main.d1lrsqsn5lcgd2.amplifyapp.com)
 
 ## Built With
 
-[Virtual Studio Code](https://code.visualstudio.com/) - A coding framework used
-[Amazon Web Services](https://aws.amazon.com/free/?gclid=Cj0KCQjw2PSvBhDjARIsAKc2cgOJxaKm08M5BqLgHDI-HYeECxiDdhcsuZKMMNB6g154zA66lhDucRYaArUoEALw_wcB&trk=6a4c3e9d-cdc9-4e25-8dd9-2bd8d15afbca&sc_channel=ps&ef_id=Cj0KCQjw2PSvBhDjARIsAKc2cgOJxaKm08M5BqLgHDI-HYeECxiDdhcsuZKMMNB6g154zA66lhDucRYaArUoEALw_wcB:G:s&s_kwcid=AL!4422!3!651751059777!e!!g!!amazon%20web%20services!19852662197!145019195737&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all) - A server host
+**[Virtual Studio Code](https://code.visualstudio.com/) - A coding framework used**
+**[Amazon Web Services](https://aws.amazon.com/free/?gclid=Cj0KCQjw2PSvBhDjARIsAKc2cgOJxaKm08M5BqLgHDI-HYeECxiDdhcsuZKMMNB6g154zA66lhDucRYaArUoEALw_wcB&trk=6a4c3e9d-cdc9-4e25-8dd9-2bd8d15afbca&sc_channel=ps&ef_id=Cj0KCQjw2PSvBhDjARIsAKc2cgOJxaKm08M5BqLgHDI-HYeECxiDdhcsuZKMMNB6g154zA66lhDucRYaArUoEALw_wcB:G:s&s_kwcid=AL!4422!3!651751059777!e!!g!!amazon%20web%20services!19852662197!145019195737&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all) - A server host**
 
 ## Contributing
 
@@ -35,7 +35,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 * **Riley Burke** - *Facilitator, Product Owner, Backend Dev* - [rjb489](https://github.com/rjb489)
 * **Laura Guerrero** - *Scrum Master and Flex Developer* - [lmg479](https://github.com/lmg479)
 * **Charles Diaz** - *Archivist & Backend Dev* - [chd63](https://github.com/chd63)
-* **Xavier Graham** - *Frontend Dev* - [xcg3](https://github.com/xcg2003)
+* **Xavier Graham** - *Flex Dev* - [xcg3](https://github.com/xcg2003)
 * **Minuka Trikawalagoda** - *Frontend Dev* - [mt2464](https://github.com/minukatrik)
 
 ## License
