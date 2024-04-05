@@ -4,6 +4,7 @@
   High-quality images of a gym and natural landscapes provide visual motivation and context, suggesting both the environment where workouts take place and the outdoor activities that might relate to fitness goals. As well as a sans-serif font presents a modern and clean look that is easy on the eyes, enhancing readability. The brand name "wrkOut" is boldly placed at the top of each page, reinforcing brand identity.
 
 # Architecture
+![High Level Architecture Diagram]()
 
 ###
 
