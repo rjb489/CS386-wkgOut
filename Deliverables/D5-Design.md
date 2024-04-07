@@ -9,7 +9,7 @@
 ###
 
 # Class Diagram
-![Class Diagram]()
+![Class Diagram](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/Final%20Class%20Diagram.png)
 
 ###
 
