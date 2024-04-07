@@ -16,7 +16,7 @@ Our architecture starts off with users who can access the presentation layer, wh
 ###
 
 # Sequence Diagram
-![Class Diagram](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/d5_Sequence.jpg)
+![Class Diagram](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/d5_Sequence.JPG)
 
 The Use case is when a user wants to create an exercise. The first thing that a user must do is create a Workout, which will return a Workout. If that does not work properly, an error message will be returned to the user. After a Workout has been created, an Exercise can be created through the method addExercise. Again, an error will be returned if the user puts in the wrong information while creating the exercise.
 
