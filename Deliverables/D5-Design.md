@@ -6,6 +6,8 @@
 # Architecture
 ![High Level Architecture Diagram](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/HighLevelArchitecture.png)
 
+Our architecture starts off with users who can access the presentation layer, which is just UI. The presentation layer is then what connects the users to the cross-cutting accounts, and the operation layer is done so users have a pleasant experience through a UI, making it easier for the user to use the product. The operation layer has access to both the data layer and the cross-cutting, as the Journal Workout Builder and Calendar all need to be connected to an account to access the data they need via the data layer. The data layer is connected to data storage, as you need to have data to access.
+
 ###
 
 # Class Diagram
