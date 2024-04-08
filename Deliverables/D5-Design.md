@@ -23,6 +23,8 @@ The Use case is when a user wants to create an exercise. The first thing that a 
 ###
 
 # Design Patterns
+Exercise Builder: https://github.com/rjb489/CS386-wkgOut/blob/main/Frontend/JavaScript_Files/Exercise.js
+
 
 ###
 
