@@ -26,6 +26,8 @@ The Use case is when a user wants to create an exercise. The first thing that a 
 Exercise Builder: https://github.com/rjb489/CS386-wkgOut/blob/main/Frontend/JavaScript_Files/Exercise.js
 ![image](https://github.com/rjb489/CS386-wkgOut/assets/128425706/667843c7-0166-43cd-88e4-c79e7a22c23b)
 
+Workout List: https://github.com/rjb489/CS386-wkgOut/blob/main/Frontend/JavaScript_Files/WorkoutList.js
+![image](https://github.com/rjb489/CS386-wkgOut/assets/99576318/1d621c5c-1d6d-4d7f-b08a-e8cdb55c7aab)
 
 
 ###
