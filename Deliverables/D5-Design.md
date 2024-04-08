@@ -24,6 +24,8 @@ The Use case is when a user wants to create an exercise. The first thing that a 
 
 # Design Patterns
 Exercise Builder: https://github.com/rjb489/CS386-wkgOut/blob/main/Frontend/JavaScript_Files/Exercise.js
+![image](https://github.com/rjb489/CS386-wkgOut/assets/128425706/667843c7-0166-43cd-88e4-c79e7a22c23b)
+
 
 
 ###
