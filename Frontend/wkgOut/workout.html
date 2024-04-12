@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Workout</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        #nav .links li.active a {
+            color: white; 
+        }
+    </style>
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <a href="main.html" class="logo">Home</a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul class="links">
+            <li><a href="main.html">Home</a></li>
+            <li class="active"><a href="workout.html">Workout</a></li>
+            <li><a href="journal.html">Journal</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <ul class="icons">
+            <li><a href="https://github.com/rjb489/CS386-wkgOut" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+        </ul>
+    </nav>
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- Post -->
+        <section class="post">
+            <header class="major">
+                <h1>Workouts</h1>
+                <p>Here you are able to choose preset workouts, view workouts that you have already built, or build a new workout.</p>
+            </header>
+            <div class="image main"><img src="images/dumbell.jpg" alt="" /></div>
+        </section>
+
+        <!-- Workout Form -->
+        <section id="workoutsYouHaveCreated">
+            <h2>Build a Workout</h2>
+            <form id="workoutBuilderForm">
+                <div class="fields">
+                    <div class="field">
+                        <label for="workoutStage">Workout Stage</label>
+                        <select id="workoutStage" name="workoutStage">
+                            <option value="Beginner">Beginner</option>
+                            <option value="Intermediate">Intermediate</option>
+                            <option value="Advanced">Advanced</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="workoutType">Workout Type</label>
+                        <select id="workoutType" name="workoutType">
+                            <option value="Weights">Weights</option>
+                            <option value="Body Weight">Body Weight</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="workoutLength">Workout Length</label>
+                        <select id="workoutLength" name="workoutLength">
+                            <option value="30min">30 Minutes</option>
+                            <option value="45min">45 Minutes</option>
+                            <option value="60min">60 Minutes</option>
+                        </select>
+                    </div>
+                </div>
+                <ul class="actions">
+                    <li><input type="submit" value="Build Workout" class="primary" /></li>
+                </ul>
+            </form>
+        </section>
+
+        <!-- Create Your Own Workout -->
+        <section id="createOwnWorkout">
+            <h2>Create Your Own Workout</h2>
+            <form id="createOwnWorkoutForm">
+                <div class="fields">
+                    <div class="field">
+                        <label for="exerciseName">Exercise</label>
+                        <input type="text" id="exerciseName" name="exerciseName" placeholder="Enter Exercise" required />
+                    </div>
+                    <div class="field">
+                        <label for="reps">Reps</label>
+                        <input type="number" id="reps" name="reps" placeholder="Enter Reps" required />
+                    </div>
+                    <div class="field">
+                        <label for="sets">Sets</label>
+                        <input type="number" id="sets" name="sets" placeholder="Enter Sets" required />
+                    </div>
+                    <div class="field">
+                        <label for="restTime">Rest Time</label>
+                        <input type="number" id="restTime" name="restTime" placeholder="Enter Rest Time" required />
+                    </div>
+                    <div class="field">
+                        <label for="duration">Duration</label>
+                        <input type="number" id="duration" name="duration" placeholder="Enter Duration" required />
+                    </div>
+                </div>
+                <ul class="actions">
+                    <li><input type="submit" value="Add Exercise" class="primary" /></li>
+                </ul>
+            </form>
+        </section>
+
+        <!-- Workouts You Have Created -->
+        <section id="workoutsYouHaveCreated">
+            <h2>Workouts You Have Created</h2>
+            <ul id="createdWorkoutsList">
+                <!-- Exercise items will be dynamically added here -->
+            </ul>
+        </section>
+
+        <!-- Display Workout -->
+        <section id="workoutDisplay"></section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <section class="split contact">
+            <section>
+                <h3>CS386</h3>
+                <a href="https://github.com/rjb489/CS386-wkgOut" class="icon brands alt fa-github"><span class="label">GitHub</span></a>
+            </section>
+        </section>
+    </footer>
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/wkbuilder.js"></script>
+<script src="assets/js/wkown.js"></script>
+</body>
+</html>

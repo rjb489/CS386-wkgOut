@@ -16,7 +16,7 @@ Please install and test the provided prerequisites.
 
 ## Deployment
 
-[wkgOut](https://main.d1lrsqsn5lcgd2.amplifyapp.com)
+[wkgOut](https://main.d3sgq1csnkubqp.amplifyapp.com)
 
 ## Built With
 
