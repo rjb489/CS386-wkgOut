@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Create Account</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        .button-wrapper {
+            text-align: center;
+        }
+        .button-wrapper li {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body class="is-preload">
+<!-- Wrapper -->
+<div id="wrapper">
+    <!-- Header -->
+    <header id="header">
+        <a href="main.html" class="logo">Home</a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul class="links">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="workout.html">Workout</a></li>
+            <li><a href="journal.html">Journal</a></li>
+            <li class="active"><a href="login.html">Login</a></li> 
+        </ul>
+		<ul class="icons">
+			<li><a href="https://github.com/rjb489/CS386-wkgOut" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+		</ul>
+    </nav>
+
+    <!-- Main -->
+    <div id="main">
+        <!-- Create Account Form -->
+        <section class="post">
+            <header class="major">
+                <h1>Create Account</h1>
+            </header>
+            <form method="post" action="main.html">
+                <div class="fields">
+                    <div class="field">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" required />
+                    </div>
+                    <div class="field">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required />
+                    </div>
+                    <div class="field">
+                        <label for="confirm_password">Confirm Password</label>
+                        <input type="password" name="confirm_password" id="confirm_password" required />
+                    </div>
+                    <div class="field">
+                        <label for="current_weight">Current Weight</label>
+                        <input type="number" name="current_weight" id="current_weight" required />
+                    </div>
+                    <div class="field">
+                        <label for="gender">Gender</label>
+                        <select name="gender" id="gender" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                </div>
+                <ul class="actions button-wrapper">
+                    <li><input type="submit" value="Create Account" class="primary" /></li>
+                </ul>
+            </form>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <section class="split contact">
+            <section>
+                <h3>CS386</h3>
+                <a href="https://github.com/rjb489/CS386-wkgOut" class="icon brands alt fa-github"><span class="label">GitHub</span></a>
+            </section>
+        </section>
+    </footer>
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
