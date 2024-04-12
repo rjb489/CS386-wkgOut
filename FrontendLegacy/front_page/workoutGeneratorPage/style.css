@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #008080;
+    color: white;
+    font-family: 'Rockin Rocker', sans-serif;
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+.top-right-image {
+    position: absolute;
+    top: 200px; /* Aligns the image to the top of the container */
+    right: 50px; /* Aligns the image to the right of the container */
+    width: 100px; /* Adjust based on your needs */
+    height: auto; /* Adjust to maintain aspect ratio */
+}
+
+.top-right-image:hover {
+    transform: scale(1.1);
+}
+
+#openingMessage {
+    text-align: center;
+}
+
+#workoutBuilderForm {
+    text-align: center;
+}
+
+#workoutDisplay {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+#editWorkoutButton{
+    text-align: center;
+}
