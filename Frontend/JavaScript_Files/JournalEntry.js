@@ -43,4 +43,4 @@ const journal = new JournalEntry();
 
 // Attach methods to buttons
 document.getElementById('saveButton').onclick = () => journal.saveEntry();
-document.getElementById('loadButton').onclick = () => journal.loadEntry();
+document.getElementById('loadButton').onclick = () => journal.loadEntry(); 
