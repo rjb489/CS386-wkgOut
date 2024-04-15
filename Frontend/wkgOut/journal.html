@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Workout</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <a href="index.html" class="logo">Home</a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="workout.html">Workout</a></li>
+            <li class="active"><a href="journal.html">Journal</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <ul class="icons">
+            <li><a href="https://github.com/rjb489/CS386-wkgOut" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+        </ul>
+    </nav>
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- Post -->
+        <section class="post">
+            <header class="major">
+                <h1>Journals</h1>
+                <p>Here you can track your workouts and mindsets through building up your own journal.</p>
+            </header>
+            <div class="image main"><img src="images/journals.png" alt="" /></div>
+        </section>
+
+        <!-- Journal Presets Form -->
+        <section id="journalPresets"> 
+            <h2>Journal Presets</h2>
+            <p><i> For already created journal questions click below between physical and emotional journal types to generate the question.</i></p>
+            <form id="journalForm">
+                <div class="field">
+                    <label for="questionType">Question Type</label>
+                    <select id="questionType" name="questionType">
+                        <option value="Physical">Physical</option>
+                        <option value="Emotional">Emotional</option>
+                    </select>
+                </div>
+                <ul class="actions">
+                    <li><button id="generateButton" type="button" class="primary">Generate Question</button></li>
+                </ul>
+                <div id="questionContainer"></div>
+                    <button id="saveButton" class="primary" style="display: none;">Save</button>
+            </form>
+        </section>
+
+        <!-- Journal Build Form -->
+        <section>
+            <h2>Build Your Own Journal Questions</h2>
+            <p><i> To create your own journal questions, type your question below and press generate question to be able to answer the question.</i></p>
+            <form id="buildJournalForm">
+                <div class="field">
+                    <label for="customQuestion">Enter Your Custom Question</label>
+                    <input type="text" id="customQuestion" name="customQuestion" />
+                </div>
+                <ul class="actions">
+                    <li><button id="generateCustomButton" class="primary">Generate Question</button></li>
+                </ul>
+                <div id="customQuestionContainer"></div>
+                <button id="saveCustomButton" class="primary" style="display: none;">Save</button>
+            </form>
+        </section>
+
+        <!-- Journal prompts section -->
+        <section id="previousJournalPrompts">
+            <h2>Previous Journal Prompts</h2>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <section class="split contact">
+            <section>
+                <h3>CS386</h3>
+                <a href="https://github.com/rjb489/CS386-wkgOut" class="icon brands alt fa-github"><span class="label">GitHub</span></a>
+            </section>
+        </section>
+    </footer>
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolilex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/JP.js"></script>
+</body>
+</html>
