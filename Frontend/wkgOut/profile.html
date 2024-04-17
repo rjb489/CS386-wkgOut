@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>wkgOut</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+
+        <!-- Intro -->
+        <div id="intro">
+            <h1>wkgOut</h1>
+            <ul class="actions">
+                <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+            </ul>
+        </div>
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">Home</a>
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="workout.html">Workout</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="profile.html" class="icon fas fa-user"><span class ="label">Profile</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Featured Post -->
+            <article class="post featured">
+                <header class="major">
+                    <h2>Profile</h2>
+                    <p>View your profile information below</p>
+                </header>
+            </article>
+
+            <!-- XP Bar Section -->
+            <section id="xp-section">
+                <label for="xpBar">XP Progress:</label>
+                <div class="xp-bar">
+                    <div class="xp-progress">Level: 750/1000</div>
+                </div>
+            </section>
+
+            <!-- Profile -->
+         <section class="main profile">
+            <h3 style="text-align: center; display: block; margin: 0 auto; width: fit-content; margin-bottom: 30px; font-weight: bold;">Update your profile information and settings below</h3>
+
+            <!-- New Username -->
+            <div class="profile-item">
+                <button id="newUsernameBtn" onclick="showTextbox('newUsername')">Change Username</button>
+                <div id="newUsernameTextbox" style="display: none;">
+                    <label for="newUsername">New Username:</label>
+                    <input type="text" id="newUsername" placeholder="New Username" />
+                </div>
+            </div>
+
+            <!-- New Password -->
+            <div class="profile-item">
+                <button id="newPasswordBtn" onclick="showTextbox('newPassword')">Change Password</button>
+                <div id="newPasswordTextbox" style="display: none;">
+                    <label for="newpassword">New Password:</label>
+                    <input type="password" id="newpassword" placeholder="New Password" />
+                </div>
+            </div>   
+            </ul>
+        </section>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <section class="split contact">
+                <section>
+                    <h3>CS386</h3>
+                    <a href="https://github.com/rjb489/CS386-wkgOut" class="icon brands alt fa-github"><span class="label">GitHub</span></a>
+                </section>
+            </section>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/profile.js"></script>
+</body>
+</html>
