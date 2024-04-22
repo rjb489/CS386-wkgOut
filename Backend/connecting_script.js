@@ -81,8 +81,20 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
+// this was added for https
+const https = require('https');
+const fs = require('fs');
+
 const app = express();
 const PORT = 3000;
+
+
+// Load SSL/TLS certificate and key
+const options = {
+    key: fs.readFileSync('/home/dev/example_com.key'), // Replace with the path to your private key file
+    ca: fs.readFileSync('/home/dev/sql-server/sendingout/weebworkout_com.ca-bundle'), // Replace with the path to your CA certificate file
+    cert: fs.readFileSync('/home/dev/sql-server/sendingout/weebworkout_com.crt') // Replace with the path to your SSL/TLS certificate file
+  };
 
 // Middleware to parse JSON bodies
 app.use(bodyParser.json());
