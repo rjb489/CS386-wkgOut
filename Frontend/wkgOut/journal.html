@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        #nav .links li.active a {
+            color: white; 
+        }
+    </style>
 </head>
 <body class="is-preload">
 
@@ -14,19 +19,19 @@
 
     <!-- Header -->
     <header id="header">
-        <a href="main.html" class="logo">Home</a>
+        <a href="index.html" class="logo">Home</a>
     </header>
 
     <!-- Nav -->
     <nav id="nav">
         <ul class="links">
-            <li><a href="main.html">Home</a></li>
-            <li><a href="workout.html">Workout</a></li>
-            <li class="active"><a href="journal.html">Journal</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="workout.html">Workout</a></li>
+            <li><a href="journal.html">Journal</a></li>
             <li><a href="login.html">Login</a></li>
         </ul>
         <ul class="icons">
-            <li><a href="https://github.com/rjb489/CS386-wkgOut" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            <li><a href="profile.html" class="icon fas fa-user"><span class ="label">Profile</span></a></li>
         </ul>
     </nav>
 
@@ -98,7 +103,7 @@
 
 <!-- Scripts -->
 <script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrolilex.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
 <script src="assets/js/jquery.scrolly.min.js"></script>
 <script src="assets/js/browser.min.js"></script>
 <script src="assets/js/breakpoints.min.js"></script>
