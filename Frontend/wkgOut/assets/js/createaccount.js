@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if(sendData(requestData))
            {
             // if so redirect to the home page
-            // TODO:redirect to sign in page
+            window.location.href = "https://main.d3sgq1csnkubqp.amplifyapp.com/login.html";
            }
 
         // For now, let's reset the form
