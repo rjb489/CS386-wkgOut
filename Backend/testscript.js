@@ -120,6 +120,40 @@ server.on('error', (error) => {
   console.error('Server error:', error);
 });
 
+
+// Create a session to store when a user logs in
+
+const session = require('express-session');
+const MySQLStore = require('express-mysql-session')(session);
+const mysql = require('mysql');
+
+// MySQL connection configuration
+const dbConfig = {
+  host: '23.254.211.151',
+  user: 'dbuser',
+  password: 'MyPaSSworD587@',
+  database: 'workout_planner_system',
+  port: '5231'
+};
+
+// Create a MySQLStore instance with the database connection options
+const sessionStore = new MySQLStore(dbConfig);
+
+//create a random key for secret
+const crypto = require('crypto');
+const secretKey = crypto.randomBytes(32).toString('hex');
+console.log('Random Secret Key:', secretKey);
+
+// Configure session middleware with the MySQL session store
+app.use(session({
+  secret: secretKey,
+  resave: false,
+  saveUninitialized: true,
+  store: sessionStore
+}));
+
+
+
 /*
 
 POST: /createAccount
@@ -163,7 +197,7 @@ app.post('/authoricate', (req,res) => {
   console.log('This is the username:',receivedData.username);
 
   // now we will send this data to a create account
-  authoricateAccount(receivedData.username,receivedData.password,res);
+  authoricateAccount(receivedData.username,receivedData.password,res,req);
 
   // Send back a response to the client
   //res.json({ message: 'Data received successfully' });
@@ -180,7 +214,7 @@ username and password are in
 
 */
 
-function authoricateAccount(username,password,res)
+function authoricateAccount(username,password,res,req)
 {
   const mysql = require('mysql');
 
@@ -215,6 +249,11 @@ function authoricateAccount(username,password,res)
           
           if (results.length > 0) {
               console.log('User exists and credentials are valid');
+
+              // we need to store information in the sessions/
+              req.session.sessionId = req.sessionID;
+              req.session.userData = results[0]; 
+
               res.status(200).json({ success: true, message: 'User exists and credentials are valid' });
           } else {
               console.log('User does not exist or credentials are invalid');
