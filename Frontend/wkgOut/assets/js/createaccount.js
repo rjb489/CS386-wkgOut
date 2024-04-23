@@ -26,13 +26,9 @@ document.addEventListener('DOMContentLoaded', function() {
             password: password
         }
 
-        // call send data and check if returned true
-        if(sendData(requestData))
-           {
-            console.log('Should redirect');
-            // if so redirect to the home page
-            window.location.href = "https://main.d3sgq1csnkubqp.amplifyapp.com/login.html";
-           }
+        // call send data 
+        sendData(requestData);
+           
 
         // For now, let's reset the form
         form.reset();
@@ -60,8 +56,11 @@ function sendData(userData)
         console.log('Response from server:', data);
         // if the function was properly executed then you can return a true
         console.log("Correct output occured");
-        return true;
+
+        //redirect to login
+        window.location.href = "https://main.d3sgq1csnkubqp.amplifyapp.com/login.html";
+        
     })
     .catch(error => console.error('Error:', error));
-
+    
    }
