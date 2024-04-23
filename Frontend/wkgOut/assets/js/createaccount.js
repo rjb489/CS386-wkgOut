@@ -26,8 +26,12 @@ document.addEventListener('DOMContentLoaded', function() {
             password: password
         }
 
-        // call send data
-        sendData(requestData);
+        // call send data and check if returned true
+        if(sendData(requestData))
+           {
+            // if so redirect to the home page
+            // TODO:redirect to sign in page
+           }
 
         // For now, let's reset the form
         form.reset();
