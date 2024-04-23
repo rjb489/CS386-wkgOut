@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // call send data and check if returned true
         if(sendData(requestData))
            {
+            console.log('Should redirect');
             // if so redirect to the home page
             window.location.href = "https://main.d3sgq1csnkubqp.amplifyapp.com/login.html";
            }
