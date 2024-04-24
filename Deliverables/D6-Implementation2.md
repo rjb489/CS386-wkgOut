@@ -12,8 +12,7 @@ EXAMPLE FORMAT
 - Approved by:
 - Print Screen (If Applicable)
 
-
-
+###
 
 - Requirement: Profile page
 - Issue: 184
@@ -21,14 +20,46 @@ EXAMPLE FORMAT
 - Implemented by: Laura Guerrero
 - Approved by: Riley Burke
 
+###
 
-
-
-- Requirement: Redesign login, journal, workout, and home pages
-- Issue: 179, 181, 182, 183
+- Requirement: Redesign login page
+- Issue: 183
 - Pull Request: 164
 - Implemented by: Laura Guerrero
 - Approved by: Riley Burke
+
+###
+
+- Requirement: Redesign journal page
+- Issue: 182
+- Pull Request: 164
+- Implemented by: Laura Guerrero
+- Approved by: Riley Burke
+
+###
+
+- Requirement: Redesign workout page
+- Issue: 181
+- Pull Request: 164
+- Implemented by: Laura Guerrero
+- Approved by: Riley Burke
+
+###
+
+- Requirement: Redesign home page
+- Issue: 179
+- Pull Request: 164
+- Implemented by: Laura Guerrero
+- Approved by: Riley Burke
+
+###
+
+- Requirement: Create experience system
+- Issue: 44
+- Pull Request: 164
+- Implemented by: Laura Guerrero
+- Approved by: Riley Burke
+
 
 # Tests
 
