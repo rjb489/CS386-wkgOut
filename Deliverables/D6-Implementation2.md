@@ -12,11 +12,17 @@ EXAMPLE FORMAT
 - Approved by:
 - Print Screen (If Applicable)
 
+
+
+
 - Requirement: Profile page
 - Issue: 184
 - Pull Request: 172
 - Implemented by: Laura Guerrero
 - Approved by: Riley Burke
+
+
+
 
 - Requirement: Redesign login, journal, workout, and home pages
 - Issue: 179, 181, 182, 183
