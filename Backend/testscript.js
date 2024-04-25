@@ -149,7 +149,8 @@ app.use(session({
   secret: secretKey,
   resave: false,
   saveUninitialized: true,
-  store: sessionStore
+  store: sessionStore,
+  cookie: { maxAge: 600000 } // 10 minutes in milliseconds
 }));
 
 
@@ -253,6 +254,10 @@ function authoricateAccount(username,password,res,req)
               // we need to store information in the sessions/
               req.session.sessionId = req.sessionID;
               req.session.userData = results[0]; 
+
+
+              // log to see if session was created properly
+              console.log('Session created:', req.session);
 
               res.status(200).json({ success: true, message: 'User exists and credentials are valid' });
           } else {
