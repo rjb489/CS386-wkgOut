@@ -1,5 +1,5 @@
 // Made by Riley Burke
-class Level
+export class Level
    {
     // data
     curLevel;
