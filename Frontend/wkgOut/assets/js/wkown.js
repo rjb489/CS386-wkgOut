@@ -1,14 +1,33 @@
+// testing for fetching
+fetch('https://weebworkout.com:3000/checkSessionData', {
+  method: 'GET',
+  credentials: 'include' // Important for sending cookies (session data)
+})
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json(); // Assuming the response contains JSON data
+  })
+  .then(data => {
+    console.log('Session data:', data); // Log the session data received from the server
+  })
+  .catch(error => {
+    console.error('There was a problem with the fetch operation:', error);
+  });
+
 // fetch using fetch API to get session info
+/*
 fetch('https://weebworkout.com:3000/getSessionData')
     .then(response => response.json())
     .then(data => {
         // Handle received session data
-        console.log(data.username);
+        console.log('Successful he is data:',data);
     })
     .catch(error => {
         console.error('Error fetching session data:', error);
     });
-
+*/
 
 
 
