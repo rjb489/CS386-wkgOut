@@ -16,6 +16,7 @@ app.use(bodyParser.json());
 // Enable CORS for all origins
 app.use(cors({ origin: '*' }));
 
+
 // Define the hostname and port
 const hostname = '23.254.211.151'; // Change this to your domain
 const port = 3000; // Default port for HTTPS
@@ -98,35 +99,27 @@ app.post('/createAccount', (req,res) => {
   POST: /authoricate
   DESCRIPTION: will recive info at /authoricate and send back if that
   information if it is true, information is username and password
-  
+  authoricate
   
   */
   
-  // POST endpoint to receive data from client
-  app.post('/authoricate', (req,res) => {
-  
+// POST endpoint to receive data from client
+app.post('/authoricate', (req, res) => {
     const receivedData = req.body;
     console.log('Received data from client:', receivedData);
-    
-    console.log('This is the username:',receivedData.username);
-  
-    // now we will send this data to a create account
-    authenticateAccount(receivedData.username,receivedData.password,res,req, (auth) => {
-        if(auth)
-           {
-             // redirect
-             res.redirect('https://main.d3sgq1csnkubqp.amplifyapp.com/index.html');
-            }
-         else
-            {
-             //res.status(401).json({ success: false, message: 'Authentication failed' });
-             res.status(401).json({ success: false, message: 'Authentication failed' });
-            }
-    });
+    console.log('This is the username:', receivedData.username);
 
-    // Send back a response to the client
-    //res.json({ message: 'Data received successfully' });
-  });
+    // now we will send this data to create an account
+    authenticateAccount(receivedData.username, receivedData.password, res, req, (auth, sessionId) => {
+        if (auth) {
+            // Send session ID and success message in the response
+            res.status(200).json({ success: true, sessionId: sessionId });
+        } else {
+            // Send authentication failure message in the response
+            res.status(401).json({ success: false, message: 'Authentication failed' });
+        }
+    });
+});
   
   /*
   GET request for session data /getSessionData
@@ -150,7 +143,7 @@ app.post('/createAccount', (req,res) => {
         if (err) {
             console.error('Error acquiring database connection:', err);
             //res.status(500).json({ success: false, message: 'Database error' });
-            callback(false);
+            callback(false,null);
             return;
         }
 
@@ -162,7 +155,7 @@ app.post('/createAccount', (req,res) => {
             if (error) {
                 console.error('Error executing query:', error);
                 //res.status(500).json({ success: false, message: 'Error executing query' });
-                callback(false);
+                callback(false,null);
                 return;
             }
 
@@ -178,11 +171,11 @@ app.post('/createAccount', (req,res) => {
 
                 //res.status(200).json({ success: true, message: 'User exists and credentials are valid' });
 
-                callback(true);
+                callback(true, req.sessionID);
             } else {
                 console.log('User does not exist or credentials are invalid');
                 //res.status(200).json({ success: false, message: 'User does not exist or credentials are invalid' });
-                callback(false);
+                callback(false,null);
             }
         });
     });

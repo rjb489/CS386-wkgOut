@@ -52,9 +52,22 @@ function sendData(userData)
     })
     .then(data => {
         console.log('Response from server:', data);
-        // if the function was properly executed then you can return a true
-        console.log("Correct output occured");
+        
+        // we are going to check if authentication was sucessful
+        if(data.success)
+           {
+            // store the session id in local storage
+            const sessionId = data.sessionId;
+            localStorage.setItem('sessionId', sessionId);
+            // redirect to home page
+            window.location.href = 'https://main.d3sgq1csnkubqp.amplifyapp.com/index.html';
 
+           }
+        else
+           {
+            //authenification did not work
+            console.error('Authentication failed:', data.message);
+           }
         
     })
     .catch(error => console.error('Error:', error));
