@@ -8,7 +8,6 @@ function addExerciseToWorkoutsList(exercise) {
         <strong>${exercise.name}</strong><br>
         Reps: ${exercise.reps}<br>
         Sets: ${exercise.sets}<br>
-        Rest Time: ${exercise.restTime}<br>
     `;
 
     // Add duration if it exists
@@ -32,16 +31,12 @@ document.getElementById("createOwnWorkoutForm").addEventListener("submit", funct
     var exerciseName = document.getElementById("exerciseName").value;
     var reps = document.getElementById("reps").value;
     var sets = document.getElementById("sets").value;
-    var restTime = document.getElementById("restTime").value;
-    var duration = document.getElementById("duration").value;
 
     // Create an object to represent the exercise
     var exercise = {
         name: exerciseName,
         reps: reps,
-        sets: sets,
-        restTime: restTime,
-        duration: duration
+        sets: sets
     };
 
     // Add the exercise to the "Workouts You Have Created" section
@@ -51,6 +46,4 @@ document.getElementById("createOwnWorkoutForm").addEventListener("submit", funct
     document.getElementById("exerciseName").value = "";
     document.getElementById("reps").value = "";
     document.getElementById("sets").value = "";
-    document.getElementById("restTime").value = "";
-    document.getElementById("duration").value = "";
 });
