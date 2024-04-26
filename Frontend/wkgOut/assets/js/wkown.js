@@ -1,3 +1,18 @@
+// fetch using fetch API to get session info
+fetch('https://weebworkout.com:3000/getSessionData')
+    .then(response => response.json())
+    .then(data => {
+        // Handle received session data
+        console.log(data.username);
+    })
+    .catch(error => {
+        console.error('Error fetching session data:', error);
+    });
+
+
+
+
+
 // Function to add a new exercise to the "Workouts You Have Created" section
 function addExerciseToWorkoutsList(exercise) {
     // Create a new list item

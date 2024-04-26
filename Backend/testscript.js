@@ -204,6 +204,24 @@ app.post('/authoricate', (req,res) => {
   //res.json({ message: 'Data received successfully' });
 });
 
+/*
+GET request for session data /getSessionData
+*/
+
+app.get('/getSessionData', (req, res) => {
+  // Check if userData exists in the session
+  if (req.session.userData) {
+      // If userData exists, extract relevant session data
+      const sessionData = {
+          username: req.session.userData.username,
+          // Add other session data as needed
+      };
+      res.json(sessionData);
+  } else {
+      // If userData doesn't exist, return an error response
+      res.status(401).json({ error: 'User session data not found' });
+  }
+});
 
 
 /*
