@@ -88,7 +88,7 @@ app.get('/data', (req, res) => {
 
     console.log('Received data from client:', sessionId);
       // now we will send this data to get data 
-      getUserData(sessionId, res, req, (auth, userData) => {
+      getUserData(sessionId, (auth, userData) => {
         if (auth) {
             // Send session ID and success message in the response
             res.status(200).json({ success: true, userData: userData });
@@ -193,7 +193,11 @@ app.post('/createAccount', (req,res) => {
 
                 // Store user data in session
                 req.session.sessionId = req.sessionID;
-                req.session.userData = results[0];
+                req.session.userData = {
+                    username: results[0].username, 
+                    admin: results[0].admin,
+                    experience: results[0].experience
+                };
 
                 // Log session creation
                 console.log('Session created:', req.session);
@@ -270,6 +274,13 @@ app.post('/createAccount', (req,res) => {
   */
   function getUserData(sessionId, callback)
    {
+    const sqlQuery = `
+    SELECT * FROM users 
+    WHERE username = (
+        SELECT SUBSTRING_INDEX(SUBSTRING_INDEX(data, '"username":"', -1), '"', 1) AS username 
+        FROM sessions 
+        WHERE session_id = ?
+    )`;
     // Attempt to acquire a connection from the pool
     pool.getConnection((err, connection) => {
         if (err) {
@@ -278,8 +289,10 @@ app.post('/createAccount', (req,res) => {
             return;
         }
 
+
+
         // If connection is successful, perform authentication
-        connection.query('SELECT user_id FROM users WHERE sessionId = ?', [sessionId], (error, results) => {
+        connection.query(sqlQuery, [sessionId], (error, results) => {
             // Release the connection back to the pool
             connection.release();
 
@@ -293,7 +306,7 @@ app.post('/createAccount', (req,res) => {
                 console.log('User sucussfuly found');
 
                 // Store user data in session
-                const userData = result[0];
+                const userData = results[0];
 
                 // Log session creation
                 console.log('User Found:', userData);
