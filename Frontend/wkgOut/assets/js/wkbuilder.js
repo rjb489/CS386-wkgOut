@@ -359,7 +359,8 @@ document.addEventListener('DOMContentLoaded', function()
         
         //call the display workout function to show the user the workout
         displayWorkout( selectedWorkout );
-        
+        scrollDownMessage.style.display = 'block';
+
         //call the disable button function to disable button after workout is saved and displayed
         disableButton();
     });
