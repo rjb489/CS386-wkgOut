@@ -49,3 +49,9 @@ create table journal_entry
  foreign key (schedule_id) references schedules(id)
 );
  
+
+CREATE TABLE sessions (
+    session_id VARCHAR(255) NOT NULL PRIMARY KEY,
+    expires BIGINT NOT NULL,
+    data TEXT
+);
