@@ -4770,3 +4770,15 @@ input, select, textarea {
 }
 .profile-item div[id$="Textbox"] {
     display: none;}
+
+.workout-item {
+    border: 1px solid #ccc;
+    background-color: #f0f0f0; 
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+ul#createdWorkoutsList {
+    list-style: none;
+}
