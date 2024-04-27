@@ -55,3 +55,19 @@ CREATE TABLE sessions (
     expires BIGINT NOT NULL,
     data TEXT
 );
+
+create table exercise 
+(
+ id int primary key auto_increment,
+ user_id varchar(30) not null,
+ name varchar(30),
+ reps varchar(20),
+ sets varchar(20),
+ restTime varchar(30),
+ experince int,
+ foreign key (user_id) references users(username)
+);
+
+
+ALTER TABLE exercise
+ADD COLUMN weekday ENUM('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday');

@@ -101,6 +101,26 @@ app.get('/data', (req, res) => {
 
 
 /*
+POST: /setExersise
+DESCRIPTION: used to fetch user specific data
+*/
+app.post('/setExersise', (req, res) => {
+
+    // extract the information from exersies
+    const { name, reps, sets, weekday, sessionID } = req.body;
+
+    console.log('Exercise data:', { name, reps, sets, weekday });
+    console.log('Session ID:', sessionID);
+
+    setExersise({ name, reps, sets, weekday }, sessionID);
+
+    res.json({ message: 'Exercise data received successfully' });
+});
+
+
+
+
+/*
 
 POST: /createAccount
 DESCRIPTION: will recive info at /createAccount for username and password
@@ -321,4 +341,78 @@ app.post('/createAccount', (req,res) => {
     });
 
 
+   }
+
+
+  /*
+  
+  Function: setExersise(sessionID)
+  DESCRIPTION: will set an exersiese according to sessionID
+  
+  
+  */
+  function setExersise(exerciseData, sessionId)
+   {
+    getUserNameFromID(sessionId, (username, error) => {
+
+       if(error)
+          {
+           console.error('Error getting username:', error); 
+           return ;
+          }
+       if(!username)
+          {
+           console.error('Username not found for the sessionID');
+           return;
+          }
+
+       console.log('USername found:', username);
+
+
+       pool.query('INSERT INTO exercise (user_id, name, reps, sets, weekday) VALUES (?, ?, ?, ?, ?)',
+       [username, exerciseData.name, exerciseData.reps, exerciseData.sets,  exerciseData.weekday],
+       (error) => {
+           if (error) {
+               console.error('Error executing query:', error);
+           } else {
+               console.log('Exercise added successfully');
+           }
+       });
+
+    }); 
+
+
+   }
+
+
+/*
+  
+Function: getUserNameFromID(sessionID)
+DESCRIPTION: will get a username fro sessionID
+  
+*/
+
+function getUserNameFromID(sessionID, callback) 
+   {
+    pool.query(`
+    SELECT * FROM users 
+    WHERE username = (
+        SELECT SUBSTRING_INDEX(SUBSTRING_INDEX(data, '"username":"', -1), '"', 1) AS username 
+        FROM sessions 
+        WHERE session_id = ?
+    )`, [sessionID], (error, results) => {
+    if (error) {
+        console.error('Error executing query:', error);
+        callback(null, error);
+    } else {
+        // Check if any results are returned
+        if (results.length > 0) {
+            // Username found, return it
+            callback(results[0].username, null);
+        } else {
+            // Username not found
+            callback(null, 'Username not found for the sessionID');
+        }
+    }
+});
    }
