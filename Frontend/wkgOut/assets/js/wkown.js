@@ -1,34 +1,26 @@
-// testing for fetching
-fetch('https://weebworkout.com:3000/checkSessionData', {
-  method: 'GET',
-  credentials: 'include' // Important for sending cookies (session data)
-})
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
+// Retrieve the session ID from localStorage
+const sessionId = localStorage.getItem('sessionId');
+
+// get the user
+fetch('https://weebworkout.com:3000/data',{
+    method: 'GET',
+    headers: {
+        'Content-Type': 'application/json',
+        // Include the session ID in the request headers
+        'Authorization': `Bearer ${sessionId}`
     }
-    return response.json(); // Assuming the response contains JSON data
-  })
-  .then(data => {
-    console.log('Session data:', data); // Log the session data received from the server
-  })
-  .catch(error => {
-    console.error('There was a problem with the fetch operation:', error);
-  });
-
-// fetch using fetch API to get session info
-/*
-fetch('https://weebworkout.com:3000/getSessionData')
-    .then(response => response.json())
-    .then(data => {
-        // Handle received session data
-        console.log('Successful he is data:',data);
-    })
-    .catch(error => {
-        console.error('Error fetching session data:', error);
-    });
-*/
-
+})
+.then(response => {
+    if (!response.ok) {
+        throw new Error('Network response was not ok');
+    }
+    return response.json();
+})
+.then(data => {
+    console.log('Response from server:', data);
+    // Check if the request was successful and handle the response data
+})
+.catch(error => console.error('Error:', error));
 
 
 

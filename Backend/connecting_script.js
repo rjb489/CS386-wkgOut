@@ -68,6 +68,37 @@ app.use(session({
   cookie: { maxAge: 600000 } // 10 minutes in milliseconds
 }));
 
+// need to use middleware to extract session id from reqest
+// handlers
+app.use((req, res, next) => {
+    const sessionId = req.headers.authorization;
+    if (sessionId) {
+        req.sessionId = sessionId;
+    }
+    next();
+});
+
+
+/*
+GET: /data
+DESCRIPTION: used to fetch user specific data
+*/
+app.get('/data', (req, res) => {
+    const sessionId = req.sessionId;
+
+    console.log('Received data from client:', sessionId);
+      // now we will send this data to get data 
+      getUserData(sessionId, res, req, (auth, userData) => {
+        if (auth) {
+            // Send session ID and success message in the response
+            res.status(200).json({ success: true, userData: userData });
+        } else {
+            // Send authentication failure message in the response
+            res.status(401).json({ success: false, message: 'Authentication failed' });
+        }
+    });
+});
+
 
 /*
 
@@ -103,27 +134,25 @@ app.post('/createAccount', (req,res) => {
   
   */
   
-// POST endpoint to receive data from client
-app.post('/authoricate', (req, res) => {
-    const receivedData = req.body;
-    console.log('Received data from client:', receivedData);
-    console.log('This is the username:', receivedData.username);
+  // POST endpoint to receive data from client
+  app.post('/authoricate', (req, res) => {
+      const receivedData = req.body;
+      console.log('Received data from client:', receivedData);
+      console.log('This is the username:', receivedData.username);
 
-    // now we will send this data to create an account
-    authenticateAccount(receivedData.username, receivedData.password, res, req, (auth, sessionId) => {
-        if (auth) {
-            // Send session ID and success message in the response
-            res.status(200).json({ success: true, sessionId: sessionId });
-        } else {
-            // Send authentication failure message in the response
-            res.status(401).json({ success: false, message: 'Authentication failed' });
-        }
-    });
-});
+      // now we will send this data to create an account
+      authenticateAccount(receivedData.username, receivedData.password, res, req, (auth, sessionId) => {
+          if (auth) {
+              // Send session ID and success message in the response
+              res.status(200).json({ success: true, sessionId: sessionId });
+          } else {
+              // Send authentication failure message in the response
+              res.status(401).json({ success: false, message: 'Authentication failed' });
+          }
+      });
+   });
   
-  /*
-  GET request for session data /getSessionData
-  */
+
   
   
   
@@ -231,4 +260,52 @@ app.post('/authoricate', (req, res) => {
         });
     });
   }
+
+  /*
   
+  Function: getUserData(sessionID)
+  DESCRIPTION: will get the users data reling on there sessionID
+  
+  
+  */
+  function getUserData(sessionId, callback)
+   {
+    // Attempt to acquire a connection from the pool
+    pool.getConnection((err, connection) => {
+        if (err) {
+            console.error('Error acquiring database connection:', err);
+            callback(false,null);
+            return;
+        }
+
+        // If connection is successful, perform authentication
+        connection.query('SELECT user_id FROM users WHERE sessionId = ?', [sessionId], (error, results) => {
+            // Release the connection back to the pool
+            connection.release();
+
+            if (error) {
+                console.error('Error executing query:', error);
+                callback(false,null);
+                return;
+            }
+
+            if (results.length > 0) {
+                console.log('User sucussfuly found');
+
+                // Store user data in session
+                const userData = result[0];
+
+                // Log session creation
+                console.log('User Found:', userData);
+
+
+                callback(true, userData);
+            } else {
+                console.log('User data not found');
+                callback(false,null);
+            }
+        });
+    });
+
+
+   }
