@@ -7,7 +7,7 @@ describe users;
 
 create table users
 (
- email varchar(30) primary key,
+ username varchar(30) primary key,
  password varchar(30) not null,
  admin boolean not null,
  experience int
@@ -49,3 +49,9 @@ create table journal_entry
  foreign key (schedule_id) references schedules(id)
 );
  
+
+CREATE TABLE sessions (
+    session_id VARCHAR(255) NOT NULL PRIMARY KEY,
+    expires BIGINT NOT NULL,
+    data TEXT
+);

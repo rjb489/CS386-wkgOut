@@ -1,3 +1,29 @@
+// Retrieve the session ID from localStorage
+const sessionId = localStorage.getItem('sessionId');
+
+// get the user
+fetch('https://weebworkout.com:3000/data',{
+    method: 'GET',
+    headers: {
+        'Content-Type': 'application/json',
+        // Include the session ID in the request headers
+        'Authorization': `${sessionId}`
+    }
+})
+.then(response => {
+    if (!response.ok) {
+        throw new Error('Network response was not ok');
+    }
+    return response.json();
+})
+.then(data => {
+    console.log('Response from server:', data);
+    // Check if the request was successful and handle the response data
+})
+.catch(error => console.error('Error:', error));
+
+
+
 // Function to add a new exercise to the "Workouts You Have Created" section
 function addExerciseToWorkoutsList(exercise) {
     // Create a new list item
