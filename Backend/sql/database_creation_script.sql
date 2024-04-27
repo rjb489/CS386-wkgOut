@@ -7,7 +7,7 @@ describe users;
 
 create table users
 (
- email varchar(30) primary key,
+ username varchar(30) primary key,
  password varchar(30) not null,
  admin boolean not null,
  experience int

@@ -7,7 +7,7 @@ fetch('https://weebworkout.com:3000/data',{
     headers: {
         'Content-Type': 'application/json',
         // Include the session ID in the request headers
-        'Authorization': `Bearer ${sessionId}`
+        'Authorization': `${sessionId}`
     }
 })
 .then(response => {
