@@ -1,3 +1,5 @@
+const sessionId = localStorage.getItem('sessionId');
+
 document.addEventListener("DOMContentLoaded", function() {
     // Define journal questions based on different types
     const journalQuestions = {
@@ -225,3 +227,44 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("generateCustomButton").addEventListener("click", handleGenerateCustomQuestion);
     document.getElementById("generateButton").addEventListener("click", handleGenerateQuestion);
 });
+
+
+
+
+
+/*
+
+function: saveToDatabase(sessionID, question, answer)
+description: will save the question and answer to the sql database
+
+*/
+
+function saveToDatabase(sessionID, question, answer)
+   {
+    var data = {
+        sessionID: sessionID,
+        question: question,
+        answer: answer,
+    };
+
+    fetch('https://weebworkout.com:3000/setJournal', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log('Exercise data sent successfully:', data);
+    })
+    .catch(error => {
+        console.error('Error sending exercise data:', error);
+    });
+
+   }

@@ -1,3 +1,6 @@
+// Importing the Level class
+import { Level } from './Level.js';
+
 class User
    {
     //TODO: THIS CLASS CURRENTTLY HAS SKELENTON CODE NEEDS TO BE WORKED ON
@@ -28,7 +31,8 @@ class User
         this.username = username;
         this.password = password;
         this.email = email;
-        this.level = level; 
+        // creates the level at 0
+        this.level = new Level(0, 0, 0)
        }
 
     //TODO: alter these to be able to use the database

@@ -87,13 +87,18 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 
+
+
 const app = express();
 
 // Middleware to parse JSON bodies
 app.use(bodyParser.json());
 
 // Enable CORS for all origins
-app.use(cors());
+//app.use(cors());
+
+// TESTING: Enable CORS for all origins
+app.use(cors({ origin: '*' }));
 
 
 // Define the hostname and port
@@ -149,7 +154,8 @@ app.use(session({
   secret: secretKey,
   resave: false,
   saveUninitialized: true,
-  store: sessionStore
+  store: sessionStore,
+  cookie: { maxAge: 600000 } // 10 minutes in milliseconds
 }));
 
 
@@ -203,6 +209,40 @@ app.post('/authoricate', (req,res) => {
   //res.json({ message: 'Data received successfully' });
 });
 
+/*
+GET request for session data /getSessionData
+*/
+
+// Example route to check session data
+app.get('/checkSessionData', (req, res) => {
+  // Log session data
+  console.log('Session data:', req.session);
+  
+  res.send('Session data logged');
+});
+
+
+
+
+app.get('/getSessionData', (req, res) => {
+  // Check if userData exists in the session
+  if (req.session.userData) {
+      // If userData exists, extract relevant session data
+      // log the username and make sure it is sent properly
+      const username = req.session.userData.username;
+      console.log('Username:', username); 
+
+      const sessionData = {
+          username: username,
+          // Add other session data as needed
+      };
+      // Send the session data in the response
+      //res.status(200).json("this shuld be working", sessionData);
+  } else {
+      // If userData doesn't exist, return an error response
+      res.status(401).json({ error: 'User session data not found' });
+  }
+});
 
 
 /*
@@ -253,6 +293,10 @@ function authoricateAccount(username,password,res,req)
               // we need to store information in the sessions/
               req.session.sessionId = req.sessionID;
               req.session.userData = results[0]; 
+
+
+              // log to see if session was created properly
+              console.log('Session created:', req.session);
 
               res.status(200).json({ success: true, message: 'User exists and credentials are valid' });
           } else {

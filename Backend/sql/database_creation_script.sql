@@ -7,7 +7,7 @@ describe users;
 
 create table users
 (
- email varchar(30) primary key,
+ username varchar(30) primary key,
  password varchar(30) not null,
  admin boolean not null,
  experience int
@@ -49,3 +49,35 @@ create table journal_entry
  foreign key (schedule_id) references schedules(id)
 );
  
+
+CREATE TABLE sessions (
+    session_id VARCHAR(255) NOT NULL PRIMARY KEY,
+    expires BIGINT NOT NULL,
+    data TEXT
+);
+
+create table exercise 
+(
+ id int primary key auto_increment,
+ user_id varchar(30) not null,
+ name varchar(30),
+ reps varchar(20),
+ sets varchar(20),
+ restTime varchar(30),
+ experince int,
+ foreign key (user_id) references users(username)
+);
+
+
+ALTER TABLE exercise
+ADD COLUMN weekday ENUM('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday');
+
+
+create table journal 
+(
+ id int primary key auto_increment,
+ user_id varchar(30) not null,
+ question VARCHAR(500),
+ answer VARCHAR(6000),
+ foreign key (user_id) references users(username)
+);
