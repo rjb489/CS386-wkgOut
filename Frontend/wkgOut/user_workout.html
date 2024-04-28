@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Workout</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        #nav .links li.active a {
+            color: white; 
+        }
+        
+    </style>
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <a href="index.html" class="logo">Home</a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="workout.html">Workout</a></li>
+            <li><a href="journal.html">Journal</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <ul class="icons">
+            <li><a href="profile.html" class="icon fas fa-user"><span class ="label">Profile</span></a></li>
+        </ul>
+    </nav>
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- Post -->
+        <section class="post">
+            <header class="major">
+                <h1>Your Workouts</h1>
+                <p>Here you are able to access the workouts you have created.</p>
+            </header>
+            <div class="image main"><img src="images/user_wk.jpg" alt="" /></div>
+        </section>
+
+    <!-- Workout Sections -->
+    <section id="createOwnWorkout">
+        <form id="createOwnWorkoutForm">
+        <!-- Container for each day of the week -->
+        <div id="Monday" class="workout-day">
+            <h2>Monday</h2>
+            <ul id="MondayWorkouts" class="workouts-list"></ul>
+        </div>
+        <div id="Tuesday" class="workout-day">
+            <h2>Tuesday</h2>
+            <ul id="TuesdayWorkouts" class="workouts-list"></ul>
+        </div>
+        <div id="Wednesday" class="workout-day">
+            <h2>Wednesday</h2>
+            <ul id="WednesdayWorkouts" class="workouts-list"></ul>
+        </div>
+        <div id="Thursday" class="workout-day">
+            <h2>Thursday</h2>
+            <ul id="ThursdayWorkouts" class="workouts-list"></ul>
+        </div>
+        <div id="Friday" class="workout-day">
+            <h2>Friday</h2>
+            <ul id="FridayWorkouts" class="workouts-list"></ul>
+        </div>
+        <div id="Saturday" class="workout-day">
+            <h2>Saturday</h2>
+            <ul id="SaturdayWorkouts" class="workouts-list"></ul>
+        </div>
+        <div id="Sunday" class="workout-day">
+            <h2>Sunday</h2>
+            <ul id="SundayWorkouts" class="workouts-list"></ul>
+        </div>
+        <div id="userWorkouts"></div>
+        <div id="debugInfo"></div>
+
+        </form>
+    </section>
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+    <section class="split contact">
+        <section>
+            <h3>CS386</h3>
+            <a href="https://github.com/rjb489/CS386-wkgOut" class="icon brands alt fa-github"><span class="label">GitHub</span></a>
+        </section>
+    </section>
+</footer>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/wkown.js"></script>
+</body>
+</html>
