@@ -71,3 +71,13 @@ create table exercise
 
 ALTER TABLE exercise
 ADD COLUMN weekday ENUM('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday');
+
+
+create table journal 
+(
+ id int primary key auto_increment,
+ user_id varchar(30) not null,
+ question VARCHAR(500),
+ answer VARCHAR(6000),
+ foreign key (user_id) references users(username)
+);

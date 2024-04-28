@@ -65,7 +65,7 @@ app.use(session({
   resave: false,
   saveUninitialized: true,
   store: sessionStore,
-  cookie: { maxAge: 3600000 } // 1 hour in milliseconds
+  cookie: { maxAge: 21600000 } // 6 hours in milliseconds
 }));
 
 // need to use middleware to extract session id from reqest
@@ -116,6 +116,24 @@ app.post('/setExersise', (req, res) => {
     setExersise({ name, reps, sets, weekday }, sessionID);
 
     res.json({ message: 'Exercise data received successfully' });
+});
+
+
+/*
+POST: /setJournal
+DESCRIPTION: used to fetch user specific data
+*/
+app.post('/setJournal', (req, res) => {
+
+    // extract the information from exersies
+    const { sessionID, question, answer } = req.body;
+
+    // uncomment for error checking
+    console.log('Information:', { sessionID, question, answer });
+
+    setJournal(sessionID, question, answer);
+
+    res.json({ message: 'Journal data received successfully' });
 });
 
 
@@ -440,6 +458,46 @@ app.post('/deleteExerciseById', (req, res) => {
 
 
 /*
+function: setJournal
+description: adds a journal to the database dependign on its
+sessionID
+*/
+
+function setJournal(sessionID, question, answer)
+   {
+    // need to first get the user based off of the sessionID
+    getUserNameFromID(sessionID, (username, error) => {
+
+        if(error)
+           {
+            console.error('Error getting username:', error); 
+            return ;
+           }
+        if(!username)
+           {
+            console.error('Username not found for the sessionID');
+            return;
+           }
+
+        // uncomment for error checking 
+        console.log('Username found:', username);
+
+        
+        pool.query('INSERT INTO journal (user_id, question, answer) VALUES (?, ?, ?)',
+        [username, question, answer],
+        (error) => {
+            if (error) {
+                console.error('Error executing query:', error);
+            } 
+        });
+     }); 
+
+   }
+
+
+
+
+/*
   
 Function: getUserNameFromID(sessionID)
 DESCRIPTION: will get a username fro sessionID
@@ -550,3 +608,4 @@ function deleteExercise(exerciseId)
 
     });
    }
+
