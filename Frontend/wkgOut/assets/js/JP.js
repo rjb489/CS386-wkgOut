@@ -203,6 +203,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Save custom question and answer to the database
         saveToDatabase(sessionId, questionText, answer);
+        
 
         // create sections
         const journalPromptDiv = document.createElement("div");
@@ -270,10 +271,13 @@ function saveToDatabase(sessionID, question, answer)
     })
     .then(data => {
         console.log('Exercise data sent successfully:', data);
+
+        window.location.reload();
     })
     .catch(error => {
         console.error('Error sending exercise data:', error);
     });
+
 
    }
 
