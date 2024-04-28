@@ -1,6 +1,6 @@
 // Retrieve the session ID from localStorage
 //const sessionId = localStorage.getItem('sessionId');
-const sessionIds = '99Lt6wATS5GmYKz06jrWJOh81udfKNs2';
+const sessionIds = localStorage.getItem('sessionId');
 const daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
 
