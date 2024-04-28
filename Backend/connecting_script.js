@@ -708,10 +708,10 @@ mysql
 
 */
 
-function deleteExercise(journalId)
+function deleteExercise(workoutId)
    {
     
-    pool.query('delete from journal where id = ?', [journalId], (error, results) => {
+    pool.query('delete from exercise where id = ?', [workoutId], (error, results) => {
         if (error) {
             console.error('Error executing query:', error);
         } 
