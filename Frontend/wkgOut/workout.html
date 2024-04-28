@@ -45,9 +45,28 @@
                 <h1>Workouts</h1>
                 <p>Here you are able to choose preset workouts, view workouts that you have already built, or build a new workout.</p>
             </header>
-            <div class="image main"><img src="images/dumbell.jpg" alt="" /></div>
         </section>
 
+            <section class="posts">
+                <article>
+                    <header>
+                        <h2><a href="workout.html">Built Workouts</a></h2>
+                    </header>
+                    <a href="built_workout.html" class="image fit"><img src="images/built_wk.jpg" alt="" /></a>
+                    <ul class="actions special">
+                        <li><a href="built_workout.html" class="button">View Your Built Workouts</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <header>
+                        <h2><a href="user_workout.html">User Workouts</a></h2>
+                    </header>
+                    <a href="user_workout.html" class="image fit"><img src="images/user_wk.jpg" alt="" /></a>
+                    <ul class="actions special">
+                        <li><a href="user_workout.html" class="button">View Your Created Workouts</a></li>
+                    </ul>
+                </article>
+            </section>
         <!-- Workout Form -->
         <section id="workoutsYouHaveCreated" class="workout-item">
             <h2>Build a Workout</h2>
@@ -82,9 +101,6 @@
                 </ul>
             </form>
         </section>
-        <section id="scrollDownMessage" style="display: none;">
-            <p>Scroll down to find workout built.</p>
-        </section>
 
         <!-- Create Your Own Workout -->
         <section id="createOwnWorkout">
@@ -105,25 +121,15 @@
                     </div>
                     <div class="field">
                         <label for="weekday">Weekday</label>
+                        <p> Day of the week must be capitalized</p>
                         <input type="text" id="weekday" name="weekday" placeholder="Enter day of the week" required />
                     </div>
                 </div>
                 <ul class="actions">
-                    <li><input type="submit" value="Add Exercise" class="primary" /></li>
+                    <li><a href="user_workout.html" class="button">Create Your Workouts</a></li>
                 </ul>
             </form>
         </section>
-
-        <!-- Workouts You Have Created -->
-        <section id="workoutsYouHaveCreated">
-            <h2>Workouts You Have Created</h2>
-            <ul id="createdWorkoutsList">
-            </ul>
-        </section>
-
-        <!-- Display Workout -->
-        <section id="workoutDisplay"></section>
-
     </div>
 
     <!-- Footer -->
