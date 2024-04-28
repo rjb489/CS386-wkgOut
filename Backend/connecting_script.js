@@ -109,8 +109,9 @@ app.post('/setExersise', (req, res) => {
     // extract the information from exersies
     const { name, reps, sets, weekday, sessionID } = req.body;
 
-    console.log('Exercise data:', { name, reps, sets, weekday });
-    console.log('Session ID:', sessionID);
+    // uncomment for error checking
+    //console.log('Exercise data:', { name, reps, sets, weekday });
+    //console.log('Session ID:', sessionID);
 
     setExersise({ name, reps, sets, weekday }, sessionID);
 
@@ -131,7 +132,9 @@ app.get('/workouts', (req, res) => {
     const sessionId = req.query.sessionId;
     const dayOfWeek = req.query.dayOfWeek;
 
-    console.log('Received data from client:', sessionId);
+
+    // uncomment for error checking
+    //console.log('Received data from client:', sessionId);
     
     // call getWorkouts this will get workouts
     getWorkouts(sessionId,dayOfWeek, (workouts, error) => {
@@ -143,8 +146,8 @@ app.get('/workouts', (req, res) => {
             return;
            }
         
-        
-        console.log('Workouts fetched successfully:', workouts);
+        // uncomment for error checking
+        //console.log('Workouts fetched successfully:', workouts);
         res.status(200).json({ success: true, workouts: workouts });
         
 
@@ -408,9 +411,7 @@ app.post('/createAccount', (req,res) => {
        (error) => {
            if (error) {
                console.error('Error executing query:', error);
-           } else {
-               console.log('Exercise added successfully');
-           }
+           } 
        });
 
     }); 
@@ -479,8 +480,11 @@ function getWorkouts(sessionID, dayOfWeek, callback)
             console.error('Username not found for the sessionID');
             return;
            }
- 
-        console.log('USername found:', username);
+
+
+
+        // uncomment for error checking 
+        //console.log('USername found:', username);
 
         // now we can complete a query to get all the exersies related to a
         // specific day
