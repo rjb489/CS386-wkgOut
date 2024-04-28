@@ -8,13 +8,4 @@
     border: 1px solid #ccc;
     padding: 10px;
     margin: 10px;
-    width: 300px;
-}
-
-#UserWorkouts {
-    align-items: center;
-}
-
-#UserWorkoutHeader {
-    text-align: center;
 }

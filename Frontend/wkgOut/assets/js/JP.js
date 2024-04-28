@@ -1,5 +1,7 @@
 const sessionId = localStorage.getItem('sessionId');
 
+getJournals(sessionId);
+
 document.addEventListener("DOMContentLoaded", function() {
     // Define journal questions based on different types
     const journalQuestions = {
@@ -70,6 +72,9 @@ document.addEventListener("DOMContentLoaded", function() {
         // Get the question text from the question container
         const questionInput = document.getElementById("questionContainer");
         const questionText = questionInput.querySelector("p").innerText;
+
+        // Save question and answer to the database
+        saveToDatabase(sessionId, questionText, answer);
 
         // Create a new <div> element to display the journal prompt
         const journalPromptDiv = document.createElement("div");
@@ -196,6 +201,9 @@ document.addEventListener("DOMContentLoaded", function() {
         const questionInput = document.getElementById("customQuestion");
         const questionText = questionInput.value.trim();
 
+        // Save custom question and answer to the database
+        saveToDatabase(sessionId, questionText, answer);
+
         // create sections
         const journalPromptDiv = document.createElement("div");
         journalPromptDiv.classList.add("journal-prompt");
@@ -266,5 +274,134 @@ function saveToDatabase(sessionID, question, answer)
     .catch(error => {
         console.error('Error sending exercise data:', error);
     });
+
+   }
+
+/*
+
+function: getJournals(sessionID)
+description: will get the jounrals and display them
+
+*/
+
+
+function getJournals(sessionId)
+   {
+
+    let jounrals;
+
+
+    // set the headers
+    const headers = {
+        'Content-Type': 'application/json',
+    };
+
+    const url = new URL('https://weebworkout.com:3000/getJournals');
+    url.searchParams.append('sessionId', sessionId);
+    
+
+    // get the user
+    fetch(url,{
+        method: 'GET',
+        headers: headers,
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        //save the workouts to a variable
+        jounrals = data.journals;
+
+        console.log('Response from server:', jounrals);
+
+        // call the function to display a journal
+        displayJournals(jounrals);
+
+    })
+    .catch(error => console.error('Error:', error));
+   }
+
+
+function displayJournals(jounrals)
+   {
+        
+
+// Reference the container where workouts will be displayed
+const workoutsContainer = document.getElementById('journals-container');
+
+// Iterate over the workouts data and create HTML elements for each workout
+jounrals.forEach(jounral => {
+    // Create a div element to represent the workout
+    const workoutDiv = document.createElement('div');
+    workoutDiv.classList.add('workout');
+
+    // Create HTML content for the workout
+    const workoutHTML = `
+        <h4>${jounral.question}</h4>
+        <p><strong>Answer:</strong> ${jounral.answer}</p>
+        <button class="delete-btn" data-workout-id="${jounral.id}" >Delete</button>
+    `;
+
+    // Set the HTML content of the workout div
+    workoutDiv.innerHTML = workoutHTML;
+
+    // Append the workout div to the container
+    workoutsContainer.appendChild(workoutDiv);
+
+    const deleteBtn = workoutDiv.querySelector('.delete-btn');
+        deleteBtn.addEventListener('click', () => {
+            event.preventDefault();
+
+            const journalId = deleteBtn.getAttribute('data-workout-id');
+
+            // Call a function to handle deletion of a journal
+            deleteJournal(journalId);
+        });
+
+});
+   }
+
+
+function deleteJournal(journalId)
+   {
+
+
+
+    // Make a fetch request to delete the workout
+    fetch('https://weebworkout.com:3000/deleteJournalById', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            // Include the workoutId in the request headers
+        },
+
+        body: JSON.stringify({ journalId: journalId }),
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Failed to delete journal');
+        }
+        console.log("Journal deleted successfully");
+
+    })
+    .catch(error => console.error('Error:', error));
+
+    // Log the workout id to test
+    console.log("Journal will be deleted:", journalId);
+
+
+    const deleteBtn = document.querySelector(`[data-workout-id="${journalId}"]`);
+    const workoutContainer = deleteBtn.closest('.workout');
+
+    // Check if the workout div exists
+    if (workoutContainer) {
+        // Remove the workout div from the DOM
+        workoutContainer.remove();
+    } else {
+        console.warn(`Workout container with ID ${journalId} not found.`);
+    }
 
    }
