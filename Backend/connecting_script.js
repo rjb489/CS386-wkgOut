@@ -65,7 +65,7 @@ app.use(session({
   resave: false,
   saveUninitialized: true,
   store: sessionStore,
-  cookie: { maxAge: 600000 } // 10 minutes in milliseconds
+  cookie: { maxAge: 3600000 } // 1 hour in milliseconds
 }));
 
 // need to use middleware to extract session id from reqest
