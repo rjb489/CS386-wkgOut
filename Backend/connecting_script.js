@@ -186,7 +186,7 @@ app.get('/getJournals', (req, res) => {
     const sessionId = req.query.sessionId;
 
     // uncomment for error checking
-    console.log('Received data from client:', sessionId);
+    //console.log('Received data from client:', sessionId);
 
     getJournals(sessionId, (journals, error) => {
 
@@ -198,7 +198,7 @@ app.get('/getJournals', (req, res) => {
            }
         
         // uncomment for error checking
-        console.log('Journals fetched successfully:', journals);
+        //console.log('Journals fetched successfully:', journals);
         res.status(200).json({ success: true, journals: journals });
         
 
@@ -274,6 +274,26 @@ app.post('/deleteExerciseById', (req, res) => {
 
     // call deleteExercise
     deleteExercise(workoutId);
+
+
+});
+
+/*
+
+POST: /deleteJournalById
+Description: will delete journal according to the journal id
+
+*/
+app.post('/deleteJournalById', (req, res) => {  
+
+    // get the id
+    const { journalId } = req.body;
+
+    // uncomment for testing
+    console.log("here is the journalId", journalId);
+
+    // call deleteExercise
+    deleteJournal(journalId);
 
 
 });
@@ -688,14 +708,35 @@ mysql
 
 */
 
-function deleteExercise(exerciseId)
+function deleteExercise(journalId)
    {
     
-    pool.query('delete from exercise where id = ?', [exerciseId], (error, results) => {
+    pool.query('delete from journal where id = ?', [journalId], (error, results) => {
         if (error) {
             console.error('Error executing query:', error);
         } 
 
     });
    }
+
+
+/*
+
+Function: deleteJournal
+Description: will take in an journal id and will delete it in
+mysql
+
+*/
+
+function deleteJournal(journalId)
+   {
+    
+    pool.query('delete from journal where id = ?', [journalId], (error, results) => {
+        if (error) {
+            console.error('Error executing query:', error);
+        } 
+
+    });
+   }
+
 
