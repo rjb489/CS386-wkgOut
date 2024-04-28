@@ -1,3 +1,4 @@
+const sessionId = localStorage.getItem('sessionId');
 
 /*
 
