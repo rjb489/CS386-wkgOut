@@ -1,3 +1,6 @@
+
+/*
+
 // Retrieve the session ID from localStorage
 const sessionId = localStorage.getItem('sessionId');
 
@@ -22,7 +25,7 @@ fetch('https://weebworkout.com:3000/data',{
 })
 .catch(error => console.error('Error:', error));
 
-
+*/
 
 // Function to add a new exercise to the "Workouts You Have Created" section
 function addExerciseToWorkoutsList(exercise) {
@@ -80,7 +83,7 @@ document.getElementById("createOwnWorkoutForm").addEventListener("submit", funct
     sendExercise(sessionId,exercise);
 
     // Add the exercise to the "Workouts You Have Created" section
-    addExerciseToWorkoutsList(exercise);
+    //addExerciseToWorkoutsList(exercise);
 
     // Clear the form inputs
     document.getElementById("exerciseName").value = "";

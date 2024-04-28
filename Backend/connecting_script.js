@@ -118,6 +118,40 @@ app.post('/setExersise', (req, res) => {
 });
 
 
+/*
+
+GET: /workouts
+DESCRIPTION: used to fetch user specific workouts
+
+*/
+app.get('/workouts', (req, res) => {
+
+    // I also need to figure out a call to get the day of the week
+
+    const sessionId = req.query.sessionId;
+    const dayOfWeek = req.query.dayOfWeek;
+
+    console.log('Received data from client:', sessionId);
+    
+    // call getWorkouts this will get workouts
+    getWorkouts(sessionId,dayOfWeek, (workouts, error) => {
+
+        if(error)
+           {
+            console.error('Error fetching workouts:', error);
+            res.status(500).json({ success: false, message: 'Error fetching workouts' });
+            return;
+           }
+        
+        
+        console.log('Workouts fetched successfully:', workouts);
+        res.status(200).json({ success: true, workouts: workouts });
+        
+
+    });
+
+});
+
 
 
 /*
@@ -415,4 +449,61 @@ function getUserNameFromID(sessionID, callback)
         }
     }
 });
+   }
+
+
+/*
+  
+Function: getWorkouts(sessionID)
+DESCRIPTION: will get a username fro sessionID
+  
+*/
+
+function getWorkouts(sessionID, dayOfWeek, callback)
+   {
+    const query = `
+            SELECT name, reps, sets, weekday
+            FROM exercise
+            WHERE user_id = ? AND weekday = ?`;
+
+    // we need to get the user name from the session id
+    getUserNameFromID(sessionID, (username, error) => {
+
+        if(error)
+           {
+            console.error('Error getting username:', error); 
+            return ;
+           }
+        if(!username)
+           {
+            console.error('Username not found for the sessionID');
+            return;
+           }
+ 
+        console.log('USername found:', username);
+
+        // now we can complete a query to get all the exersies related to a
+        // specific day
+        pool.query(query,[username, dayOfWeek], (error, results) => {
+      
+            if(error)
+               {
+                console.error('Error executing query:',error);
+                callback(null,error);
+                return;
+               }
+            
+            if(results.length > 0)
+               {
+                callback(results, null);
+               }
+            else
+               {
+                callback([], null);
+               }
+
+        });
+ 
+ 
+     }); 
    }
