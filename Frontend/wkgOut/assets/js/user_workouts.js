@@ -1,54 +1,74 @@
 // Retrieve the session ID from localStorage
 const sessionId = localStorage.getItem('sessionId');
-const dayOfWeek = 'Monday';
+const daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
-// save workout data
-let workoutData;
 
-// set the headers
-const headers = {
-    'Content-Type': 'application/json',
-};
+for(let index = 0; index < daysOfWeek.length; index++)
+   {
+    // call the getWorkouts for each day of the week
+    getWorkouts(sessionId,daysOfWeek[index]);
+   }
 
-const url = new URL('https://weebworkout.com:3000/workouts');
-url.searchParams.append('sessionId', sessionId);
-url.searchParams.append('dayOfWeek', dayOfWeek);
+/*
+Function: getWorkouts
+Definition: will get a list of workout and display in depending
+on the sessionId and the day of the week entered
+*/
 
-// get the user
-fetch(url,{
-    method: 'GET',
-    headers: headers,
-})
-.then(response => {
-    if (!response.ok) {
-        throw new Error('Network response was not ok');
-    }
-    return response.json();
-})
-.then(data => {
-    //save the workouts to a variable
-    workoutData = data.workouts;
+function getWorkouts(sessionId,dayOfWeek)
+   {
+    // save workout data
+    let workoutData;
 
-    console.log('Response from server:', workoutData);
+    // set the headers
+    const headers = {
+        'Content-Type': 'application/json',
+    };
 
-    // call the function to create a workotu
-    displayWorkouts(workoutData);
+    const url = new URL('https://weebworkout.com:3000/workouts');
+    url.searchParams.append('sessionId', sessionId);
+    url.searchParams.append('dayOfWeek', dayOfWeek);
 
-    // Check if the request was successful and handle the response data
-})
-.catch(error => console.error('Error:', error));
+    // get the user
+    fetch(url,{
+        method: 'GET',
+        headers: headers,
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        //save the workouts to a variable
+        workoutData = data.workouts;
+
+        console.log('Response from server:', workoutData);
+
+        // call the function to create a workotu
+        displayWorkouts(workoutData,dayOfWeek);
+
+        // Check if the request was successful and handle the response data
+    })
+    .catch(error => console.error('Error:', error));
+
+   }
+
+
 
 
 
 // here is where we will add the data to the page
 
-function displayWorkouts(workoutData)
+function displayWorkouts(workoutData,dayOfWeek)
    {
 
-    // Assuming workoutsData contains the array of workouts fetched from the server
+    // append the dayOfWeek to end of workouts-container
+    const containerWithDay = 'workouts-container-' + dayOfWeek;
 
 // Reference the container where workouts will be displayed
-const workoutsContainer = document.getElementById('workouts-container');
+const workoutsContainer = document.getElementById(containerWithDay);
 
 // Iterate over the workouts data and create HTML elements for each workout
 workoutData.forEach(workout => {
@@ -61,7 +81,7 @@ workoutData.forEach(workout => {
         <h2>${workout.name}</h2>
         <p><strong>Reps:</strong> ${workout.reps}</p>
         <p><strong>Sets:</strong> ${workout.sets}</p>
-        <p><strong>Rest Time:</strong> ${workout.restTime}</p>
+        <p><strong>Rest Time:</strong> ${workout.weekday}</p>
     `;
 
     // Set the HTML content of the workout div
