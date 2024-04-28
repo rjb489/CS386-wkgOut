@@ -174,6 +174,37 @@ app.get('/workouts', (req, res) => {
 });
 
 
+/*
+
+GET: /getJournals
+DESCRIPTION: used to fetch user specific workouts
+
+*/
+app.get('/getJournals', (req, res) => {
+
+    // get the session id
+    const sessionId = req.query.sessionId;
+
+    // uncomment for error checking
+    console.log('Received data from client:', sessionId);
+
+    getJournals(sessionId, (journals, error) => {
+
+        if(error)
+           {
+            console.error('Error fetching journals:', error);
+            res.status(500).json({ success: false, message: 'Error fetching workouts' });
+            return;
+           }
+        
+        // uncomment for error checking
+        console.log('Journals fetched successfully:', journals);
+        res.status(200).json({ success: true, journals: journals });
+        
+
+    });
+});
+
 
 /*
 
@@ -533,7 +564,7 @@ function getUserNameFromID(sessionID, callback)
 /*
   
 Function: getWorkouts(sessionID)
-DESCRIPTION: will get a username fro sessionID
+DESCRIPTION: will get workouts from sessionID
   
 */
 
@@ -566,6 +597,65 @@ function getWorkouts(sessionID, dayOfWeek, callback)
         // now we can complete a query to get all the exersies related to a
         // specific day
         pool.query(query,[username, dayOfWeek], (error, results) => {
+      
+            if(error)
+               {
+                console.error('Error executing query:',error);
+                callback(null,error);
+                return;
+               }
+            
+            if(results.length > 0)
+               {
+                callback(results, null);
+               }
+            else
+               {
+                callback([], null);
+               }
+
+        });
+ 
+ 
+     }); 
+   }
+
+/*
+  
+Function: getJournals(sessionID)
+DESCRIPTION: will get journals from a userID
+  
+*/
+
+function getJournals(sessionID, callback)
+   {
+    const query = `
+            SELECT id, question, answer
+            FROM journal
+            WHERE user_id = ?`;
+
+    // we need to get the user name from the session id
+    getUserNameFromID(sessionID, (username, error) => {
+
+        if(error)
+           {
+            console.error('Error getting username:', error); 
+            return ;
+           }
+        if(!username)
+           {
+            console.error('Username not found for the sessionID');
+            return;
+           }
+
+
+
+        // uncomment for error checking 
+        //console.log('USername found:', username);
+
+        // now we can complete a query to get all the exersies related to a
+        // specific day
+        pool.query(query,[username], (error, results) => {
       
             if(error)
                {
