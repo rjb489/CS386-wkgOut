@@ -10,3 +10,11 @@
     margin: 10px;
     width: 300px;
 }
+
+#UserWorkouts {
+    align-items: center;
+}
+
+#UserWorkoutHeader {
+    text-align: center;
+}
