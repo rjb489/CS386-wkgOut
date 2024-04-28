@@ -1,4 +1,4 @@
-const sessionId = 'Tt8hVero9ig9T2y-zYfmkbmlt8dn40Fq';
+const sessionId = localStorage.getItem('sessionId');
 
 getJournals(sessionId);
 
