@@ -1,12 +1,13 @@
 // Retrieve the session ID from localStorage
 //const sessionId = localStorage.getItem('sessionId');
+const sessionIds = '99Lt6wATS5GmYKz06jrWJOh81udfKNs2';
 const daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
 
 for(let index = 0; index < daysOfWeek.length; index++)
    {
     // call the getWorkouts for each day of the week
-    getWorkouts(sessionId,daysOfWeek[index]);
+    getWorkouts(sessionIds,daysOfWeek[index]);
    }
 
 /*
@@ -82,6 +83,7 @@ workoutData.forEach(workout => {
         <p><strong>Reps:</strong> ${workout.reps}</p>
         <p><strong>Sets:</strong> ${workout.sets}</p>
         <p><strong>Rest Time:</strong> ${workout.weekday}</p>
+        <button class="delete-btn" data-workout-id="${workout.id}" >Delete</button>
     `;
 
     // Set the HTML content of the workout div
@@ -89,6 +91,56 @@ workoutData.forEach(workout => {
 
     // Append the workout div to the container
     workoutsContainer.appendChild(workoutDiv);
+
+    const deleteBtn = workoutDiv.querySelector('.delete-btn');
+        deleteBtn.addEventListener('click', () => {
+            event.preventDefault();
+
+            const workoutId = deleteBtn.getAttribute('data-workout-id');
+            // Call a function to handle deletion of the workout
+            deleteWorkout(workoutId);
+        });
+
 });
    }
 
+
+function deleteWorkout(workoutId) 
+   {
+
+
+    // Make a fetch request to delete the workout
+    fetch('https://weebworkout.com:3000/deleteExerciseById', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            // Include the workoutId in the request headers
+        },
+
+        body: JSON.stringify({ workoutId: workoutId }),
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Failed to delete workout');
+        }
+        console.log("Workout deleted successfully");
+
+    })
+    .catch(error => console.error('Error:', error));
+
+    // Log the workout id to test
+    console.log("Workout will be deleted:", workoutId);
+
+
+    const deleteBtn = document.querySelector(`[data-workout-id="${workoutId}"]`);
+    const workoutContainer = deleteBtn.closest('.workout');
+
+    // Check if the workout div exists
+    if (workoutContainer) {
+        // Remove the workout div from the DOM
+        workoutContainer.remove();
+    } else {
+        console.warn(`Workout container with ID ${workoutId} not found.`);
+    }
+    
+   } 

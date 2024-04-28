@@ -180,7 +180,7 @@ app.post('/createAccount', (req,res) => {
   
     // Send back a response to the client
     //res.json({ message: 'Data received successfully' });
-  });
+    });
   
   /*
   
@@ -208,7 +208,26 @@ app.post('/createAccount', (req,res) => {
           }
       });
    });
-  
+
+/*
+
+POST: /deleteExerciseById
+Description: will delete and exercise according to the workout id
+
+*/
+app.post('/deleteExerciseById', (req, res) => {  
+
+    // get the id
+    const { workoutId } = req.body;
+
+    // uncomment for testing
+    //console.log("here is the workoutId", workoutId);
+
+    // call deleteExercise
+    deleteExercise(workoutId);
+
+
+});
 
   
   
@@ -463,7 +482,7 @@ DESCRIPTION: will get a username fro sessionID
 function getWorkouts(sessionID, dayOfWeek, callback)
    {
     const query = `
-            SELECT name, reps, sets, weekday
+            SELECT name, reps, sets, weekday, id
             FROM exercise
             WHERE user_id = ? AND weekday = ?`;
 
@@ -510,4 +529,24 @@ function getWorkouts(sessionID, dayOfWeek, callback)
  
  
      }); 
+   }
+
+
+/*
+
+Function: deleteExercise
+Description: will take in an exercise id and will delete it in
+mysql
+
+*/
+
+function deleteExercise(exerciseId)
+   {
+    
+    pool.query('delete from exercise where id = ?', [exerciseId], (error, results) => {
+        if (error) {
+            console.error('Error executing query:', error);
+        } 
+
+    });
    }
