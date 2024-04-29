@@ -6,53 +6,54 @@ Introducing wkgOut, your ultimate gym companion designed to enhance your workout
 
 ###
 
-- Requirement: Profile page
+- Requirement: As a website user I would like to be able to looks at my profile.
 - Issue: [184](https://github.com/rjb489/CS386-wkgOut/issues/184)
 - Pull Request: [172](https://github.com/rjb489/CS386-wkgOut/pull/172)
 - Implemented by: Laura Guerrero
 - Approved by: Riley Burke
-![profile](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/profile-page.JPG)
+- ![profile](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/profile-page.JPG)
+
 
 
 ###
 
-- Requirement: Redesign login page
+- Requirement: As a website user I would like to be able to have an accessible login page.
 - Issue: [183](https://github.com/rjb489/CS386-wkgOut/issues/183)
 - Pull Request: [164](https://github.com/rjb489/CS386-wkgOut/pull/164)
 - Implemented by: Laura Guerrero
 - Approved by: Riley Burke
-![login](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/login-page.JPG)
+- ![login](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/login-page.JPG)
 
 ###
 
-- Requirement: Redesign journal page
+- Requirement: As a website user I would like to be able to have an easy to use journal page.
 - Issue: [182](https://github.com/rjb489/CS386-wkgOut/issues/182)
 - Pull Request: [164](https://github.com/rjb489/CS386-wkgOut/pull/164)
 - Implemented by: Laura Guerrero
 - Approved by: Riley Burke
-![journal page](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/journal_page.JPG)
+- ![journal page](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/journal_page.JPG)
 
 ###
 
-- Requirement: Redesign workout page
+- Requirement: As a website user I would like to be able to have an intuitive workout planner.
 - Issue: [181](https://github.com/rjb489/CS386-wkgOut/issues/181)
 - Pull Request: [164](https://github.com/rjb489/CS386-wkgOut/pull/164)
 - Implemented by: Laura Guerrero
 - Approved by: Riley Burke
-![workout page](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/workout-page.JPG)
+- ![workout page](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/workout-page.JPG)
 
 ###
 
-- Requirement: Redesign home page
+- Requirement: As a website user I like websites that are pretty and easy to navigate. 
 - Issue: [179](https://github.com/rjb489/CS386-wkgOut/issues/179)
 - Pull Request: [164](https://github.com/rjb489/CS386-wkgOut/pull/164)
 - Implemented by: Laura Guerrero
 - Approved by: Riley Burke
-![home page](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/home-page.JPG)
+- ![home page](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/home-page.JPG)
 
 ###
 
-- Requirement: Create experience system
+- Requirement: As a fan of games I would like to have a leveling system for my workouts to mimic those games.
 - Issue: [44](https://github.com/rjb489/CS386-wkgOut/issues/44)
 - Pull Request: [164](https://github.com/rjb489/CS386-wkgOut/pull/164)
 - Implemented by: Laura Guerrero
@@ -60,27 +61,28 @@ Introducing wkgOut, your ultimate gym companion designed to enhance your workout
 
 ###
 
-- Requirement: Create accounts 
+- Requirement: As a user I want to be Create accounts to save my
+data on a website.
 - Issue: [193](https://github.com/rjb489/CS386-wkgOut/issues/193)
 - Pull Request: [177](https://github.com/rjb489/CS386-wkgOut/pull/177)
 - Implemented by: Charles Diaz
 - Approved by: Riley Burke
-![account created](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/account-created.JPG)
+- ![account created](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/account-created.JPG)
 
 ###
 
-- Requirement: Create working session
+- Requirement: As a user I want to save my data on a website.
 - Issue: [223](https://github.com/rjb489/CS386-wkgOut/issues/223)
 - Pull Request: [200](https://github.com/rjb489/CS386-wkgOut/pull/200)
 - Implemented by: Charles Diaz
 - Approved by: Xavier Graham
-![picture of sessions](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/sessions.JPG)
+- ![picture of sessions](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/sessions.JPG)
 
 
 
 ###
 
-- Requirement: Add exercises to the database
+- Requirement: As a gymgoer, I want to be able to add exercises to my schedule.
 - Issue: [206](https://github.com/rjb489/CS386-wkgOut/issues/206)
 - Pull Request: [205](https://github.com/rjb489/CS386-wkgOut/pull/205)
 - Implemented by: Charles Diaz
@@ -89,16 +91,16 @@ Introducing wkgOut, your ultimate gym companion designed to enhance your workout
 
 ###
 
-- Requirement: Sending exercises from database to website
+- Requirement: As a gymgoer I want to be able to get exercises that are saved.
 - Issue: [207](https://github.com/rjb489/CS386-wkgOut/issues/207)
 - Pull Request: [209](https://github.com/rjb489/CS386-wkgOut/pull/209)
 - Implemented by: Charles Diaz
 - Approved by: Xavier Graham
-![picture of console](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/exercises-from-server.JPG)
+- ![picture of console](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/exercises-from-server.JPG)
 
 ###
 
-- Requirement: Create Sign Up Page
+- Requirement: As a website user I want to be able to sign up for a website.
 - Issue: 118
 - Pull Request: [118](https://github.com/rjb489/CS386-wkgOut/pull/118)
 - Implemented by: Xavier Graham
