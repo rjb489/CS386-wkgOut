@@ -60,6 +60,43 @@ EXAMPLE FORMAT
 - Implemented by: Laura Guerrero
 - Approved by: Riley Burke
 
+###
+
+- Requirement: Create accounts 
+- Issue: [193](https://github.com/rjb489/CS386-wkgOut/issues/193)
+- Pull Request: [177](https://github.com/rjb489/CS386-wkgOut/pull/177)
+- Implemented by: Charles Diaz
+- Approved by: Riley Burke
+
+###
+
+- Requirement: Create working session
+- Issue: [223](https://github.com/rjb489/CS386-wkgOut/issues/223)
+- Pull Request: [200](https://github.com/rjb489/CS386-wkgOut/pull/200)
+- Implemented by: Charles Diaz
+- Approved by: Riley Burke
+- picture of sessions
+
+
+###
+
+- Requirement: Add exercises to the database
+- Issue: [206](https://github.com/rjb489/CS386-wkgOut/issues/206)
+- Pull Request: [205](https://github.com/rjb489/CS386-wkgOut/pull/205)
+- Implemented by: Charles Diaz
+- Approved by: Riley Burke
+
+
+###
+
+- Requirement: Sending exercises from database to website
+- Issue: [207](https://github.com/rjb489/CS386-wkgOut/issues/207)
+- Pull Request: [209](https://github.com/rjb489/CS386-wkgOut/pull/209)
+- Implemented by: Charles Diaz
+- Approved by: Riley Burke
+- picture of console
+
+
 
 # Tests
 
