@@ -97,7 +97,13 @@ EXAMPLE FORMAT
 - Approved by: Riley Burke
 - ![picture of console](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/exercises-from-server.JPG)
 
+###
 
+- Requirement: Create Sign Up Page
+- Issue: 118
+- Pull Request: [118](https://github.com/rjb489/CS386-wkgOut/pull/118)
+- Implemented by: Xavier Graham
+- Approved by: Riley Burke
 
 # Tests
 
