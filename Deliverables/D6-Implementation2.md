@@ -87,7 +87,7 @@ Introducing wkgOut, your ultimate gym companion designed to enhance your workout
 - Pull Request: [209](https://github.com/rjb489/CS386-wkgOut/pull/209)
 - Implemented by: Charles Diaz
 - Approved by: Xavier Graham
-- ![picture of console](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/exercises-from-server.JPG)
+![picture of console](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/exercises-from-server.JPG)
 
 ###
 
