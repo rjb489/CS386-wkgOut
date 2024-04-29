@@ -11,6 +11,8 @@ Introducing wkgOut, your ultimate gym companion designed to enhance your workout
 - Pull Request: [172](https://github.com/rjb489/CS386-wkgOut/pull/172)
 - Implemented by: Laura Guerrero
 - Approved by: Riley Burke
+![profile](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/profile-page.JPG)
+
 
 ###
 
@@ -19,6 +21,7 @@ Introducing wkgOut, your ultimate gym companion designed to enhance your workout
 - Pull Request: [164](https://github.com/rjb489/CS386-wkgOut/pull/164)
 - Implemented by: Laura Guerrero
 - Approved by: Riley Burke
+![login](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/login-page.JPG)
 
 ###
 
@@ -27,6 +30,7 @@ Introducing wkgOut, your ultimate gym companion designed to enhance your workout
 - Pull Request: [164](https://github.com/rjb489/CS386-wkgOut/pull/164)
 - Implemented by: Laura Guerrero
 - Approved by: Riley Burke
+![journal page](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/journal_page.JPG)
 
 ###
 
@@ -35,6 +39,7 @@ Introducing wkgOut, your ultimate gym companion designed to enhance your workout
 - Pull Request: [164](https://github.com/rjb489/CS386-wkgOut/pull/164)
 - Implemented by: Laura Guerrero
 - Approved by: Riley Burke
+![workout page](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/workout-page.JPG)
 
 ###
 
@@ -43,6 +48,7 @@ Introducing wkgOut, your ultimate gym companion designed to enhance your workout
 - Pull Request: [164](https://github.com/rjb489/CS386-wkgOut/pull/164)
 - Implemented by: Laura Guerrero
 - Approved by: Riley Burke
+![home page](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/home-page.JPG)
 
 ###
 
@@ -59,6 +65,7 @@ Introducing wkgOut, your ultimate gym companion designed to enhance your workout
 - Pull Request: [177](https://github.com/rjb489/CS386-wkgOut/pull/177)
 - Implemented by: Charles Diaz
 - Approved by: Riley Burke
+![account created](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/account-created.JPG)
 
 ###
 
@@ -67,7 +74,7 @@ Introducing wkgOut, your ultimate gym companion designed to enhance your workout
 - Pull Request: [200](https://github.com/rjb489/CS386-wkgOut/pull/200)
 - Implemented by: Charles Diaz
 - Approved by: Xavier Graham
-- ![picture of sessions](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/sessions.JPG)
+![picture of sessions](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/sessions.JPG)
 
 
 
@@ -96,8 +103,6 @@ Introducing wkgOut, your ultimate gym companion designed to enhance your workout
 - Pull Request: [118](https://github.com/rjb489/CS386-wkgOut/pull/118)
 - Implemented by: Xavier Graham
 - Approved by: Riley Burke
-
-# Tests
 
 # Demo
 
