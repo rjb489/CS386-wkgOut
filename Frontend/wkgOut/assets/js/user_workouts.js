@@ -82,7 +82,6 @@ workoutData.forEach(workout => {
         <h2>${workout.name}</h2>
         <p><strong>Reps:</strong> ${workout.reps}</p>
         <p><strong>Sets:</strong> ${workout.sets}</p>
-        <p><strong>Rest Time:</strong> ${workout.weekday}</p>
         <button class="delete-btn" data-workout-id="${workout.id}" >Delete</button>
     `;
 
