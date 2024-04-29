@@ -75,7 +75,8 @@ EXAMPLE FORMAT
 - Pull Request: [200](https://github.com/rjb489/CS386-wkgOut/pull/200)
 - Implemented by: Charles Diaz
 - Approved by: Riley Burke
-- picture of sessions
+- ![picture of sessions](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/sessions.JPG)
+
 
 
 ###
@@ -94,7 +95,7 @@ EXAMPLE FORMAT
 - Pull Request: [209](https://github.com/rjb489/CS386-wkgOut/pull/209)
 - Implemented by: Charles Diaz
 - Approved by: Riley Burke
-- picture of console
+- ![picture of console](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/exercises-from-server.JPG)
 
 
 
