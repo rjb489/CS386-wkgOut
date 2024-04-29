@@ -4,59 +4,51 @@ Introducing wkgOut, your ultimate gym companion designed to enhance your workout
 
 # Implemented Requirements
 
-EXAMPLE FORMAT
-- Requirement:
-- Issue:
-- Pull Request:
-- Implemented by:
-- Approved by:
-- Print Screen (If Applicable)
-
 ###
 
 - Requirement: Profile page
-- Issue: 184
-- Pull Request: 172
+- Issue: [184](https://github.com/rjb489/CS386-wkgOut/issues/184)
+- Pull Request: [172](https://github.com/rjb489/CS386-wkgOut/pull/172)
 - Implemented by: Laura Guerrero
 - Approved by: Riley Burke
 
 ###
 
 - Requirement: Redesign login page
-- Issue: 183
-- Pull Request: 164
+- Issue: [183](https://github.com/rjb489/CS386-wkgOut/issues/183)
+- Pull Request: [164](https://github.com/rjb489/CS386-wkgOut/pull/164)
 - Implemented by: Laura Guerrero
 - Approved by: Riley Burke
 
 ###
 
 - Requirement: Redesign journal page
-- Issue: 182
-- Pull Request: 164
+- Issue: [182](https://github.com/rjb489/CS386-wkgOut/issues/182)
+- Pull Request: [164](https://github.com/rjb489/CS386-wkgOut/pull/164)
 - Implemented by: Laura Guerrero
 - Approved by: Riley Burke
 
 ###
 
 - Requirement: Redesign workout page
-- Issue: 181
-- Pull Request: 164
+- Issue: [181](https://github.com/rjb489/CS386-wkgOut/issues/181)
+- Pull Request: [164](https://github.com/rjb489/CS386-wkgOut/pull/164)
 - Implemented by: Laura Guerrero
 - Approved by: Riley Burke
 
 ###
 
 - Requirement: Redesign home page
-- Issue: 179
-- Pull Request: 164
+- Issue: [179](https://github.com/rjb489/CS386-wkgOut/issues/179)
+- Pull Request: [164](https://github.com/rjb489/CS386-wkgOut/pull/164)
 - Implemented by: Laura Guerrero
 - Approved by: Riley Burke
 
 ###
 
 - Requirement: Create experience system
-- Issue: 44
-- Pull Request: 164
+- Issue: [44](https://github.com/rjb489/CS386-wkgOut/issues/44)
+- Pull Request: [164](https://github.com/rjb489/CS386-wkgOut/pull/164)
 - Implemented by: Laura Guerrero
 - Approved by: Riley Burke
 
@@ -74,7 +66,7 @@ EXAMPLE FORMAT
 - Issue: [223](https://github.com/rjb489/CS386-wkgOut/issues/223)
 - Pull Request: [200](https://github.com/rjb489/CS386-wkgOut/pull/200)
 - Implemented by: Charles Diaz
-- Approved by: Riley Burke
+- Approved by: Xavier Graham
 - ![picture of sessions](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/sessions.JPG)
 
 
@@ -94,7 +86,7 @@ EXAMPLE FORMAT
 - Issue: [207](https://github.com/rjb489/CS386-wkgOut/issues/207)
 - Pull Request: [209](https://github.com/rjb489/CS386-wkgOut/pull/209)
 - Implemented by: Charles Diaz
-- Approved by: Riley Burke
+- Approved by: Xavier Graham
 - ![picture of console](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/exercises-from-server.JPG)
 
 ###
@@ -108,6 +100,8 @@ EXAMPLE FORMAT
 # Tests
 
 # Demo
+
+[DEMO](https://www.youtube.com/watch?v=XfM54gTjzu8)
 
 # Code Quality
 One of the first decisions that we made as a group was on was code style guidelines that we all agreed made code easier to read in order to make it easier for anyone to work on. The guidelines that we decided on were inspired heavily by Dr. Michael Leverington's G.U.R.; we all took his class the previous semester, and it was something that we all knew and agreed would make reading easy. Not only was this something that was still fresh in our minds, so we did not need to waste any time learning a new way to code, but we had spent that past semester being graded on our code's ability to follow the G.U.R., so we knew it was something that we could do. This has led us to have clean, readable, and, most importantly, efficient code in our project.
