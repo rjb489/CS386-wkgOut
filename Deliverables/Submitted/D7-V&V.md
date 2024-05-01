@@ -5,6 +5,8 @@ A web app that is designed to help people who enjoy working out. wkgOut is a jou
 
 ## Unit Test
 
+![Unit test](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/D7_UnitTest_Output.png)
+
 ## Acceptance Test
 
 # Validation
