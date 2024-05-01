@@ -43,3 +43,5 @@ class Exercise
        this.reps = reps;
       }
    }
+
+   module.exports = Exercise;

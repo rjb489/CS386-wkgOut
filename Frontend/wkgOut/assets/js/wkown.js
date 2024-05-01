@@ -1,3 +1,7 @@
+const sessionId = localStorage.getItem('sessionId');
+
+/*
+
 // Retrieve the session ID from localStorage
 const sessionId = localStorage.getItem('sessionId');
 
@@ -22,7 +26,7 @@ fetch('https://weebworkout.com:3000/data',{
 })
 .catch(error => console.error('Error:', error));
 
-
+*/
 
 // Function to add a new exercise to the "Workouts You Have Created" section
 function addExerciseToWorkoutsList(exercise) {
@@ -64,6 +68,9 @@ document.getElementById("createOwnWorkoutForm").addEventListener("submit", funct
     var sets = document.getElementById("sets").value;
     var weekday = document.getElementById("weekday").value; // Get the weekday input
 
+    //TODO: create a checker to see if the weekday is actully a day of the week
+    // also make sure that the first letter is capitlised
+
     // Create an object to represent the exercise
     var exercise = {
         name: exerciseName,
@@ -72,8 +79,12 @@ document.getElementById("createOwnWorkoutForm").addEventListener("submit", funct
         weekday: weekday // Add the weekday property to the exercise object
     };
 
+    //TODO: we need to add a call to the nodejs server to send this exersise
+    // put this in a function
+    sendExercise(sessionId,exercise);
+
     // Add the exercise to the "Workouts You Have Created" section
-    addExerciseToWorkoutsList(exercise);
+    //addExerciseToWorkoutsList(exercise);
 
     // Clear the form inputs
     document.getElementById("exerciseName").value = "";
@@ -81,3 +92,37 @@ document.getElementById("createOwnWorkoutForm").addEventListener("submit", funct
     document.getElementById("sets").value = "";
     document.getElementById("weekday").value = ""; // Clear the weekday input
 });
+
+
+/*
+function: sendExercise
+Description: will send an exersise module to the nodejs server
+this will then add it to exersise table corilating with the 
+user based off of sessionID.
+*/
+
+function sendExercise(sessionId,exercise)
+   {
+    // make a post request to send the exersise data
+    exercise.sessionID = sessionId;
+
+    fetch('https://weebworkout.com:3000/setExersise', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(exercise)
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log('Exercise data sent successfully:', data);
+    })
+    .catch(error => {
+        console.error('Error sending exercise data:', error);
+    });
+   }

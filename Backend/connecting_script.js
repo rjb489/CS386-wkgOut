@@ -65,7 +65,7 @@ app.use(session({
   resave: false,
   saveUninitialized: true,
   store: sessionStore,
-  cookie: { maxAge: 600000 } // 10 minutes in milliseconds
+  cookie: { maxAge: 21600000 } // 6 hours in milliseconds
 }));
 
 // need to use middleware to extract session id from reqest
@@ -101,6 +101,112 @@ app.get('/data', (req, res) => {
 
 
 /*
+POST: /setExersise
+DESCRIPTION: used to fetch user specific data
+*/
+app.post('/setExersise', (req, res) => {
+
+    // extract the information from exersies
+    const { name, reps, sets, weekday, sessionID } = req.body;
+
+    // uncomment for error checking
+    //console.log('Exercise data:', { name, reps, sets, weekday });
+    //console.log('Session ID:', sessionID);
+
+    setExersise({ name, reps, sets, weekday }, sessionID);
+
+    res.json({ message: 'Exercise data received successfully' });
+});
+
+
+/*
+POST: /setJournal
+DESCRIPTION: used to fetch user specific data
+*/
+app.post('/setJournal', (req, res) => {
+
+    // extract the information from exersies
+    const { sessionID, question, answer } = req.body;
+
+    // uncomment for error checking
+    console.log('Information:', { sessionID, question, answer });
+
+    setJournal(sessionID, question, answer);
+
+    res.json({ message: 'Journal data received successfully' });
+});
+
+
+/*
+
+GET: /workouts
+DESCRIPTION: used to fetch user specific workouts
+
+*/
+app.get('/workouts', (req, res) => {
+
+    // I also need to figure out a call to get the day of the week
+
+    const sessionId = req.query.sessionId;
+    const dayOfWeek = req.query.dayOfWeek;
+
+
+    // uncomment for error checking
+    //console.log('Received data from client:', sessionId);
+    
+    // call getWorkouts this will get workouts
+    getWorkouts(sessionId,dayOfWeek, (workouts, error) => {
+
+        if(error)
+           {
+            console.error('Error fetching workouts:', error);
+            res.status(500).json({ success: false, message: 'Error fetching workouts' });
+            return;
+           }
+        
+        // uncomment for error checking
+        //console.log('Workouts fetched successfully:', workouts);
+        res.status(200).json({ success: true, workouts: workouts });
+        
+
+    });
+
+});
+
+
+/*
+
+GET: /getJournals
+DESCRIPTION: used to fetch user specific workouts
+
+*/
+app.get('/getJournals', (req, res) => {
+
+    // get the session id
+    const sessionId = req.query.sessionId;
+
+    // uncomment for error checking
+    //console.log('Received data from client:', sessionId);
+
+    getJournals(sessionId, (journals, error) => {
+
+        if(error)
+           {
+            console.error('Error fetching journals:', error);
+            res.status(500).json({ success: false, message: 'Error fetching workouts' });
+            return;
+           }
+        
+        // uncomment for error checking
+        //console.log('Journals fetched successfully:', journals);
+        res.status(200).json({ success: true, journals: journals });
+        
+
+    });
+});
+
+
+/*
 
 POST: /createAccount
 DESCRIPTION: will recive info at /createAccount for username and password
@@ -123,7 +229,7 @@ app.post('/createAccount', (req,res) => {
   
     // Send back a response to the client
     //res.json({ message: 'Data received successfully' });
-  });
+    });
   
   /*
   
@@ -151,7 +257,46 @@ app.post('/createAccount', (req,res) => {
           }
       });
    });
-  
+
+/*
+
+POST: /deleteExerciseById
+Description: will delete and exercise according to the workout id
+
+*/
+app.post('/deleteExerciseById', (req, res) => {  
+
+    // get the id
+    const { workoutId } = req.body;
+
+    // uncomment for testing
+    //console.log("here is the workoutId", workoutId);
+
+    // call deleteExercise
+    deleteExercise(workoutId);
+
+
+});
+
+/*
+
+POST: /deleteJournalById
+Description: will delete journal according to the journal id
+
+*/
+app.post('/deleteJournalById', (req, res) => {  
+
+    // get the id
+    const { journalId } = req.body;
+
+    // uncomment for testing
+    console.log("here is the journalId", journalId);
+
+    // call deleteExercise
+    deleteJournal(journalId);
+
+
+});
 
   
   
@@ -322,3 +467,276 @@ app.post('/createAccount', (req,res) => {
 
 
    }
+
+
+  /*
+  
+  Function: setExersise(sessionID)
+  DESCRIPTION: will set an exersiese according to sessionID
+  
+  
+  */
+  function setExersise(exerciseData, sessionId)
+   {
+    getUserNameFromID(sessionId, (username, error) => {
+
+       if(error)
+          {
+           console.error('Error getting username:', error); 
+           return ;
+          }
+       if(!username)
+          {
+           console.error('Username not found for the sessionID');
+           return;
+          }
+
+       console.log('USername found:', username);
+
+
+       pool.query('INSERT INTO exercise (user_id, name, reps, sets, weekday) VALUES (?, ?, ?, ?, ?)',
+       [username, exerciseData.name, exerciseData.reps, exerciseData.sets,  exerciseData.weekday],
+       (error) => {
+           if (error) {
+               console.error('Error executing query:', error);
+           } 
+       });
+
+    }); 
+
+
+   }
+
+
+/*
+function: setJournal
+description: adds a journal to the database dependign on its
+sessionID
+*/
+
+function setJournal(sessionID, question, answer)
+   {
+    // need to first get the user based off of the sessionID
+    getUserNameFromID(sessionID, (username, error) => {
+
+        if(error)
+           {
+            console.error('Error getting username:', error); 
+            return ;
+           }
+        if(!username)
+           {
+            console.error('Username not found for the sessionID');
+            return;
+           }
+
+        // uncomment for error checking 
+        console.log('Username found:', username);
+
+        
+        pool.query('INSERT INTO journal (user_id, question, answer) VALUES (?, ?, ?)',
+        [username, question, answer],
+        (error) => {
+            if (error) {
+                console.error('Error executing query:', error);
+            } 
+        });
+     }); 
+
+   }
+
+
+
+
+/*
+  
+Function: getUserNameFromID(sessionID)
+DESCRIPTION: will get a username fro sessionID
+  
+*/
+
+function getUserNameFromID(sessionID, callback) 
+   {
+    pool.query(`
+    SELECT * FROM users 
+    WHERE username = (
+        SELECT SUBSTRING_INDEX(SUBSTRING_INDEX(data, '"username":"', -1), '"', 1) AS username 
+        FROM sessions 
+        WHERE session_id = ?
+    )`, [sessionID], (error, results) => {
+    if (error) {
+        console.error('Error executing query:', error);
+        callback(null, error);
+    } else {
+        // Check if any results are returned
+        if (results.length > 0) {
+            // Username found, return it
+            callback(results[0].username, null);
+        } else {
+            // Username not found
+            callback(null, 'Username not found for the sessionID');
+        }
+    }
+});
+   }
+
+
+/*
+  
+Function: getWorkouts(sessionID)
+DESCRIPTION: will get workouts from sessionID
+  
+*/
+
+function getWorkouts(sessionID, dayOfWeek, callback)
+   {
+    const query = `
+            SELECT name, reps, sets, weekday, id
+            FROM exercise
+            WHERE user_id = ? AND weekday = ?`;
+
+    // we need to get the user name from the session id
+    getUserNameFromID(sessionID, (username, error) => {
+
+        if(error)
+           {
+            console.error('Error getting username:', error); 
+            return ;
+           }
+        if(!username)
+           {
+            console.error('Username not found for the sessionID');
+            return;
+           }
+
+
+
+        // uncomment for error checking 
+        //console.log('USername found:', username);
+
+        // now we can complete a query to get all the exersies related to a
+        // specific day
+        pool.query(query,[username, dayOfWeek], (error, results) => {
+      
+            if(error)
+               {
+                console.error('Error executing query:',error);
+                callback(null,error);
+                return;
+               }
+            
+            if(results.length > 0)
+               {
+                callback(results, null);
+               }
+            else
+               {
+                callback([], null);
+               }
+
+        });
+ 
+ 
+     }); 
+   }
+
+/*
+  
+Function: getJournals(sessionID)
+DESCRIPTION: will get journals from a userID
+  
+*/
+
+function getJournals(sessionID, callback)
+   {
+    const query = `
+            SELECT id, question, answer
+            FROM journal
+            WHERE user_id = ?`;
+
+    // we need to get the user name from the session id
+    getUserNameFromID(sessionID, (username, error) => {
+
+        if(error)
+           {
+            console.error('Error getting username:', error); 
+            return ;
+           }
+        if(!username)
+           {
+            console.error('Username not found for the sessionID');
+            return;
+           }
+
+
+
+        // uncomment for error checking 
+        //console.log('USername found:', username);
+
+        // now we can complete a query to get all the exersies related to a
+        // specific day
+        pool.query(query,[username], (error, results) => {
+      
+            if(error)
+               {
+                console.error('Error executing query:',error);
+                callback(null,error);
+                return;
+               }
+            
+            if(results.length > 0)
+               {
+                callback(results, null);
+               }
+            else
+               {
+                callback([], null);
+               }
+
+        });
+ 
+ 
+     }); 
+   }
+
+
+/*
+
+Function: deleteExercise
+Description: will take in an exercise id and will delete it in
+mysql
+
+*/
+
+function deleteExercise(workoutId)
+   {
+    
+    pool.query('delete from exercise where id = ?', [workoutId], (error, results) => {
+        if (error) {
+            console.error('Error executing query:', error);
+        } 
+
+    });
+   }
+
+
+/*
+
+Function: deleteJournal
+Description: will take in an journal id and will delete it in
+mysql
+
+*/
+
+function deleteJournal(journalId)
+   {
+    
+    pool.query('delete from journal where id = ?', [journalId], (error, results) => {
+        if (error) {
+            console.error('Error executing query:', error);
+        } 
+
+    });
+   }
+
+

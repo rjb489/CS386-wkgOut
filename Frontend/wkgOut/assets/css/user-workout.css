@@ -1,0 +1,11 @@
+#workouts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.workout {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
