@@ -6,7 +6,7 @@ A web app that is designed to help people who enjoy working out. wkgOut is a jou
 ## Unit Test
 1. The test frame work that we used for this test was Jest.
 
-2. https://github.com/rjb489/CS386-wkgOut/tree/main/Frontend/wkgOut/assets/JavaScript_Files
+2. https://github.com/rjb489/CS386-wkgOut/tree/main/Test%20code
 
 3. Our test case is an mock class that we are calling exercise.
 
