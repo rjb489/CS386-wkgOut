@@ -13,6 +13,14 @@ A web app that is designed to help people who enjoy working out. wkgOut is a jou
 4. ![Unit test](https://github.com/rjb489/CS386-wkgOut/blob/main/Extra%20Files/images/D7_UnitTest_Output.png)
 
 ## Acceptance Test
+1. The test framework used to develop this test is "webdriver"
+
+2. Link to your GitHub folder where your automated acceptance tests are located
+https://github.com/rjb489/CS386-wkgOut/blob/main/Test%20code/test_code.py
+
+3. An acceptance test for an e-commerce website ensures the site's core functionalities meet user requirements. This includes verifying that the home page loads correctly, product categories and details can be browsed seamlessly, and items can be added to the cart. The test also checks that the checkout process works smoothly, including filling out customer details, selecting payment options, and placing an order. The confirmation page is validated for accuracy, indicating successful transaction completion. This test ensures the website provides a smooth and error-free purchasing experience, confirming its readiness for deployment.
+
+4. https://www.youtube.com/watch?v=kcy272_6DRw
 
 # Validation
 
