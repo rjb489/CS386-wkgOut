@@ -51,141 +51,141 @@ End of Script
 
 #### Task 1 Results
 User 1:
-   Level of Difficulty: 1
-   Issues Encountered: "No problems. I was able to navigate and create an account"
+   - Level of Difficulty: 1
+   - Issues Encountered: "No problems. I was able to navigate and create an account"
 
 User 2:
-   Level of Difficulty: 1
-   Issues Encountered: "no issues"
+   - Level of Difficulty: 1
+   - Issues Encountered: "no issues"
 
 User 3:
-   Level of Difficulty: 2
-   Issues Encountered: "None"
+   - Level of Difficulty: 2
+   - Issues Encountered: "None"
 
 User 4:
-   Level of Difficulty: 2
-   Issues Encountered: "No issues"
+   - Level of Difficulty: 2
+   - Issues Encountered: "No issues"
 
 User 5:
-   Level of Difficulty: 2
-   Issues Encountered: "I did not, maybe the create account button should always be white with a black border. It isn’t when you got to the create a count tab."
+   - Level of Difficulty: 2
+   - Issues Encountered: "I did not, maybe the create account button should always be white with a black border. It isn’t when you got to the create a count tab."
 
 User 6:
-   Level of Difficulty: 1
-   Issues Encountered: "No it was very straightforward. I like the font size."
+   - Level of Difficulty: 1
+   - Issues Encountered: "No it was very straightforward. I like the font size."
 
 #### Task 2 Results
 User 1:
-   Level of Difficulty: 1
-   Issues Encountered: "no"
+   - Level of Difficulty: 1
+   - Issues Encountered: "no"
 
 User 2:
-   Level of Difficulty: 1
-   Issues Encountered: "no issues"
+   - Level of Difficulty: 1
+   - Issues Encountered: "no issues"
 
 User 3:
-   Level of Difficulty: 3
-   Issues Encountered: "None"
+   - Level of Difficulty: 3
+   - Issues Encountered: "None"
 
 User 4:
-   Level of Difficulty: 1
-   Issues Encountered: "No issues"
+   - Level of Difficulty: 1
+   - Issues Encountered: "No issues"
 
 User 5:
-   Level of Difficulty: 1
-   Issues Encountered: N/A
+   - Level of Difficulty: 1
+   - Issues Encountered: N/A
 
 User 6:
-   Level of Difficulty: 1
-   Issues Encountered: N/A
+   - Level of Difficulty: 1
+   - Issues Encountered: N/A
 
 #### Task 3 Results
 User 1:
-   Level of Difficulty: 1
-   Issues Encountered: "Don't know why I was not able to view my workouts?"
-   How is the layout? "fabulous"
+   - Level of Difficulty: 1
+   - Issues Encountered: "Don't know why I was not able to view my workouts?"
+   - How is the layout? "fabulous"
 
 User 2:
-   Level of Difficulty: 1  
-   Issues Encountered: "no issues" 
-   How is the layout? "I think that the layout could be improved by keeping everything on one page. In my opinion, it would be best for everything to be accessed on the page that has all of the days. By clicking a day, the user can see all of the exercises that they have created, with an option to add an exercise at the top of the day that'll add an exercise to the bottom of the list. With the way that it is now, it makes it a bit more time consuming for the user to check what exercises they have already added to make sure they have everything that they want, especially if they are adding exercises in bulk (like adding a whole week of exercises at once, for example)."
+   - Level of Difficulty: 1  
+   - Issues Encountered: "no issues" 
+   - How is the layout? "I think that the layout could be improved by keeping everything on one page. In my opinion, it would be best for everything to be accessed on the page that has all of the days. By clicking a day, the user can see all of the exercises that they have created, with an option to add an exercise at the top of the day that'll add an exercise to the bottom of the list. With the way that it is now, it makes it a bit more time consuming for the user to check what exercises they have already added to make sure they have everything that they want, especially if they are adding exercises in bulk (like adding a whole week of exercises at once, for example)."
 
 User 3:
-   Level of Difficulty: 2  
-   Issues Encountered: "No issues" 
-   How is the layout? "The layout works as intended."
+   - Level of Difficulty: 2  
+   - Issues Encountered: "No issues" 
+   - How is the layout? "The layout works as intended."
 
 User 4:
-   Level of Difficulty: 1
-   Issues Encountered: "No issues"  
-   How is the layout? "Simple, nice font, easy"
+   - Level of Difficulty: 1
+   - Issues Encountered: "No issues"  
+   - How is the layout? "Simple, nice font, easy"
 
 User 5:
-   Level of Difficulty: 1 
-   Issues Encountered: "Maybe if you enter something invalid, there should be a pop up of some kind."
-   How is the layout? "It’s good, maybe it should let you add multiple days for one workout at a time."
+   - Level of Difficulty: 1 
+   - Issues Encountered: "Maybe if you enter something invalid, there should be a pop up of some kind."
+   - How is the layout? "It’s good, maybe it should let you add multiple days for one workout at a time."
 
 User 6:
-   Level of Difficulty: 1 
-   Issues Encountered: "No it was all pretty plain and simple."
-   How is the layout? "The layout is good and it makes sense. I like all the space"
+   - Level of Difficulty: 1 
+   - Issues Encountered: "No it was all pretty plain and simple."
+   - How is the layout? "The layout is good and it makes sense. I like all the space"
 
 
 #### Task 4 Results
 User 1:
-   Level of Difficulty: 1
-   Issues Encountered: "all worked well"
-   How is the layout? "great"
+   - Level of Difficulty: 1
+   - Issues Encountered: "all worked well"
+   - How is the layout? "great"
 
 User 2:
-   Level of Difficulty: 1 
-   Issues Encountered: "No issues"  
-   How is the layout? "I think that the only thing I would like to see different is to have the ability to see what days I entered a certain journal entry. That way, I can keep track of which entry is with which workout."
+   - Level of Difficulty: 1 
+   - Issues Encountered: "No issues"  
+   - How is the layout? "I think that the only thing I would like to see different is to have the ability to see what days I entered a certain journal entry. That way, I can keep track of which entry is with which workout."
 
 User 3:
-   Level of Difficulty: 2
-   Issues Encountered: "No issues"
-   How is the layout? "The layout is nice and works"
+   - Level of Difficulty: 2
+   - Issues Encountered: "No issues"
+   - How is the layout? "The layout is nice and works"
 
 User 4:
-   Level of Difficulty: 1
-   Issues Encountered: "No issues"
-   How is the layout? "Very simple"
+   - Level of Difficulty: 1
+   - Issues Encountered: "No issues"
+   - How is the layout? "Very simple"
 
 User 5:
-   Level of Difficulty: 1
-   Issues Encountered: "When the answer is longer than the “Previous Journal Prompts” box provided, it goes off the screen and doesn’t wrap."
-   How is the layout? "Very well done, the auto generated questions are a very interesting feature."
+   - Level of Difficulty: 1
+   - Issues Encountered: "When the answer is longer than the “Previous Journal Prompts” box provided, it goes off the screen and doesn’t wrap."
+   - How is the layout? "Very well done, the auto generated questions are a very interesting feature."
 
 User 6:
-   Level of Difficulty: 1  
-   Issues Encountered: "No it was very easy and simple. Like the rest of this project."  
-   How is the layout? "the layout is very nice and simple. I like how big it is."
+   - Level of Difficulty: 1  
+   - Issues Encountered: "No it was very easy and simple. Like the rest of this project."  
+   - How is the layout? "the layout is very nice and simple. I like how big it is."
 
 #### Task 5 Results
 User 1:
-   Concerns: "I'd like to figure out why I could not see the workout I created"
-   Suggestions: "By the little person at the top right, I'd like it if it said my name so I know I was logged into my account"
+   - Concerns: "I'd like to figure out why I could not see the workout I created"
+   - Suggestions: "By the little person at the top right, I'd like it if it said my name so I know I was logged into my account"
 
 User 2:
-   Concerns: "This isn't the same for everybody, but some people don't work out the same days every week, and with vacation for example, their workouts might change days. Is there an easy way to save a cluster of exercises as one workout and then under a certain day, the user can easily just select the workout that they already have saved instead of having to add each individual exercise? With that being said, my concern is with the amount of time it could take someone to enter their workouts."
-   Suggestions: "Another option is to add a calendar so that the user can click on a calendar day and add exercises/workouts/journal entries on any day they want. Also, not sure if it matters for the class, but I would make sure that all the grammar is solid :)"
+   - Concerns: "This isn't the same for everybody, but some people don't work out the same days every week, and with vacation for example, their workouts might change days. Is there an easy way to save a cluster of exercises as one workout and then under a certain day, the user can easily just select the workout that they already have saved instead of having to add each individual exercise? With that being said, my concern is with the amount of time it could take someone to enter their workouts."
+   - Suggestions: "Another option is to add a calendar so that the user can click on a calendar day and add exercises/workouts/journal entries on any day they want. Also, not sure if it matters for the class, but I would make sure that all the grammar is solid :)"
 
 User 3:
-   Concerns: "No concerns!"
-   Suggestions: "The heading of the website is quite big and can be shrunk down a bit, other than that no."
+   - Concerns: "No concerns!"
+   - Suggestions: "The heading of the website is quite big and can be shrunk down a bit, other than that no."
 
 User 4:
-   Concerns: "No concerns"
-   Suggestions: "Meet the team redirects back to the main page which is a bit unnecessary but thats about it, see ya"
+   - Concerns: "No concerns"
+   - Suggestions: "Meet the team redirects back to the main page which is a bit unnecessary but thats about it, see ya"
 
 User 5:
-   Concerns: "Just a few bugs."
-   Suggestions: "I would like to see a feature where you can add a work out to multiple days of the week instead of just one at a time."
+   - Concerns: "Just a few bugs."
+   - Suggestions: "I would like to see a feature where you can add a work out to multiple days of the week instead of just one at a time."
 
 User 6:
-   Concerns: "not right now"
-   Suggestions: "Make sure to add a space to record how much WEIGHT you did for your exercises. Also, just so you know, most people add weight to each set for a specific exercise. For example, had my bench press recording been in my own journal, it would have said 185 for 10 reps, 225 for 6 reps, and 250 for 2 reps. Gym goers want to be able to record the specific number of reps and weight used per set on each exercise."
+   - Concerns: "not right now"
+   - Suggestions: "Make sure to add a space to record how much WEIGHT you did for your exercises. Also, just so you know, most people add weight to each set for a specific exercise. For example, had my bench press recording been in my own journal, it would have said 185 for 10 reps, 225 for 6 reps, and 250 for 2 reps. Gym goers want to be able to record the specific number of reps and weight used per set on each exercise."
 
 # Reflection
 
