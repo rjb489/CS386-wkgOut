@@ -197,3 +197,5 @@ User 6:
 
 # Reflection
 
+It turns out that most of our features worked pretty well, we tested the main features, which are: creating accounts, logging in, creating workouts, and creating journal entries. On almost all of these features, the majority rated them a one or two in difficulty. However, we do have to note that one user had issues with creating an account, so they could not complete the rest of the tasks. The users stated that the layout of the website was simple and worked as intended; however, some feedback we could also take into consideration was to keep all the features on one page. The users liked how the website was simple to use the most. However, the greatest concerns were bugs that occurred for a few users who were having issues seeing their workouts and the lack of adaptability that the workout planner has. In the end, we were close to our value proposition but still had some issues like bugs and some small design choices that we could change to better our product.
+
